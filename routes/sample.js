@@ -23,6 +23,7 @@ function convertObjectToJson(obj) {
   return Object.fromEntries(entries);
 }
 
+console.log(convertObjectToJson(enka.getAllCharacters()));
 
 //スコア計算
 
