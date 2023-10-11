@@ -6,10 +6,8 @@ const enka = new EnkaClient({ defaultLanguage: "jp" });
 
 router.get("/", (req, res, next) => {
   res.render("index", {
-    text: "text",
+    text: convertObjectToJson(enka.getAllCharacters()),
   })
-  //next()
-  console.log("次");
 });
 
 //JSON変換
@@ -24,6 +22,7 @@ function convertObjectToJson(obj) {
   }
   return Object.fromEntries(entries);
 }
+
 
 //スコア計算
 
@@ -116,7 +115,7 @@ async function run() {
 
   let a = damage(CUR_ATK, DMG_source, 1, 0, DMG_bonus, crit_value, 1, 0.5, 0.9)
 
-  console.log(a);
+  //console.log(a);
 
   function damage(a, b, c, d, e, f, g, h, i) {
     let damage = (a * b * c + d) * e * f * g * h * i;
