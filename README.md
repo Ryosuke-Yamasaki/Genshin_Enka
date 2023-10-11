@@ -5,7 +5,7 @@
 ### テーブル名一覧
 
 |テーブル名|テーブルの内容|
-| ------------- | ------------- |
+|-|-|
 | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
 
