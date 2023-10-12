@@ -4,66 +4,68 @@
 
 |テーブル名|テーブルの内容|
 |-|-|
-|characters|キャラクターの基本情報|
-|names|キャラクターの基本情報|
-|stars|レアリティの情報|
-|visions|元素タイプの情報|
-|weaponTypes|武器種の情報|
-|ascensionStatus|突破ステータスの情報|
+|Characters|キャラクターの基本情報|
+|Names|キャラクターの基本情報|
+|Stars|レアリティの情報|
+|Visions|元素タイプの情報|
+|WeaponTypes|武器種の情報|
+|AscensionStatus|突破ステータスの情報|
+|AscensionStatusValues4|突破ステータスの星4の数値情報|
+|AscensionStatusValues5|突破ステータスの星5の数値情報|
 
 ## 各テーブルのカラム一覧
-### characters
+### Characters
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
-|names_id|varchar|名前|
-|stars_id|int|レアリティ|
-|visions_id|int|元素タイプ|
-|weaponTypes_id|int|武器種|
-|ascensionStatus_id|int|突破ステータス|
+|Names_id|int|名前|
+|Stars_id|int|レアリティ|
+|Visions_id|int|元素タイプ|
+|WeaponTypes_id|int|武器種|
+|AscensionStatus_id|int|突破ステータス|
 
-### names
+### Names
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
-|japanese|varchar|日本語表記|
-|english|varchar|英語表記|
+|Japanese|varchar|日本語表記|
+|English|varchar|英語表記|
 
-### stars
+### Stars
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
-|text|varchar|テキスト表記|
-|number|int|数値|
+|Text|varchar|テキスト表記|
+|Number|int|数値|
 
-### visions
+### Visions
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
-|text|varchar|テキスト表記|
+|Text|varchar|テキスト表記|
 
-### weaponTypes
+### WeaponTypes
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
-|text|varchar|テキスト表記|
+|Text|varchar|テキスト表記|
 
-### ascensionStatus
+### AscensionStatus
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
-|name|varchar|名前|
-|text|varchar|テキスト表記|
-|values|int|数値|
+|Name|varchar|名前|
+|Text|varchar|テキスト表記|
+|Value|int|数値|
 
-### ascensionStatusValue4
+### AscensionStatusValues4
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
-|number|float|数値|
+|Number|float|数値|
 
-### ascensionStatusValue5
+### AscensionStatusValues5
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
-|number|float|数値|
+|Number|float|数値|
