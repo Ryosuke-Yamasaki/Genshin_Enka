@@ -23,11 +23,9 @@ function convertObjectToJson(obj) {
   return Object.fromEntries(entries);
 }
 
-console.log(convertObjectToJson(enka.getAllCharacters()));
-
 //スコア計算
 
-//run();
+run();
 
 async function run() {
   const uid = 859889403;
@@ -48,7 +46,9 @@ async function run() {
   const name = target.characterData.name.get();
   const level = target.level;
   const maxLevel = target.maxLevel;
-  const statsList = target.stats.statProperties
+  const statsList = target.stats.statProperties;
+
+  console.log(convertObjectToJson(enka.getCharacterById(10000037)));
 
   let talent_lvl = {
     "normalAttack": target.skillLevels[0].level.value,
