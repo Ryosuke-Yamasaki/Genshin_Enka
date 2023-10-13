@@ -28,8 +28,8 @@
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
-|WeaponNames|int|名前|
-|WeaponTypes|int|武器種|
+|Names|int|名前|
+|Types|int|武器種|
 |SubStatusNames|int|サブステータス名|
 |SubStatus|int|サブステータス|
 |BaseAttacks|int|基礎攻撃力|
@@ -60,20 +60,23 @@
 |English|varchar|英語表記|
 
 ### BaseAttacks(x)[^1]
-[^1]:xに入るのはLv.1時点での基礎攻撃力
-
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
 |Level|int|レベル|
+|AscensionStages|int|限界突破段階|
 |Type(x)|int|Type(x)の基礎攻撃力数値|
 
-### SubStatus
+### AscensionStages[^2]
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
-|Level|int|レベル|
-|BaseAttacks|int|基礎攻撃力|
+|star(x)|int|primary key|
+
+### SubStatus(x)[^1]
+|カラム名|型|内容|
+|-|-|-|
+|id|int|primary key|
 |Number|int|数値|
 
 
@@ -144,3 +147,6 @@
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
+
+[^1]:xに入るのはLv.1時点での基礎攻撃力
+[^2]:xに入るのは武器のレアリティ

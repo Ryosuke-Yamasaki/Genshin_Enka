@@ -51,9 +51,11 @@ async function run() {
 
 
 
-  let weapon = enka.getWeaponById(15512);
+  //console.log(convertObjectToJson(enka.getAllWeapons().map(w => w.id)));
 
-  console.log(convertObjectToJson(weapon.getStats(5, 80)));
+  let weapon = enka.getWeaponById(15401);
+
+  console.log(convertObjectToJson(weapon), convertObjectToJson(weapon.getAscensionData(6)));
 
   let character = enka.getCharacterById(10000035);
 
