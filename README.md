@@ -59,7 +59,7 @@
 |Japanese|varchar|日本語表記|
 |English|varchar|英語表記|
 
-### BaseAttacks(x)[^1]
+### BaseAttacks(x)\[^1]
 [^1]:に入るのはLv.1時点での基礎攻撃力()
 
 |カラム名|型|内容|
