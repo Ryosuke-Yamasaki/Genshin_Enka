@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-const { EnkaClient, DetailedGenshinUser, ArtifactSet, TextAssets, DynamicTextAssets } = require("enka-network-api");
+const { EnkaClient, DetailedGenshinUser, ArtifactSet, TextAssets, DynamicTextAssets, WeaponData } = require("enka-network-api");
 const enka = new EnkaClient({ defaultLanguage: "jp" });
 
 router.get("/", (req, res, next) => {
@@ -48,7 +48,17 @@ async function run() {
   const maxLevel = target.maxLevel;
   const statsList = target.stats.statProperties;
 
-  console.log(convertObjectToJson(enka.getCharacterById(10000037)));
+
+
+
+  let weapon = enka.getWeaponById(15512);
+
+  console.log(convertObjectToJson(weapon.getStats(5, 80)));
+
+  let character = enka.getCharacterById(10000035);
+
+  //console.log(convertObjectToJson(character.getAscensionData(6)));
+
 
   let talent_lvl = {
     "normalAttack": target.skillLevels[0].level.value,
