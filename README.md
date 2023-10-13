@@ -28,13 +28,14 @@
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
-|Names|int|Namesのid|
-|Types|int|Typesのid|
+|Names|int|WeaponNamesのid|
+|Types|int|WeaponTypesのid|
 |SubStatusNames|int|SubStatusNamesのid|
-|SubStatus|int||
+|SubStatus|int|SubStatusのid|
 |BaseAttacks|int|BaseAttacksのid|
-|Stars|int|Starsのid|
+|Stars|int|WeaponStarsのid|
 |AscensionStages|int|AscensionStagesのid|
+|Level|int|レベル|
 |Refinements|int||
 
 ### WeaponsNames
@@ -58,7 +59,28 @@
 |Japanese|varchar|日本語表記|
 |English|varchar|英語表記|
 
-### BaseAttacks[^1]
+### SubStatus
+|カラム名|型|内容|
+|-|-|-|
+|id|int|primary key|
+|BaseAttacks|int|BaseAttacksのid|
+|AttackPercent|decimal(8,3)|攻撃力%の数値|
+|DefensePercent|decimal(8,3)|防御力%の数値|
+|HPPercent|decimal(8,3)|HP%の数値|
+|CritRate|decimal(8,3)|会心率の数値|
+|CritDMG|decimal(8,3)|会心ダメージの数値|
+|EnergyRecharge|decimal(8,3)|元素チャージ効率の数値|
+|ElementalMastery|decimal(8,3)|元素熟知の数値|
+|PyroDMGBonus|decimal(8,3)|炎元素バフの数値|
+|HydroDMGBonus|decimal(8,3)|水元素バフの数値|
+|CryoDMGBonus|decimal(8,3)|氷元素バフの数値|
+|ElectroDMGBonus|decimal(8,3)|雷元素バフの数値|
+|AnemoDMGBonus|decimal(8,3)|風元素バフの数値|
+|GeoDMGBonus|decimal(8,3)|岩元素バフの数値|
+|DendroDMGBonus|decimal(8,3)|草元素バフの数値|
+|PhysicalDMGBonus|decimal(8,3)|物理バフの数値|
+
+### BaseAttacks
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
@@ -67,21 +89,52 @@
 |:|:|:|
 |Type49|int|Type49の基礎攻撃力数値|
 
-### AscensionStages(n)[^2]
+### WeaponStars
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
-|Star(n)|int|Star(n)の突破ボーナス値|
+|Number|int|数値|
+|Text|varchar|テキスト表記|
+
+### AscensionStages
+|カラム名|型|内容|
+|-|-|-|
+|id|int|primary key|
+|Star3|int|Star3の突破ボーナス値|
+|Star4|int|Star4の突破ボーナス値|
+|Star5|int|Star5の突破ボーナス値|
 |UnlockMaxLevel|int|突破後のレベル上限|
 
-### SubStatus(t)[^3]
+### Refinements
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
-|BaseAttacks|int|BaseAttacksのid|
-|Number|decimal(8,3)|tの数値|
+|Rank|int|精錬ランクの数値|
+|Names|int|RefinementNamesのid|
+|Descriptions|int|RefinementDescriptionsのid|
+|Status|int|RefinementStatusのid|
 
-すべてのキャラが持ってるパラメーターは一つのテーブルでいい
+### RefinementNames
+|カラム名|型|内容|
+|-|-|-|
+|id|int|primary key|
+|Japanese|varchar|日本語表記|
+|English|varchar|英語表記|
+
+### RefinementDescriptions
+|カラム名|型|内容|
+|-|-|-|
+|id|int|primary key|
+|Japanese|varchar|日本語表記|
+|English|varchar|英語表記|
+
+### RefinementStatus(n)[^1]
+|カラム名|型|内容|
+|-|-|-|
+|id|int|primary key|
+|Japanese|varchar|日本語表記|
+|English|varchar|英語表記|
+|Number|decimal(8,3)|武器効果の各数値|
 
 
 
@@ -95,13 +148,6 @@
 |id|int|primary key|
 |Japanese|varchar|日本語表記|
 |English|varchar|英語表記|
-
-### Stars
-|カラム名|型|内容|
-|-|-|-|
-|id|int|primary key|
-|Number|int|数値|
-|Text|varchar|テキスト表記|
 
 ### Visions
 |カラム名|型|内容|
@@ -150,6 +196,4 @@
 |-|-|-|
 |id|int|primary key|
 
-[^1]:nに入るのはLv.1時点での基礎攻撃力
-[^2]:nに入るのは武器のレアリティ
-[^3]:tに入るのは武器のサブステータス名
+[^1]:nに入るのはWeaponsのid
