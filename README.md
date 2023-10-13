@@ -28,15 +28,14 @@
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
-|Names|int|名前|
-|Types|int|武器種|
-|SubStatusNames|int|サブステータス名|
-|SubStatus|int|サブステータス|
-|BaseAttacks|int|基礎攻撃力|
-|Stars|int|レアリティ|
-|Level|int|武器レベル|
-|AscensionStages|int|限界突破段階|
-|Refinements|int|精錬ランク|
+|Names|int|Namesのid|
+|Types|int|Typesのid|
+|SubStatusNames|int|SubStatusNamesのid|
+|SubStatus|int||
+|BaseAttacks|int|BaseAttacksのid|
+|Stars|int|Starsのid|
+|AscensionStages|int|AscensionStagesのid|
+|Refinements|int||
 
 ### WeaponsNames
 |カラム名|型|内容|
@@ -59,27 +58,30 @@
 |Japanese|varchar|日本語表記|
 |English|varchar|英語表記|
 
-### BaseAttacks(x)[^1]
+### BaseAttacks[^1]
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
 |Level|int|レベル|
-|AscensionStages|int|限界突破段階|
-|Type(x)|int|Type(x)の基礎攻撃力数値|
+|Type38|int|Type38の基礎攻撃力数値|
+|:|:|:|
+|Type49|int|Type49の基礎攻撃力数値|
 
-### AscensionStages[^2]
+### AscensionStages(n)[^2]
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
-|star(x)|int|primary key|
+|Star(n)|int|Star(n)の突破ボーナス値|
+|UnlockMaxLevel|int|突破後のレベル上限|
 
-### SubStatus(x)[^1]
+### SubStatus(t)[^3]
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
-|Number|int|数値|
+|BaseAttacks|int|BaseAttacksのid|
+|Number|decimal(8,3)|tの数値|
 
-
+すべてのキャラが持ってるパラメーターは一つのテーブルでいい
 
 
 
@@ -148,5 +150,6 @@
 |-|-|-|
 |id|int|primary key|
 
-[^1]:xに入るのはLv.1時点での基礎攻撃力
-[^2]:xに入るのは武器のレアリティ
+[^1]:nに入るのはLv.1時点での基礎攻撃力
+[^2]:nに入るのは武器のレアリティ
+[^3]:tに入るのは武器のサブステータス名
