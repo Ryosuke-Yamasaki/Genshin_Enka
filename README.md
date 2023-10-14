@@ -264,14 +264,14 @@
 |Names|int|RefinementNamesのid|
 |Descriptions|int|RefinementDescriptionsのid|
 
-#### RefinementNames
+##### RefinementNames
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
 |Japanese|varchar|日本語表記|
 |English|varchar|英語表記|
 
-#### RefinementDescriptions
+##### RefinementDescriptions
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
@@ -285,7 +285,7 @@
 |Names|int|RefinementPropertyNamesのid|
 |Number|decimal(8,3)|武器効果の各数値|
 
-#### RefinementPropertyNames
+##### RefinementPropertyNames
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
