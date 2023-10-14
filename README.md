@@ -4,24 +4,31 @@
 
 |テーブル名|テーブルの内容|
 |-|-|
-|Characters|キャラクター基本情報|
 |Weapons|武器基本情報|
-|Names|名前情報|
-|Stars|レアリティ情報|
-|Visions|元素タイプ情報|
-|WeaponTypes|武器種情報|
-|AscensionStatus|突破ステータス情報|
-|WeaponStatus|武器ステータス情報|
+|WeaponNames|武器名情報|
+|WeaponTypes|武器タイプ情報|
+|WeaponSubStatusNames|武器サブステータス名情報|
+|WeaponSubStatus|武器サブステータス情報|
+|WeaponBaseAttacks|武器基礎攻撃力情報|
+|WeaponStars|武器レアリティ情報|
+|WeaponAscensionStages|武器突破ステータス情報|
+|Refinements|精錬ランク情報|
+|RefinementNames|精錬ランクテキスト名情報|
+|RefinementDesciriptions|精錬ランク内容情報|
+|RefinementProperty(n)|nの精錬ランクプロパティ情報|
+|RefinementPropertyNames|精錬ランクプロパティ名情報|
 
 ## NamesテーブルのIDについて
 |0|000|0000|
 |-|-|-|
 |大枠の識別番号|内容の識別番号|各テーブルのid|
 
+**大枠の割り振り**
 |id|内容|
 |-|-|
 |1|characters|
 |2|weapons|
+|3|artifacts|
 
 **weaponsの割り振り**
 |id|内容|
@@ -41,11 +48,23 @@
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
-|Names|int|名前|
-|Stars|int|レアリティ|
-|Visions|int|元素タイプ|
-|WeaponTypes|int|武器種|
-|AscensionStatus|int|突破ステータス|
+|Names|int|CharacterNamesのid|
+|BodyType|int||
+|weaponType|int||
+|Gender|int||
+|Stars|int||
+|NormalAttack|int||
+|ElementalSkill|int||
+|ElementalBurst|int||
+|PassiveTalent|int||
+|Element|int||
+|Birthday|int||
+|Location|int||
+|Vision|int||
+|ConstellationName|int||
+|Title|int||
+|Description|int||
+|Constellation|int||
 
 ### Weapons
 |カラム名|型|内容|
@@ -59,7 +78,7 @@
 |Stars|int|WeaponStarsのid|
 |AscensionStages|int|AscensionStagesのid|
 |Level|int|レベル|
-|RefinementTextValues|int|RefinementTextValuesのid|
+|Refinements|int|Refinementsのid|
 |RefinementPropertyTableNames|varchar|各武器のRefinementPropertyのテーブル名|
 
 ### WeaponsNames
@@ -129,7 +148,7 @@
 |Star5|int|Star5の突破ボーナス値|
 |UnlockMaxLevel|int|突破後のレベル上限|
 
-### RefinementTextValues
+### Refinements
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
