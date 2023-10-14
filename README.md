@@ -1,6 +1,6 @@
-# データベースの設計
+**データベースの設計**
 
-## テーブル名一覧
+# テーブル名一覧
 
 |テーブル名|テーブルの内容|
 |-|-|
@@ -18,7 +18,7 @@
 |RefinementProperty(n)|nの精錬ランクプロパティ情報|
 |RefinementPropertyNames|精錬ランクプロパティ名情報|
 
-## NamesテーブルのIDについて
+# NamesテーブルのIDについて
 |0|000|0000|
 |-|-|-|
 |大枠の識別番号|内容の識別番号|各テーブルのid|
@@ -43,30 +43,139 @@
 |id|内容|
 |-|-|
 
-## 各テーブルのカラム一覧
-### Characters
+# 各テーブルのカラム一覧
+## Characters
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
 |Names|int|CharacterNamesのid|
-|BodyType|int||
-|weaponType|int||
-|Gender|int||
-|Stars|int||
-|NormalAttack|int||
-|ElementalSkill|int||
-|ElementalBurst|int||
-|PassiveTalent|int||
-|Element|int||
-|Birthday|int||
-|Location|int||
-|Vision|int||
-|ConstellationName|int||
-|Title|int||
-|Description|int||
-|Constellation|int||
+|WeaponTypes|int|WeaponTypesのid|
+|Genders|int|Gendersのid|
+|Stars|int|CharacterStarsのid|
+|NormalAttackTexts|int|NormalAttackTextsのid|
+|NormalAttackPropertyTableNames|varchar|各キャラのNormalAttackPropertyのテーブル名|
+|ElementalSkillTexts|int|ElementalSkillTextsのid|
+|ElementalSkillPropertyTableNames|varchar|各キャラのElementalSkillPropertyのテーブル名|
+|ElementalBurstTexts|int|ElementalBurstTextsのid|
+|ElementalBurstPropertyTableNames|varchar|各キャラのElementalBurstPropertyのテーブル名|
+|PassiveTalent|int|のid|
+|Element|int|のid|
+|Birthday|int|のid|
+|Location|int|のid|
+|Vision|int|のid|
+|ConstellationName|int|のid|
+|Title|int|のid|
+|Description|int|のid|
+|Constellation|int|のid|
 
-### Weapons
+## Genders
+|カラム名|型|内容|
+|-|-|-|
+|id|int|primary key|
+|Japanese|varchar|日本語表記|
+|English|varchar|英語表記|
+
+## CharacterStars
+|カラム名|型|内容|
+|-|-|-|
+|id|int|primary key|
+|Japanese|varchar|日本語表記|
+|English|varchar|英語表記|
+
+## NormalAttackTexts
+|カラム名|型|内容|
+|-|-|-|
+|id|int|primary key|
+|Names|int|NormalAttackNamesのid|
+|Descriptions|int|NormalAttackDescriptionsのid|
+
+## NormalAttackNames
+|カラム名|型|内容|
+|-|-|-|
+|id|int|primary key|
+|Japanese|varchar|日本語表記|
+|English|varchar|英語表記|
+
+## NormalAttackDescriptions
+|カラム名|型|内容|
+|-|-|-|
+|id|int|primary key|
+|Japanese|varchar|日本語表記|
+|English|varchar|英語表記|
+
+## NormalAttackProperty(n)[^2]
+|カラム名|型|内容|
+|-|-|-|
+|id|int|primary key|
+|Names|int|NormalAttackPropertyNamesのid|
+|Level_1|decimal(8,3)|Lv1の通常攻撃倍率|
+|:|:|:|
+|Level_15|decimal(8,3)|Lv15の通常攻撃倍率|
+|ElementTypes|int|ElementTypesのid|
+|AttackingTypes|int|AttackingTypesのid|
+
+## NormalAttackPropertyNames
+|カラム名|型|内容|
+|-|-|-|
+|id|int|primary key|
+|Japanese|varchar|日本語表記|
+|English|varchar|英語表記|
+
+## ElementTypes
+|カラム名|型|内容|
+|-|-|-|
+|id|int|primary key|
+|Japanese|varchar|日本語表記|
+|English|varchar|英語表記|
+
+## AttackingTypes
+|カラム名|型|内容|
+|-|-|-|
+|id|int|primary key|
+|Japanese|varchar|日本語表記|
+|English|varchar|英語表記|
+
+## ElementalSkillTests
+|カラム名|型|内容|
+|-|-|-|
+|id|int|primary key|
+|Names|int|ElementalSkillNamesのid|
+|Descriptions|int|Descriptionsのid|
+
+## ElementalSkillNames
+|カラム名|型|内容|
+|-|-|-|
+|id|int|primary key|
+|Japanese|varchar|日本語表記|
+|English|varchar|英語表記|
+
+## ElementalSkillDescriptions
+|カラム名|型|内容|
+|-|-|-|
+|id|int|primary key|
+|Japanese|varchar|日本語表記|
+|English|varchar|英語表記|
+
+## ElementalSkillProperty(n)[^2]
+|カラム名|型|内容|
+|-|-|-|
+|id|int|primary key|
+|Names|int|ElementalSkillPropertyNamesのid|
+|Number|decimal(8,3)|通常攻撃の各倍率|
+
+## ElementalSkillPropertyNames
+|カラム名|型|内容|
+|-|-|-|
+|id|int|primary key|
+|Japanese|varchar|日本語表記|
+|English|varchar|英語表記|
+
+
+
+
+**charactersの正規化をする**
+
+## Weapons
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
@@ -79,30 +188,30 @@
 |AscensionStages|int|AscensionStagesのid|
 |Level|int|レベル|
 |Refinements|int|Refinementsのid|
-|RefinementPropertyTableNames|varchar|各武器のRefinementPropertyのテーブル名|
+|RefinementPTableNames|varchar|各武器のRefinementPropertyのテーブル名|
 
-### WeaponsNames
+## WeaponsNames
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
 |Japanese|varchar|日本語表記|
 |English|varchar|英語表記|
 
-### WeaponsTypes
+## WeaponsTypes
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
 |Japanese|varchar|日本語表記の名前|
 |English|varchar|英語表記の名前|
 
-### WeaponSubStatusNames
+## WeaponSubStatusNames
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
 |Japanese|varchar|日本語表記|
 |English|varchar|英語表記|
 
-### WeaponSubStatus
+## WeaponSubStatus
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
@@ -123,32 +232,32 @@
 |DendroDMGBonus|decimal(8,3)|草元素バフの数値|
 |PhysicalDMGBonus|decimal(8,3)|物理バフの数値|
 
-### WeaponBaseAttacks
+## WeaponBaseAttacks
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
 |Level|int|レベル|
-|Type38|int|Type38の基礎攻撃力数値|
+|Type_38|int|Lv1時点で基礎攻撃力38の基礎攻撃力数値|
 |:|:|:|
-|Type49|int|Type49の基礎攻撃力数値|
+|Type_49|int|Lv1時点で基礎攻撃力49の基礎攻撃力数値|
 
-### WeaponStars
+## WeaponStars
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
 |Number|int|数値|
 |Text|varchar|テキスト表記|
 
-### WeaponAscensionStages
+## WeaponAscensionStages
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
-|Star3|int|Star3の突破ボーナス値|
-|Star4|int|Star4の突破ボーナス値|
-|Star5|int|Star5の突破ボーナス値|
+|Star_3|int|星3の突破ボーナス値|
+|Star_4|int|星4の突破ボーナス値|
+|Star_5|int|星5の突破ボーナス値|
 |UnlockMaxLevel|int|突破後のレベル上限|
 
-### Refinements
+## Refinements
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
@@ -156,28 +265,28 @@
 |Names|int|RefinementNamesのid|
 |Descriptions|int|RefinementDescriptionsのid|
 
-### RefinementNames
+## RefinementNames
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
 |Japanese|varchar|日本語表記|
 |English|varchar|英語表記|
 
-### RefinementDescriptions
+## RefinementDescriptions
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
 |Japanese|varchar|日本語表記|
 |English|varchar|英語表記|
 
-### RefinementProperty(n)[^1]
+## RefinementProperty(n)[^1]
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
 |Names|int|RefinementPropertyNamesのid|
 |Number|decimal(8,3)|武器効果の各数値|
 
-### RefinementPropertyNames
+## RefinementPropertyNames
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
@@ -185,3 +294,4 @@
 |English|varchar|英語表記|
 
 [^1]:nに入るのはWeaponsのid
+[^2]:nに入るのはCharactersのid
