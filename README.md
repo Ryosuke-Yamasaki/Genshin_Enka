@@ -43,20 +43,23 @@
 |-|-|
 
 ## 各テーブルのカラム一覧
+
 ### Characters
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
 |Names|int|CharacterNamesのid|
-|WeaponTypes|int|WeaponTypesのid|
+|WeaponTypes|int|CharacterWeaponTypesのid|
 |Genders|int|Gendersのid|
 |Stars|int|CharacterStarsのid|
 |NormalAttackTexts|int|NormalAttackTextsのid|
 |NormalAttackPropertyTableNames|varchar|各キャラのNormalAttackPropertyのテーブル名|
 |ElementalSkillTexts|int|ElementalSkillTextsのid|
 |ElementalSkillPropertyTableNames|varchar|各キャラのElementalSkillPropertyのテーブル名|
+|ElementalSkillMaxQty|int|元素スキルの個数|
 |ElementalBurstTexts|int|ElementalBurstTextsのid|
 |ElementalBurstPropertyTableNames|varchar|各キャラのElementalBurstPropertyのテーブル名|
+|ElementalBurstMaxQty|int|元素爆発の個数|
 |PassiveTalent|int|のid|
 |Element|int|のid|
 |Birthday|int|のid|
@@ -66,6 +69,20 @@
 |Title|int|のid|
 |Description|int|のid|
 |Constellation|int|のid|
+
+#### CharacterNames
+|カラム名|型|内容|
+|-|-|-|
+|id|int|primary key|
+|Japanese|varchar|日本語表記|
+|English|varchar|英語表記|
+
+#### CharacterWeaponTypes
+|カラム名|型|内容|
+|-|-|-|
+|id|int|primary key|
+|Japanese|varchar|日本語表記|
+|English|varchar|英語表記|
 
 #### Genders
 |カラム名|型|内容|
@@ -88,14 +105,14 @@
 |Names|int|NormalAttackNamesのid|
 |Descriptions|int|NormalAttackDescriptionsのid|
 
-#### NormalAttackNames
+##### NormalAttackNames
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
 |Japanese|varchar|日本語表記|
 |English|varchar|英語表記|
 
-#### NormalAttackDescriptions
+##### NormalAttackDescriptions
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
@@ -107,48 +124,56 @@
 |-|-|-|
 |id|int|primary key|
 |Names|int|NormalAttackPropertyNamesのid|
-|Level_1|decimal(8,3)|Lv1の通常攻撃倍率|
-|:|:|:|
-|Level_15|decimal(8,3)|Lv15の通常攻撃倍率|
-|ElementTypes|int|ElementTypesのid|
-|AttackingTypes|int|AttackingTypesのid|
+|Values|int|NormalAttackPropertyValuesのid|
+|ElementTypes|int|NormalAttackPropertyElementTypesのid|
+|AttackingTypes|int|NormalAttackPropertyAttackingTypesのid|
 
-#### NormalAttackPropertyNames
+##### NormalAttackPropertyNames
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
 |Japanese|varchar|日本語表記|
 |English|varchar|英語表記|
 
-#### ElementTypes
+##### NormalAttackPropertyValues
+|カラム名|型|内容|
+|-|-|-|
+|id|int|primary key|
+|Level|int|天賦レベル|
+|ValueText|varchar|天賦倍率のテキスト表記|
+|Number|decimal(8,3)|天賦倍率の数値|
+
+##### NormalAttackPropertyElementTypes
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
 |Japanese|varchar|日本語表記|
 |English|varchar|英語表記|
 
-#### AttackingTypes
+##### NormalAttackPropertyAttackingTypes
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
 |Japanese|varchar|日本語表記|
 |English|varchar|英語表記|
 
-#### ElementalSkillTests
+
+
+#### ElementalSkillTexts
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
 |Names|int|ElementalSkillNamesのid|
-|Descriptions|int|Descriptionsのid|
+|Descriptions|int|ElementalSkillDescriptionsのid|
 
-#### ElementalSkillNames
+##### ElementalSkillNames
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
 |Japanese|varchar|日本語表記|
 |English|varchar|英語表記|
 
-#### ElementalSkillDescriptions
+##### ElementalSkillDescriptions
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
@@ -160,14 +185,114 @@
 |-|-|-|
 |id|int|primary key|
 |Names|int|ElementalSkillPropertyNamesのid|
-|Number|decimal(8,3)|通常攻撃の各倍率|
+|Values|int|ElementalSkillPropertyValuesのid|
+|ElementTypes|int|ElementalSkillPropertyElementTypesのid|
+|AttackingTypes|int|ElementalSkillPropertyAttackingTypesのid|
 
-#### ElementalSkillPropertyNames
+##### ElementalSkillPropertyNames
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
 |Japanese|varchar|日本語表記|
 |English|varchar|英語表記|
+
+##### ElementalSkillPropertyValues
+|カラム名|型|内容|
+|-|-|-|
+|id|int|primary key|
+|Level|int|天賦レベル|
+|ValueText|varchar|天賦倍率のテキスト表記|
+|Number|decimal(8,3)|天賦倍率の数値|
+
+##### ElementalSkillPropertyElementTypes
+|カラム名|型|内容|
+|-|-|-|
+|id|int|primary key|
+|Japanese|varchar|日本語表記|
+|English|varchar|英語表記|
+
+##### ElementalSkillPropertyAttackingTypes
+|カラム名|型|内容|
+|-|-|-|
+|id|int|primary key|
+|Japanese|varchar|日本語表記|
+|English|varchar|英語表記|
+
+
+
+
+
+
+
+
+
+#### ElementalBurstTexts
+|カラム名|型|内容|
+|-|-|-|
+|id|int|primary key|
+|Names|int|ElementalBurstNamesのid|
+|Descriptions|int|ElementalBurstDescriptionsのid|
+
+##### ElementalBurstNames
+|カラム名|型|内容|
+|-|-|-|
+|id|int|primary key|
+|Japanese|varchar|日本語表記|
+|English|varchar|英語表記|
+
+##### ElementalBurstDescriptions
+|カラム名|型|内容|
+|-|-|-|
+|id|int|primary key|
+|Japanese|varchar|日本語表記|
+|English|varchar|英語表記|
+
+#### ElementalBurstProperty(n)[^2]
+|カラム名|型|内容|
+|-|-|-|
+|id|int|primary key|
+|Names|int|ElementalBurstPropertyNamesのid|
+|Values|int|ElementalBurstPropertyValuesのid|
+|ElementTypes|int|ElementalBurstPropertyElementTypesのid|
+|AttackingTypes|int|ElementalBurstPropertyAttackingTypesのid|
+
+##### ElementalBurstPropertyNames
+|カラム名|型|内容|
+|-|-|-|
+|id|int|primary key|
+|Japanese|varchar|日本語表記|
+|English|varchar|英語表記|
+
+##### ElementalBurstPropertyValues
+|カラム名|型|内容|
+|-|-|-|
+|id|int|primary key|
+|Level|int|天賦レベル|
+|ValueText|varchar|天賦倍率のテキスト表記|
+|Number|decimal(8,3)|天賦倍率の数値|
+
+##### ElementalBurstPropertyElementTypes
+|カラム名|型|内容|
+|-|-|-|
+|id|int|primary key|
+|Japanese|varchar|日本語表記|
+|English|varchar|英語表記|
+
+##### ElementalBurstPropertyAttackingTypes
+|カラム名|型|内容|
+|-|-|-|
+|id|int|primary key|
+|Japanese|varchar|日本語表記|
+|English|varchar|英語表記|
+
+
+
+
+
+
+
+
+
 
 
 
