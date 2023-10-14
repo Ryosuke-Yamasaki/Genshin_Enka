@@ -13,6 +13,29 @@
 |AscensionStatus|突破ステータス情報|
 |WeaponStatus|武器ステータス情報|
 
+## NamesテーブルのIDについて
+|0|000|0000|
+|-|-|-|
+|大枠の識別番号|内容の識別番号|各テーブルのid|
+
+|id|内容|
+|-|-|
+|1|characters|
+|2|weapons|
+
+**weaponsの割り振り**
+|id|内容|
+|-|-|
+|001|WeaponNames|
+|002|SubStatusNames|
+|003|RefinementNames|
+|004|RefinementDescriptions|
+|005|RefinementPropertyNames|
+
+**charactersの割り振り**
+|id|内容|
+|-|-|
+
 ## 各テーブルのカラム一覧
 ### Characters
 |カラム名|型|内容|
@@ -36,7 +59,8 @@
 |Stars|int|WeaponStarsのid|
 |AscensionStages|int|AscensionStagesのid|
 |Level|int|レベル|
-|Refinements|int||
+|RefinementTextValues|int|RefinementTextValuesのid|
+|RefinementPropertyTableNames|varchar|各武器のRefinementPropertyのテーブル名|
 
 ### WeaponsNames
 |カラム名|型|内容|
@@ -49,17 +73,17 @@
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
-|JapaneseName|int|日本語表記の名前|
-|EnglishName|int|英語表記の名前|
+|Japanese|varchar|日本語表記の名前|
+|English|varchar|英語表記の名前|
 
-### SubStatusNames
+### WeaponSubStatusNames
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
 |Japanese|varchar|日本語表記|
 |English|varchar|英語表記|
 
-### SubStatus
+### WeaponSubStatus
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
@@ -80,7 +104,7 @@
 |DendroDMGBonus|decimal(8,3)|草元素バフの数値|
 |PhysicalDMGBonus|decimal(8,3)|物理バフの数値|
 
-### BaseAttacks
+### WeaponBaseAttacks
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
@@ -96,7 +120,7 @@
 |Number|int|数値|
 |Text|varchar|テキスト表記|
 
-### AscensionStages
+### WeaponAscensionStages
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
@@ -105,14 +129,13 @@
 |Star5|int|Star5の突破ボーナス値|
 |UnlockMaxLevel|int|突破後のレベル上限|
 
-### Refinements
+### RefinementTextValues
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
 |Rank|int|精錬ランクの数値|
 |Names|int|RefinementNamesのid|
 |Descriptions|int|RefinementDescriptionsのid|
-|Status|int|RefinementStatusのid|
 
 ### RefinementNames
 |カラム名|型|内容|
@@ -128,72 +151,18 @@
 |Japanese|varchar|日本語表記|
 |English|varchar|英語表記|
 
-### RefinementStatus(n)[^1]
+### RefinementProperty(n)[^1]
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
-|Japanese|varchar|日本語表記|
-|English|varchar|英語表記|
+|Names|int|RefinementPropertyNamesのid|
 |Number|decimal(8,3)|武器効果の各数値|
 
-
-
-
-
-
-
-### Names
+### RefinementPropertyNames
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
 |Japanese|varchar|日本語表記|
 |English|varchar|英語表記|
-
-### Visions
-|カラム名|型|内容|
-|-|-|-|
-|id|int|primary key|
-|Text|varchar|テキスト表記|
-
-### WeaponTypes
-|カラム名|型|内容|
-|-|-|-|
-|id|int|primary key|
-|Text|varchar|テキスト表記|
-
-### AscensionStatus
-|カラム名|型|内容|
-|-|-|-|
-|id|int|primary key|
-|Names|int|名前|
-|Star4|decimal(8,3)|星4の数値|
-|Star5|decimal(8,3)|星5の数値|
-
-### WeaponStatus
-|カラム名|型|内容|
-|-|-|-|
-|id|int|primary key|
-|Level|int|武器レベル|
-|AscensionStages|int|限界突破段階|
-|BaseAttacks|int|基礎攻撃力|
-|SubStatus|int|サブステータス|
-
-### AscensionStages
-|カラム名|型|内容|
-|-|-|-|
-|id|int|primary key|
-|MaxLevel|int|レベル上限|
-
-### BaseAttacks
-|カラム名|型|内容|
-|-|-|-|
-|id|int|primary key|
-|Level|int|レベル|
-|Number|int|基礎攻撃力の数値|
-
-### SubStatus
-|カラム名|型|内容|
-|-|-|-|
-|id|int|primary key|
 
 [^1]:nに入るのはWeaponsのid
