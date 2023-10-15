@@ -34,13 +34,25 @@
 |WeaponTypes|int|CharacterWeaponTypesのid|
 |Genders|int|Gendersのid|
 |Stars|int|CharacterStarsのid|
-|NormalAttackTitles|int|NormalAttackTitlesのid|
-|NormalAttackStatusTableNames|varchar|各キャラのNormalAttackStatusのテーブル名|
-|ElementalSkillTitles|int|ElementalSkillTitlesのid|
-|ElementalSkillStatusTableNames|varchar|各キャラのElementalSkillStatusのテーブル名|
+|NormalAttackTitleNames|int|NormalAttackTitleNamesのid|
+|NormalAttackTitleDescriptions|int|NormalAttackTitleDescriptionsのid|
+|NormalAttackStatusNames|int|NormalAttackStatusNamesのid|
+|NormalAttackStatusTableNames|var|NormalAttackStatusValuesのテーブル名|
+|NormalAttackStatusElementTypes|int|NormalAttackStatusElementTypesのid|
+|NormalAttackStatusAttackingTypes|int|NormalAttackStatusAttackingTypesのid|
+|ElementalSkillTitleNames|int|ElementalSkillTitleNamesのid|
+|ElementalSkillTitleDescriptions|int|ElementalSkillTitleDescriptionsのid|
+|ElementalSkillStatusNames|int|ElementalSkillStatusNamesのid|
+|ElementalSkillStatusTableNames|var|ElementalSkillStatusValuesのテーブル名|
+|ElementalSkillStatusElementTypes|int|ElementalSkillStatusElementTypesのid|
+|ElementalSkillStatusAttackingTypes|int|ElementalSkillStatusAttackingTypesのid|
 |ElementalSkillMaxQty|int|元素スキルの個数|
-|ElementalBurstTitles|int|ElementalBurstTitlesのid|
-|ElementalBurstStatusTableNames|varchar|各キャラのElementalBurstStatusのテーブル名|
+|ElementalBurstTitleNames|int|ElementalBurstTitleNamesのid|
+|ElementalBurstTitleDescriptions|int|ElementalBurstTitleDescriptionsのid|
+|ElementalBurstStatusNames|int|ElementalBurstStatusNamesのid|
+|ElementalBurstStatusTableNames|var|ElementalBurstStatusValuesのテーブル名|
+|ElementalBurstStatusElementTypes|int|ElementalBurstStatusElementTypesのid|
+|ElementalBurstStatusAttackingTypes|int|ElementalBurstStatusAttackingTypesのid|
 |ElementalBurstMaxQty|int|元素爆発の個数|
 |Element|int|のid|
 |Birthday|int|のid|
@@ -79,21 +91,14 @@
 |Japanese|varchar|日本語表記|
 |English|varchar|英語表記|
 
-#### NormalAttackTitles
-|カラム名|型|内容|
-|-|-|-|
-|id|int|primary key|
-|Names|int|NormalAttackTitleNamesのid|
-|Descriptions|int|NormalAttackTitleDescriptionsのid|
-
-##### NormalAttackTitleNames
+#### NormalAttackTitleNames
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
 |Japanese|varchar|日本語表記|
 |English|varchar|英語表記|
 
-##### NormalAttackTitleDescriptions
+#### NormalAttackTitleDescriptions
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
@@ -104,11 +109,10 @@
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
-|CharacterId|int|Charactersのid|
-|Names|int|NormalAttackStatusNamesのid|
-|Values|int|NormalAttackStatusValuesのid|
-|ElementTypes|int|NormalAttackStatusElementTypesのid|
-|AttackingTypes|int|NormalAttackStatusAttackingTypesのid|
+|NormalAttackStatusNames|int|NormalAttackStatusNamesのid|
+|NormalAttackStatusTableNames|var|NormalAttackStatusValuesのテーブル名|
+|NormalAttackStatusElementTypes|int|NormalAttackStatusElementTypesのid|
+|NormalAttackStatusAttackingTypes|int|NormalAttackStatusAttackingTypesのid|
 
 ##### NormalAttackStatusNames
 |カラム名|型|内容|
@@ -117,7 +121,7 @@
 |Japanese|varchar|日本語表記|
 |English|varchar|英語表記|
 
-##### NormalAttackStatusValues
+##### NormalAttackStatusValue(n)[^1]
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
@@ -139,21 +143,14 @@
 |Japanese|varchar|日本語表記|
 |English|varchar|英語表記|
 
-#### ElementalSkillTitles
-|カラム名|型|内容|
-|-|-|-|
-|id|int|primary key|
-|Names|int|ElementalSkillTitleNamesのid|
-|Descriptions|int|ElementalSkillTitleDescriptionsのid|
-
-##### ElementalSkillTitleNames
+#### ElementalSkillTitleNames
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
 |Japanese|varchar|日本語表記|
 |English|varchar|英語表記|
 
-##### ElementalSkillTitleDescriptions
+#### ElementalSkillTitleDescriptions
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
@@ -164,11 +161,10 @@
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
-|CharacterId|int|Charactersのid|
-|Names|int|ElementalSkillStatusNamesのid|
-|Values|int|ElementalSkillStatusValuesのid|
-|ElementTypes|int|ElementalSkillStatusElementTypesのid|
-|AttackingTypes|int|ElementalSkillStatusAttackingTypesのid|
+|ElementalSkillStatusNames|int|ElementalSkillStatusNamesのid|
+|ElementalSkillStatusTableNames|var|ElementalSkillStatusValuesのテーブル名|
+|ElementalSkillStatusElementTypes|int|ElementalSkillStatusElementTypesのid|
+|ElementalSkillStatusAttackingTypes|int|ElementalSkillStatusAttackingTypesのid|
 
 ##### ElementalSkillStatusNames
 |カラム名|型|内容|
@@ -177,7 +173,7 @@
 |Japanese|varchar|日本語表記|
 |English|varchar|英語表記|
 
-##### ElementalSkillStatusValues
+##### ElementalSkillStatusValue(n)[^1]
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
@@ -199,21 +195,14 @@
 |Japanese|varchar|日本語表記|
 |English|varchar|英語表記|
 
-#### ElementalBurstTitles
-|カラム名|型|内容|
-|-|-|-|
-|id|int|primary key|
-|Names|int|ElementalBurstNamesのid|
-|Descriptions|int|ElementalBurstDescriptionsのid|
-
-##### ElementalBurstTitleNames
+#### ElementalBurstTitleNames
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
 |Japanese|varchar|日本語表記|
 |English|varchar|英語表記|
 
-##### ElementalBurstTitleDescriptions
+#### ElementalBurstTitleDescriptions
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
@@ -224,11 +213,10 @@
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
-|CharacterId|int|Charactersのid|
-|Names|int|ElementalBurstStatusNamesのid|
-|Values|int|ElementalBurstStatusValuesのid|
-|ElementTypes|int|ElementalBurstStatusElementTypesのid|
-|AttackingTypes|int|ElementalBurstStatusAttackingTypesのid|
+|ElementalBurstStatusNames|int|ElementalBurstStatusNamesのid|
+|ElementalBurstStatusTableNames|var|ElementalBurstStatusValuesのテーブル名|
+|ElementalBurstStatusElementTypes|int|ElementalBurstStatusElementTypesのid|
+|ElementalBurstStatusAttackingTypes|int|ElementalBurstStatusAttackingTypesのid|
 
 ##### ElementalBurstStatusNames
 |カラム名|型|内容|
@@ -237,7 +225,7 @@
 |Japanese|varchar|日本語表記|
 |English|varchar|英語表記|
 
-##### ElementalBurstStatusValues
+##### ElementalBurstStatusValue(n)[^1]
 |カラム名|型|内容|
 |-|-|-|
 |id|int|primary key|
@@ -403,4 +391,5 @@
 |Japanese|varchar|日本語表記|
 |English|varchar|英語表記|
 
-[^2]:n=>Charactersテーブルのid
+[^1]:n=>Charactersテーブルのid
+[^2]:n=>Weaponsテーブルのid

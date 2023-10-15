@@ -58,7 +58,7 @@ async function run() {
 
   //console.log(convertObjectToJson(enka.getAllCharacters().map(c => c.id)));
 
-  console.log(convertObjectToJson(character.normalAttack))
+  console.log(convertObjectToJson(character.normalAttack.getSkillAttributes(10).map(s => s.getNullableAttributeData())))
 
 
   let talent_lvl = {
