@@ -523,34 +523,91 @@
 | Japanese | varchar | 日本語表記  |
 | English  | varchar | 英語表記    |
 
+
+
+
+
+
 ### Artifacts
-| カラム名    | 型  | 内容        |
-| ----------- | --- | ----------- |
-| id          | int | primary key |
-| Name        | int |             |
-| Description | int |             |
-| Type        | int |             |
-| Star        | int |             |
+| カラム名     | 型  | 内容                     |
+| ------------ | --- | ------------------------ |
+| id           | int | primary key              |
+| Names        | int | ArtifactNamesのid        |
+| Descriptions | int | ArtifactDescriptionsのid |
+| Types        | int | ArtifactTypesのid        |
+| Stars        | int | ArtifactStarsのid        |
+
+##### ArtifactNames
+| カラム名 | 型      | 内容        |
+| -------- | ------- | ----------- |
+| id       | int     | primary key |
+| Japanese | varchar | 日本語表記  |
+| English  | varchar | 英語表記    |
+
+##### ArtifactDescriptions
+| カラム名 | 型      | 内容        |
+| -------- | ------- | ----------- |
+| id       | int     | primary key |
+| Japanese | varchar | 日本語表記  |
+| English  | varchar | 英語表記    |
+
+##### ArtifactTypes
+| カラム名 | 型      | 内容        |
+| -------- | ------- | ----------- |
+| id       | int     | primary key |
+| Japanese | varchar | 日本語表記  |
+| English  | varchar | 英語表記    |
+
+##### ArtifactStars
+| カラム名 | 型      | 内容        |
+| -------- | ------- | ----------- |
+| id       | int     | primary key |
+| Japanese | varchar | 日本語表記  |
+| English  | varchar | 英語表記    |
 
 #### ArtifactSets
-| カラム名 | 型  | 内容        |
-| -------- | --- | ----------- |
-| id       | int | primary key |
-| Name     | int |             |
-| Bonus    | int |             |
+| カラム名 | 型  | 内容                              |
+| -------- | --- | --------------------------------- |
+| id       | int | primary key                       |
+| Names    | int | ArtifactSetNamesのid              |
+| Bonus2   | int | 2セット効果のArtifactSetBonusのid |
+| Bonus4   | int | 4セット効果のArtifactSetBonusのid |
+
+##### ArtifactSetNames
+| カラム名 | 型      | 内容        |
+| -------- | ------- | ----------- |
+| id       | int     | primary key |
+| Japanese | varchar | 日本語表記  |
+| English  | varchar | 英語表記    |
 
 #### ArtifactSetBonus
-| カラム名    | 型  | 内容        |
-| ----------- | --- | ----------- |
-| id          | int | primary key |
-| Needcount   | int |             |
-| Description | int |             |
+| カラム名     | 型  | 内容                             |
+| ------------ | --- | -------------------------------- |
+| id           | int | primary key                      |
+| Needcounts   | int | セット効果発動のための必要個数   |
+| Descriptions | int | ArtifactSetBonusDescriptionsのid |
+
+##### ArtifactSetBonusDescriptions
+| カラム名 | 型      | 内容        |
+| -------- | ------- | ----------- |
+| id       | int     | primary key |
+| Japanese | varchar | 日本語表記  |
+| English  | varchar | 英語表記    |
 
 #### ArtifactSetBonusStatus
-| カラム名 | 型  | 内容        |
-| -------- | --- | ----------- |
-| id       | int | primary key |
-| Name     | int |             |
+| カラム名           | 型           | 内容                            |
+| ------------------ | ------------ | ------------------------------- |
+| id                 | int          | primary key                     |
+| ArtifactSetBonusId | int          | ArtifactSetBonusのid            |
+| Names              | int          | ArtifactSetBonusStatusNamesのid |
+| Numbers            | decimal(8,3) | セット効果の数値                |
+
+##### ArtifactSetBonusStatusNames
+| カラム名 | 型      | 内容        |
+| -------- | ------- | ----------- |
+| id       | int     | primary key |
+| Japanese | varchar | 日本語表記  |
+| English  | varchar | 英語表記    |
 
 [^1]:n=>Charactersテーブルのid
 [^2]:n=>Weaponsテーブルのid

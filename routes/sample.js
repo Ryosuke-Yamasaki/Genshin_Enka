@@ -64,7 +64,7 @@ async function run() {
 
   //console.log(convertObjectToJson(character.getAscensionData(6)));
   //console.log(convertObjectToJson(weapon.getAscensionData(6)))
-  console.log(convertObjectToJson(artifact.set.setBonus))
+  console.log(convertObjectToJson(artifact.set))
 
   let talent_lvl = {
     "normalAttack": target.skillLevels[0].level.value,
