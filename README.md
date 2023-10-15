@@ -459,9 +459,9 @@
 | ------------------- | ------------ | ----------------------- |
 | id                  | int          | primary key             |
 | LevelTexts          | int          | CharacterLevelTextsのid |
-| BaseHP              | int          | 基礎HP                  |
-| BaseAttack          | int          | 基礎攻撃力              |
-| BaseDefense         | int          | 基礎防御力              |
+| BaseHP              | decimal(8,3) | 基礎HP                  |
+| BaseAttack          | decimal(8,3) | 基礎攻撃力              |
+| BaseDefense         | decimal(8,3) | 基礎防御力              |
 | AscensionStatusName | decimal(8,3) | 突破ステータス          |
 
 #### CharacterAscensions
@@ -528,7 +528,7 @@
 | ---------------- | ------------ | ---------------------- |
 | id               | int          | primary key            |
 | WeaponLevelTexts | int          | WeaponLevelTextsのid   |
-| BaseAttack       | int          | 基礎攻撃力             |
+| BaseAttack       | decimal(8,3) | 基礎攻撃力             |
 | AttackPercent    | decimal(8,3) | 攻撃力%の数値          |
 | DefensePercent   | decimal(8,3) | 防御力%の数値          |
 | HPPercent        | decimal(8,3) | HP%の数値              |
