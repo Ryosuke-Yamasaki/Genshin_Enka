@@ -4,6 +4,44 @@
 | テーブル名 | テーブルの内容 |
 | ---------- | -------------- |
 
+## NamesテーブルのIDについて
+| 0              | 00             | 0000           |
+| -------------- | -------------- | -------------- |
+| 大枠の識別番号 | 内容の識別番号 | 各テーブルのid |
+
+### 大枠の割り振り
+| id  | 内容       |
+| --- | ---------- |
+| 1   | Characters |
+| 2   | Weapons    |
+| 3   | Artifacts  |
+
+### Charactersの割り振り
+| id  | 内容                     |
+| --- | ------------------------ |
+| 01  | Names                    |
+| 02  | Genders                  |
+| 03  | NormalAttackTitleNames   |
+| 04  | ElementalSkillTitleNames |
+| 05  | ElementalBurstTitleNames |
+| 06  | PassiveTalentNames       |
+| 07  | Regions                  |
+| 08  | Locations                |
+| 09  | Titles                   |
+| 10  | ConstellationTitles      |
+
+### Weaponsの割り振り
+| id  | 内容            |
+| --- | --------------- |
+| 01  | Names           |
+| 02  | RefinementNames |
+
+### Artifactsの割り振り
+| id  | 内容     |
+| --- | -------- |
+| 01  | Names    |
+| 02  | SetNames |
+
 ## StatusNamesテーブルのIDについて
 | id  | 日本語                   | 英語                   |
 | --- | ------------------------ | ---------------------- |
