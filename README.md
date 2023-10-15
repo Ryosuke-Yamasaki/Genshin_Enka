@@ -4,25 +4,139 @@
 | テーブル名 | テーブルの内容 |
 | ---------- | -------------- |
 
-## NamesテーブルのIDについて
-| 0              | 000            | 0000           |
-| -------------- | -------------- | -------------- |
-| 大枠の識別番号 | 内容の識別番号 | 各テーブルのid |
+## StatusNamesテーブルのIDについて
+| id  | 日本語                   | 英語                   |
+| --- | ------------------------ | ---------------------- |
+| 1   | 基礎HP                   | BaseHP                 |
+| 2   | 基礎攻撃力               | BaseAttack             |
+| 3   | 基礎防御力               | BaseDefense            |
+| 4   | HP実数                   | HP                     |
+| 5   | HP%                      | HPPercent              |
+| 6   | 攻撃力実数               | Attack                 |
+| 7   | 攻撃力%                  | AttackPercent          |
+| 8   | 防御力実数               | Defense                |
+| 9   | 防御力%                  | DefensePercent         |
+| 10  | 基礎スピード             | BaseSpeed              |
+| 11  | スピード%                | SpeedPercent           |
+| 12  | 会心率                   | CritRate               |
+| 13  | 会心率(通常)             | NormalAttackCritRate   |
+| 14  | 会心率(重撃)             | ChargedAttackCritRate  |
+| 15  | 会心率(落下)             | PlungingAttackCritRate |
+| 16  | 会心率(元素スキル)       | ElementalSkillCritRate |
+| 17  | 会心率(元素爆発)         | ElementalBurstCritRate |
+| 18  | 会心率(燃焼)             | BurningCritRate        |
+| 19  | 会心率(開花)             | BloomCritRate          |
+| 20  | 会心率(超開花)           | HyperBloomCritRate     |
+| 21  | 会心率(烈開花)           | BurgeonCritRate        |
+| 22  | 会心ダメージ             | CritDMG                |
+| 23  | 会心ダメージ(通常)       | NormalAttackCritDMG    |
+| 24  | 会心ダメージ(重撃)       | ChargedAttackCritDMG   |
+| 25  | 会心ダメージ(落下)       | PlungingAttackCritDMG  |
+| 26  | 会心ダメージ(元素スキル) | ElementalSkillCritDMG  |
+| 27  | 会心ダメージ(元素爆発)   | ElementalBurstCritDMG  |
+| 28  | 会心ダメージ(燃焼)       | BurningCritDMG         |
+| 29  | 会心ダメージ(開花)       | BloomCritDMG           |
+| 30  | 会心ダメージ(超開花)     | HyperBloomCritDMG      |
+| 31  | 会心ダメージ(烈開花)     | BurgeonCritDMG         |
+| 32  | 元素熟知                 | ElementalMastery       |
+| 33  | 元素チャージ効率         | EnergyRecharge         |
+| 34  | ダメージバフ             | DMGBonus               |
+| 35  | 受ける治療効果           | IncomingHealingBonus   |
+| 36  | 与える治療効果           | HealingBonus           |
+| 37  | 炎元素ダメージバフ       | PyroDMGBonus           |
+| 38  | 水元素ダメージバフ       | HydroDMGBonus          |
+| 39  | 氷元素ダメージバフ       | CryoDMGBonus           |
+| 40  | 雷元素ダメージバフ       | ElectroDMGBonus        |
+| 41  | 風元素ダメージバフ       | AnemoDMGBonus          |
+| 42  | 岩元素ダメージバフ       | GeoDMGBonus            |
+| 43  | 草元素ダメージバフ       | DendroDMGBonus         |
+| 44  | 物理ダメージバフ         | PhysicalDMGBonus       |
+| 45  | 通常攻撃バフ             | NormalAttackBonus      |
+| 46  | 重撃バフ                 | ChargedAttackBonus     |
+| 47  | 落下攻撃バフ             | PlungingAttackBonus    |
+| 48  | 元素スキルバフ           | ElementalSkillBonus    |
+| 49  | 元素爆発バフ             | ElementalBurstBonus    |
+| 50  | 炎元素耐性UP             | PyroRES                |
+| 51  | 水元素耐性UP             | HydroRES               |
+| 52  | 氷元素耐性UP             | CryoRES                |
+| 53  | 雷元素耐性UP             | ElectroRES             |
+| 54  | 風元素耐性UP             | AnemoRES               |
+| 55  | 岩元素耐性UP             | GeoRES                 |
+| 56  | 草元素耐性UP             | DendroRES              |
+| 57  | 物理耐性UP               | PhysicalRES            |
+| 58  | 炎元素耐性DOWN           | PyroRESDown            |
+| 59  | 水元素耐性DOWN           | HydroRESDown           |
+| 60  | 氷元素耐性DOWN           | CryoRESDown            |
+| 61  | 雷元素耐性DOWN           | ElectroRESDown         |
+| 62  | 風元素耐性DOWN           | AnemoRESDown           |
+| 63  | 岩元素耐性DOWN           | GeoRESDown             |
+| 64  | 草元素耐性DOWN           | DendroRESDown          |
+| 65  | 物理耐性DOWN             | PhysicalRESDown        |
+| 66  | クールタイム短縮         | CDReduction            |
+| 67  | シールド強化             | ShieldStrength         |
+
+## WeaponTypesテーブルのIDについて
+| id  | 内容     |
+| --- | -------- |
+| 1   | 片手剣   |
+| 2   | 両手剣   |
+| 3   | 長衛武器 |
+| 4   | 法器     |
+| 5   | 弓       |
+
+## ElementalTypesテーブルのIDについて
+| id  | 内容   |
+| --- | ------ |
+| 1   | 炎元素 |
+| 2   | 水元素 |
+| 3   | 氷元素 |
+| 4   | 雷元素 |
+| 5   | 風元素 |
+| 6   | 岩元素 |
+| 7   | 草元素 |
+| 8   | 物理   |
+
+## AttackingTypesテーブルのIDについて
+| id  | 内容       |
+| --- | ---------- |
+| 1   | 通常       |
+| 2   | 重撃       |
+| 3   | 落下       |
+| 4   | 元素スキル |
+| 5   | 元素爆発   |
+
+## VisionsテーブルのIDについて
+| id  | 内容   |
+| --- | ------ |
+| 1   | 炎元素 |
+| 2   | 水元素 |
+| 3   | 氷元素 |
+| 4   | 雷元素 |
+| 5   | 風元素 |
+| 6   | 岩元素 |
+| 7   | 草元素 |
+
+## AscensionsテーブルのIDについて
+| 0              | 0              |
+| -------------- | -------------- |
+| 大枠の識別番号 | 各テーブルのid |
 
 ### 大枠の割り振り
 | id  | 内容       |
 | --- | ---------- |
-| 1   | characters |
-| 2   | weapons    |
-| 3   | artifacts  |
+| 1   | Characters |
+| 2   | Weapons    |
 
-### weaponsの割り振り
-| id  | 内容 |
-| --- | ---- |
+## LevelTextsテーブルのIDについて
+| 0              | 0              |
+| -------------- | -------------- |
+| 大枠の識別番号 | 各テーブルのid |
 
-### charactersの割り振り
-| id  | 内容 |
-| --- | ---- |
+### 大枠の割り振り
+| id  | 内容       |
+| --- | ---------- |
+| 1   | Characters |
+| 2   | Weapons    |
 
 ## 各テーブルのカラム一覧
 
@@ -35,31 +149,31 @@
 | Genders                            | int     | Gendersのid                            |
 | Stars                              | int     | CharacterStarsのid                     |
 | NormalAttackTitleNames             | int     | NormalAttackTitleNamesのid             |
-| NormalAttackTitleDescriptions      | int     | NormalAttackTitleDescriptionsのid      |
+| NormalAttackTitleDescriptions      | varchar | 通常攻撃の説明文                       |
 | NormalAttackStatusNames            | int     | NormalAttackStatusNamesのid            |
 | NormalAttackStatusTableNames       | varchar | NormalAttackStatusValuesのテーブル名   |
-| NormalAttackStatusElementTypes     | int     | NormalAttackStatusElementTypesのid     |
+| NormalAttackStatusElementalTypes   | int     | NormalAttackStatusElementalTypesのid   |
 | NormalAttackStatusAttackingTypes   | int     | NormalAttackStatusAttackingTypesのid   |
 | ElementalSkillTitleNames           | int     | ElementalSkillTitleNamesのid           |
-| ElementalSkillTitleDescriptions    | int     | ElementalSkillTitleDescriptionsのid    |
+| ElementalSkillTitleDescriptions    | varchar | 元素スキルの説明文                     |
 | ElementalSkillStatusNames          | int     | ElementalSkillStatusNamesのid          |
 | ElementalSkillStatusTableNames     | varchar | ElementalSkillStatusValuesのテーブル名 |
-| ElementalSkillStatusElementTypes   | int     | ElementalSkillStatusElementTypesのid   |
+| ElementalSkillStatusElementalTypes | int     | ElementalSkillStatusElementalTypesのid |
 | ElementalSkillStatusAttackingTypes | int     | ElementalSkillStatusAttackingTypesのid |
 | ElementalSkillMaxQty               | int     | 元素スキルの個数                       |
 | ElementalBurstTitleNames           | int     | ElementalBurstTitleNamesのid           |
-| ElementalBurstTitleDescriptions    | int     | ElementalBurstTitleDescriptionsのid    |
+| ElementalBurstTitleDescriptions    | varchar | 元素爆発の説明文                       |
 | ElementalBurstStatusNames          | int     | ElementalBurstStatusNamesのid          |
 | ElementalBurstStatusTableNames     | varchar | ElementalBurstStatusValuesのテーブル名 |
-| ElementalBurstStatusElementTypes   | int     | ElementalBurstStatusElementTypesのid   |
+| ElementalBurstStatusElementalTypes | int     | ElementalBurstStatusElementalTypesのid |
 | ElementalBurstStatusAttackingTypes | int     | ElementalBurstStatusAttackingTypesのid |
 | ElementalBurstMaxQty               | int     | 元素爆発の個数                         |
-| Elements                           | int     | Elementsのid                           |
+| Visions                            | int     | Visionsのid                            |
 | Birthdays                          | int     | Birthdaysのid                          |
 | Regions                            | int     | Regionsのid                            |
 | Locations                          | int     | Locationsのid                          |
 | Titles                             | int     | Titlesのid                             |
-| Descriptions                       | int     | Descriptionsのid                       |
+| Descriptions                       | varchar | キャラクターの説明文                   |
 | ConstellationTitles                | int     | ConstellationTitlesのid                |
 
 #### CharacterNames
@@ -84,20 +198,13 @@
 | English  | varchar | 英語表記    |
 
 #### CharacterStars
-| カラム名 | 型      | 内容        |
-| -------- | ------- | ----------- |
-| id       | int     | primary key |
-| Japanese | varchar | 日本語表記  |
-| English  | varchar | 英語表記    |
+| カラム名 | 型      | 内容         |
+| -------- | ------- | ------------ |
+| id       | int     | primary key  |
+| Number   | int     | 数値         |
+| Text     | varchar | テキスト表記 |
 
 #### NormalAttackTitleNames
-| カラム名 | 型      | 内容        |
-| -------- | ------- | ----------- |
-| id       | int     | primary key |
-| Japanese | varchar | 日本語表記  |
-| English  | varchar | 英語表記    |
-
-#### NormalAttackTitleDescriptions
 | カラム名 | 型      | 内容        |
 | -------- | ------- | ----------- |
 | id       | int     | primary key |
@@ -110,7 +217,7 @@
 | id                               | int     | primary key                          |
 | NormalAttackStatusNames          | int     | NormalAttackStatusNamesのid          |
 | NormalAttackStatusTableNames     | varchar | NormalAttackStatusValuesのテーブル名 |
-| NormalAttackStatusElementTypes   | int     | NormalAttackStatusElementTypesのid   |
+| NormalAttackStatusElementalTypes | int     | NormalAttackStatusElementalTypesのid |
 | NormalAttackStatusAttackingTypes | int     | NormalAttackStatusAttackingTypesのid |
 
 ##### NormalAttackStatusNames
@@ -128,7 +235,7 @@
 | ValueText | varchar      | 天賦倍率のテキスト表記 |
 | Number    | decimal(8,3) | 天賦倍率の数値         |
 
-##### NormalAttackStatusElementTypes
+##### NormalAttackStatusElementalTypes
 | カラム名 | 型      | 内容        |
 | -------- | ------- | ----------- |
 | id       | int     | primary key |
@@ -149,20 +256,13 @@
 | Japanese | varchar | 日本語表記  |
 | English  | varchar | 英語表記    |
 
-#### ElementalSkillTitleDescriptions
-| カラム名 | 型      | 内容        |
-| -------- | ------- | ----------- |
-| id       | int     | primary key |
-| Japanese | varchar | 日本語表記  |
-| English  | varchar | 英語表記    |
-
 #### ElementalSkillStatus
 | カラム名                           | 型      | 内容                                   |
 | ---------------------------------- | ------- | -------------------------------------- |
 | id                                 | int     | primary key                            |
 | ElementalSkillStatusNames          | int     | ElementalSkillStatusNamesのid          |
 | ElementalSkillStatusTableNames     | varchar | ElementalSkillStatusValuesのテーブル名 |
-| ElementalSkillStatusElementTypes   | int     | ElementalSkillStatusElementTypesのid   |
+| ElementalSkillStatusElementalTypes | int     | ElementalSkillStatusElementalTypesのid |
 | ElementalSkillStatusAttackingTypes | int     | ElementalSkillStatusAttackingTypesのid |
 
 ##### ElementalSkillStatusNames
@@ -180,7 +280,7 @@
 | ValueText | varchar      | 天賦倍率のテキスト表記 |
 | Number    | decimal(8,3) | 天賦倍率の数値         |
 
-##### ElementalSkillStatusElementTypes
+##### ElementalSkillStatusElementalTypes
 | カラム名 | 型      | 内容        |
 | -------- | ------- | ----------- |
 | id       | int     | primary key |
@@ -201,20 +301,13 @@
 | Japanese | varchar | 日本語表記  |
 | English  | varchar | 英語表記    |
 
-#### ElementalBurstTitleDescriptions
-| カラム名 | 型      | 内容        |
-| -------- | ------- | ----------- |
-| id       | int     | primary key |
-| Japanese | varchar | 日本語表記  |
-| English  | varchar | 英語表記    |
-
 #### ElementalBurstStatus
 | カラム名                           | 型      | 内容                                   |
 | ---------------------------------- | ------- | -------------------------------------- |
 | id                                 | int     | primary key                            |
 | ElementalBurstStatusNames          | int     | ElementalBurstStatusNamesのid          |
 | ElementalBurstStatusTableNames     | varchar | ElementalBurstStatusValuesのテーブル名 |
-| ElementalBurstStatusElementTypes   | int     | ElementalBurstStatusElementTypesのid   |
+| ElementalBurstStatusElementalTypes | int     | ElementalBurstStatusElementalTypesのid |
 | ElementalBurstStatusAttackingTypes | int     | ElementalBurstStatusAttackingTypesのid |
 
 ##### ElementalBurstStatusNames
@@ -232,7 +325,7 @@
 | ValueText | varchar      | 天賦倍率のテキスト表記 |
 | Number    | decimal(8,3) | 天賦倍率の数値         |
 
-##### ElementalBurstStatusElementTypes
+##### ElementalBurstStatusElementalTypes
 | カラム名 | 型      | 内容        |
 | -------- | ------- | ----------- |
 | id       | int     | primary key |
@@ -247,21 +340,14 @@
 | English  | varchar | 英語表記    |
 
 #### PassiveTalents
-| カラム名     | 型  | 内容                          |
-| ------------ | --- | ----------------------------- |
-| id           | int | primary key                   |
-| CharacterId  | int | Charactersのid                |
-| Names        | int | PassiveTalentNamesのid        |
-| Descriptions | int | PassiveTalentDescriptionsのid |
+| カラム名     | 型      | 内容                   |
+| ------------ | ------- | ---------------------- |
+| id           | int     | primary key            |
+| CharacterId  | int     | Charactersのid         |
+| Names        | int     | PassiveTalentNamesのid |
+| Descriptions | varchar | 固有天賦の説明文       |
 
 ##### PassiveTalentNames
-| カラム名 | 型      | 内容        |
-| -------- | ------- | ----------- |
-| id       | int     | primary key |
-| Japanese | varchar | 日本語表記  |
-| English  | varchar | 英語表記    |
-
-##### PassiveTalentDescriptions
 | カラム名 | 型      | 内容        |
 | -------- | ------- | ----------- |
 | id       | int     | primary key |
@@ -283,7 +369,7 @@
 | Japanese | varchar | 日本語表記  |
 | English  | varchar | 英語表記    |
 
-#### Elements
+#### Visions
 | カラム名 | 型      | 内容        |
 | -------- | ------- | ----------- |
 | id       | int     | primary key |
@@ -304,14 +390,7 @@
 | Japanese | varchar | 日本語表記  |
 | English  | varchar | 英語表記    |
 
-#### Location
-| カラム名 | 型      | 内容        |
-| -------- | ------- | ----------- |
-| id       | int     | primary key |
-| Japanese | varchar | 日本語表記  |
-| English  | varchar | 英語表記    |
-
-#### Regions
+#### Locations
 | カラム名 | 型      | 内容        |
 | -------- | ------- | ----------- |
 | id       | int     | primary key |
@@ -324,14 +403,6 @@
 | id       | int     | primary key |
 | Japanese | varchar | 日本語表記  |
 | English  | varchar | 英語表記    |
-
-#### Descriptions
-| カラム名 | 型      | 内容        |
-| -------- | ------- | ----------- |
-| id       | int     | primary key |
-| Japanese | varchar | 日本語表記  |
-| English  | varchar | 英語表記    |
-
 
 #### ConstellationTitles
 | カラム名 | 型      | 内容        |
@@ -346,21 +417,14 @@
 
 
 #### Constellation(n)[^1]
-| カラム名    | 型  | 内容                          |
-| ----------- | --- | ----------------------------- |
-| id          | int | primary key                   |
-| Rank        | int | 凸数                          |
-| Name        | int | ConstellationNamesのid        |
-| Description | int | ConstellationDesctiptionsのid |
+| カラム名    | 型      | 内容                   |
+| ----------- | ------- | ---------------------- |
+| id          | int     | primary key            |
+| Rank        | int     | 凸数                   |
+| Name        | int     | ConstellationNamesのid |
+| Description | varchar | 命ノ星座の説明文       |
 
 ##### ConstellationNames
-| カラム名 | 型      | 内容        |
-| -------- | ------- | ----------- |
-| id       | int     | primary key |
-| Japanese | varchar | 日本語表記  |
-| English  | varchar | 英語表記    |
-
-##### ConstellationDesctiptions
 | カラム名 | 型      | 内容        |
 | -------- | ------- | ----------- |
 | id       | int     | primary key |
@@ -439,11 +503,11 @@
 | English  | varchar | 英語表記    |
 
 #### WeaponTypes
-| カラム名 | 型      | 内容             |
-| -------- | ------- | ---------------- |
-| id       | int     | primary key      |
-| Japanese | varchar | 日本語表記の名前 |
-| English  | varchar | 英語表記の名前   |
+| カラム名 | 型      | 内容        |
+| -------- | ------- | ----------- |
+| id       | int     | primary key |
+| Japanese | varchar | 日本語表記  |
+| English  | varchar | 英語表記    |
 
 #### WeaponSubStatusNames
 | カラム名 | 型      | 内容        |
@@ -470,8 +534,8 @@
 | HPPercent        | decimal(8,3) | HP%の数値              |
 | CritRate         | decimal(8,3) | 会心率の数値           |
 | CritDMG          | decimal(8,3) | 会心ダメージの数値     |
-| EnergyRecharge   | decimal(8,3) | 元素チャージ効率の数値 |
 | ElementalMastery | decimal(8,3) | 元素熟知の数値         |
+| EnergyRecharge   | decimal(8,3) | 元素チャージ効率の数値 |
 | PhysicalDMGBonus | decimal(8,3) | 物理バフの数値         |
 
 #### WeaponStars
@@ -496,17 +560,10 @@
 | English  | varchar | 英語表記    |
 
 #### Refinement(n)[^2]
-| カラム名     | 型  | 内容                       |
-| ------------ | --- | -------------------------- |
-| Rank         | int | 精錬ランク                 |
-| Descriptions | int | RefinementDescriptionsのid |
-
-##### RefinementDescriptions
-| カラム名 | 型      | 内容        |
-| -------- | ------- | ----------- |
-| id       | int     | primary key |
-| Japanese | varchar | 日本語表記  |
-| English  | varchar | 英語表記    |
+| カラム名     | 型      | 内容             |
+| ------------ | ------- | ---------------- |
+| Rank         | int     | 精錬ランク       |
+| Descriptions | varchar | 武器効果の説明文 |
 
 #### RefinementStatus
 | カラム名     | 型           | 内容                      |
@@ -529,22 +586,15 @@
 
 
 ### Artifacts
-| カラム名     | 型  | 内容                     |
-| ------------ | --- | ------------------------ |
-| id           | int | primary key              |
-| Names        | int | ArtifactNamesのid        |
-| Descriptions | int | ArtifactDescriptionsのid |
-| Types        | int | ArtifactTypesのid        |
-| Stars        | int | ArtifactStarsのid        |
+| カラム名     | 型      | 内容              |
+| ------------ | ------- | ----------------- |
+| id           | int     | primary key       |
+| Names        | int     | ArtifactNamesのid |
+| Descriptions | varchar | 聖遺物の説明文    |
+| Types        | int     | ArtifactTypesのid |
+| Stars        | int     | ArtifactStarsのid |
 
 ##### ArtifactNames
-| カラム名 | 型      | 内容        |
-| -------- | ------- | ----------- |
-| id       | int     | primary key |
-| Japanese | varchar | 日本語表記  |
-| English  | varchar | 英語表記    |
-
-##### ArtifactDescriptions
 | カラム名 | 型      | 内容        |
 | -------- | ------- | ----------- |
 | id       | int     | primary key |
@@ -559,11 +609,11 @@
 | English  | varchar | 英語表記    |
 
 ##### ArtifactStars
-| カラム名 | 型      | 内容        |
-| -------- | ------- | ----------- |
-| id       | int     | primary key |
-| Japanese | varchar | 日本語表記  |
-| English  | varchar | 英語表記    |
+| カラム名 | 型      | 内容         |
+| -------- | ------- | ------------ |
+| id       | int     | primary key  |
+| Number   | int     | 数値         |
+| Text     | varchar | テキスト表記 |
 
 #### ArtifactSets
 | カラム名 | 型  | 内容                              |
@@ -581,18 +631,11 @@
 | English  | varchar | 英語表記    |
 
 #### ArtifactSetBonus
-| カラム名     | 型  | 内容                             |
-| ------------ | --- | -------------------------------- |
-| id           | int | primary key                      |
-| Needcounts   | int | セット効果発動のための必要個数   |
-| Descriptions | int | ArtifactSetBonusDescriptionsのid |
-
-##### ArtifactSetBonusDescriptions
-| カラム名 | 型      | 内容        |
-| -------- | ------- | ----------- |
-| id       | int     | primary key |
-| Japanese | varchar | 日本語表記  |
-| English  | varchar | 英語表記    |
+| カラム名     | 型      | 内容                           |
+| ------------ | ------- | ------------------------------ |
+| id           | int     | primary key                    |
+| Needcounts   | int     | セット効果発動のための必要個数 |
+| Descriptions | varchar | セット効果の説明文             |
 
 #### ArtifactSetBonusStatus
 | カラム名           | 型           | 内容                            |

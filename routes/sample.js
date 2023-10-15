@@ -62,9 +62,10 @@ async function run() {
   //console.log(convertObjectToJson(enka.getAllWeapons().map(w => w.id)));
   //console.log(convertObjectToJson(enka.getAllArtifacts().map(a => a.id)));
 
-  //console.log(convertObjectToJson(character.getAscensionData(6)));
+  //console.log(convertObjectToJson(character));
   //console.log(convertObjectToJson(weapon.getAscensionData(6)))
-  console.log(convertObjectToJson(artifact.set))
+  console.log(convertObjectToJson(artifact))
+
 
   let talent_lvl = {
     "normalAttack": target.skillLevels[0].level.value,
