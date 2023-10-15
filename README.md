@@ -27,40 +27,40 @@
 ## 各テーブルのカラム一覧
 
 ### Characters
-| カラム名                           | 型  | 内容                                   |
-| ---------------------------------- | --- | -------------------------------------- |
-| id                                 | int | primary key                            |
-| Names                              | int | CharacterNamesのid                     |
-| WeaponTypes                        | int | CharacterWeaponTypesのid               |
-| Genders                            | int | Gendersのid                            |
-| Stars                              | int | CharacterStarsのid                     |
-| NormalAttackTitleNames             | int | NormalAttackTitleNamesのid             |
-| NormalAttackTitleDescriptions      | int | NormalAttackTitleDescriptionsのid      |
-| NormalAttackStatusNames            | int | NormalAttackStatusNamesのid            |
-| NormalAttackStatusTableNames       | var | NormalAttackStatusValuesのテーブル名   |
-| NormalAttackStatusElementTypes     | int | NormalAttackStatusElementTypesのid     |
-| NormalAttackStatusAttackingTypes   | int | NormalAttackStatusAttackingTypesのid   |
-| ElementalSkillTitleNames           | int | ElementalSkillTitleNamesのid           |
-| ElementalSkillTitleDescriptions    | int | ElementalSkillTitleDescriptionsのid    |
-| ElementalSkillStatusNames          | int | ElementalSkillStatusNamesのid          |
-| ElementalSkillStatusTableNames     | var | ElementalSkillStatusValuesのテーブル名 |
-| ElementalSkillStatusElementTypes   | int | ElementalSkillStatusElementTypesのid   |
-| ElementalSkillStatusAttackingTypes | int | ElementalSkillStatusAttackingTypesのid |
-| ElementalSkillMaxQty               | int | 元素スキルの個数                       |
-| ElementalBurstTitleNames           | int | ElementalBurstTitleNamesのid           |
-| ElementalBurstTitleDescriptions    | int | ElementalBurstTitleDescriptionsのid    |
-| ElementalBurstStatusNames          | int | ElementalBurstStatusNamesのid          |
-| ElementalBurstStatusTableNames     | var | ElementalBurstStatusValuesのテーブル名 |
-| ElementalBurstStatusElementTypes   | int | ElementalBurstStatusElementTypesのid   |
-| ElementalBurstStatusAttackingTypes | int | ElementalBurstStatusAttackingTypesのid |
-| ElementalBurstMaxQty               | int | 元素爆発の個数                         |
-| Elements                           | int | Elementsのid                           |
-| Birthdays                          | int | Birthdaysのid                          |
-| Regions                            | int | Regionsのid                            |
-| Locations                          | int | Locationsのid                          |
-| Titles                             | int | Titlesのid                             |
-| Descriptions                       | int | Descriptionsのid                       |
-| ConstellationTitles                | int | ConstellationTitlesのid                |
+| カラム名                           | 型      | 内容                                   |
+| ---------------------------------- | ------- | -------------------------------------- |
+| id                                 | int     | primary key                            |
+| Names                              | int     | CharacterNamesのid                     |
+| WeaponTypes                        | int     | CharacterWeaponTypesのid               |
+| Genders                            | int     | Gendersのid                            |
+| Stars                              | int     | CharacterStarsのid                     |
+| NormalAttackTitleNames             | int     | NormalAttackTitleNamesのid             |
+| NormalAttackTitleDescriptions      | int     | NormalAttackTitleDescriptionsのid      |
+| NormalAttackStatusNames            | int     | NormalAttackStatusNamesのid            |
+| NormalAttackStatusTableNames       | varchar | NormalAttackStatusValuesのテーブル名   |
+| NormalAttackStatusElementTypes     | int     | NormalAttackStatusElementTypesのid     |
+| NormalAttackStatusAttackingTypes   | int     | NormalAttackStatusAttackingTypesのid   |
+| ElementalSkillTitleNames           | int     | ElementalSkillTitleNamesのid           |
+| ElementalSkillTitleDescriptions    | int     | ElementalSkillTitleDescriptionsのid    |
+| ElementalSkillStatusNames          | int     | ElementalSkillStatusNamesのid          |
+| ElementalSkillStatusTableNames     | varchar | ElementalSkillStatusValuesのテーブル名 |
+| ElementalSkillStatusElementTypes   | int     | ElementalSkillStatusElementTypesのid   |
+| ElementalSkillStatusAttackingTypes | int     | ElementalSkillStatusAttackingTypesのid |
+| ElementalSkillMaxQty               | int     | 元素スキルの個数                       |
+| ElementalBurstTitleNames           | int     | ElementalBurstTitleNamesのid           |
+| ElementalBurstTitleDescriptions    | int     | ElementalBurstTitleDescriptionsのid    |
+| ElementalBurstStatusNames          | int     | ElementalBurstStatusNamesのid          |
+| ElementalBurstStatusTableNames     | varchar | ElementalBurstStatusValuesのテーブル名 |
+| ElementalBurstStatusElementTypes   | int     | ElementalBurstStatusElementTypesのid   |
+| ElementalBurstStatusAttackingTypes | int     | ElementalBurstStatusAttackingTypesのid |
+| ElementalBurstMaxQty               | int     | 元素爆発の個数                         |
+| Elements                           | int     | Elementsのid                           |
+| Birthdays                          | int     | Birthdaysのid                          |
+| Regions                            | int     | Regionsのid                            |
+| Locations                          | int     | Locationsのid                          |
+| Titles                             | int     | Titlesのid                             |
+| Descriptions                       | int     | Descriptionsのid                       |
+| ConstellationTitles                | int     | ConstellationTitlesのid                |
 
 #### CharacterNames
 | カラム名 | 型      | 内容        |
@@ -105,13 +105,13 @@
 | English  | varchar | 英語表記    |
 
 #### NormalAttackStatus
-| カラム名                         | 型  | 内容                                 |
-| -------------------------------- | --- | ------------------------------------ |
-| id                               | int | primary key                          |
-| NormalAttackStatusNames          | int | NormalAttackStatusNamesのid          |
-| NormalAttackStatusTableNames     | var | NormalAttackStatusValuesのテーブル名 |
-| NormalAttackStatusElementTypes   | int | NormalAttackStatusElementTypesのid   |
-| NormalAttackStatusAttackingTypes | int | NormalAttackStatusAttackingTypesのid |
+| カラム名                         | 型      | 内容                                 |
+| -------------------------------- | ------- | ------------------------------------ |
+| id                               | int     | primary key                          |
+| NormalAttackStatusNames          | int     | NormalAttackStatusNamesのid          |
+| NormalAttackStatusTableNames     | varchar | NormalAttackStatusValuesのテーブル名 |
+| NormalAttackStatusElementTypes   | int     | NormalAttackStatusElementTypesのid   |
+| NormalAttackStatusAttackingTypes | int     | NormalAttackStatusAttackingTypesのid |
 
 ##### NormalAttackStatusNames
 | カラム名 | 型      | 内容        |
@@ -157,13 +157,13 @@
 | English  | varchar | 英語表記    |
 
 #### ElementalSkillStatus
-| カラム名                           | 型  | 内容                                   |
-| ---------------------------------- | --- | -------------------------------------- |
-| id                                 | int | primary key                            |
-| ElementalSkillStatusNames          | int | ElementalSkillStatusNamesのid          |
-| ElementalSkillStatusTableNames     | var | ElementalSkillStatusValuesのテーブル名 |
-| ElementalSkillStatusElementTypes   | int | ElementalSkillStatusElementTypesのid   |
-| ElementalSkillStatusAttackingTypes | int | ElementalSkillStatusAttackingTypesのid |
+| カラム名                           | 型      | 内容                                   |
+| ---------------------------------- | ------- | -------------------------------------- |
+| id                                 | int     | primary key                            |
+| ElementalSkillStatusNames          | int     | ElementalSkillStatusNamesのid          |
+| ElementalSkillStatusTableNames     | varchar | ElementalSkillStatusValuesのテーブル名 |
+| ElementalSkillStatusElementTypes   | int     | ElementalSkillStatusElementTypesのid   |
+| ElementalSkillStatusAttackingTypes | int     | ElementalSkillStatusAttackingTypesのid |
 
 ##### ElementalSkillStatusNames
 | カラム名 | 型      | 内容        |
@@ -209,13 +209,13 @@
 | English  | varchar | 英語表記    |
 
 #### ElementalBurstStatus
-| カラム名                           | 型  | 内容                                   |
-| ---------------------------------- | --- | -------------------------------------- |
-| id                                 | int | primary key                            |
-| ElementalBurstStatusNames          | int | ElementalBurstStatusNamesのid          |
-| ElementalBurstStatusTableNames     | var | ElementalBurstStatusValuesのテーブル名 |
-| ElementalBurstStatusElementTypes   | int | ElementalBurstStatusElementTypesのid   |
-| ElementalBurstStatusAttackingTypes | int | ElementalBurstStatusAttackingTypesのid |
+| カラム名                           | 型      | 内容                                   |
+| ---------------------------------- | ------- | -------------------------------------- |
+| id                                 | int     | primary key                            |
+| ElementalBurstStatusNames          | int     | ElementalBurstStatusNamesのid          |
+| ElementalBurstStatusTableNames     | varchar | ElementalBurstStatusValuesのテーブル名 |
+| ElementalBurstStatusElementTypes   | int     | ElementalBurstStatusElementTypesのid   |
+| ElementalBurstStatusAttackingTypes | int     | ElementalBurstStatusAttackingTypesのid |
 
 ##### ElementalBurstStatusNames
 | カラム名 | 型      | 内容        |
@@ -383,14 +383,32 @@
 | English  | varchar | 英語表記    |
 
 
+#### CharacterLevelTexts
+| カラム名       | 型  | 内容         |
+| -------------- | --- | ------------ |
+| id             | int | primary key  |
+| Level          | int | 武器レベル   |
+| AscensionStage | int | 限界突破段階 |
+
+#### CharacterStatus(n)[^1] [^4]
+| カラム名            | 型           | 内容                    |
+| ------------------- | ------------ | ----------------------- |
+| id                  | int          | primary key             |
+| LevelTexts          | int          | CharacterLevelTextsのid |
+| BaseHP              | int          | 基礎HP                  |
+| BaseAttack          | int          | 基礎攻撃力              |
+| BaseDefense         | int          | 基礎防御力              |
+| AscensionStatusName | decimal(8,3) | 突破ステータス          |
+
+#### CharacterAscensions
+| カラム名         | 型  | 内容               |
+| ---------------- | --- | ------------------ |
+| id               | int | primary key        |
+| Stage            | int | 限界突破段階       |
+| UnlockedMaxLevel | int | 突破後のレベル上限 |
 
 
 
-#### CharacterStatus
-| カラム名 | 型  | 内容        |
-| -------- | --- | ----------- |
-| id       | int | primary key |
-| level    | int | レベル      |
 
 
 
@@ -398,32 +416,29 @@
 
 
 
-
-
-**charactersの正規化をする**
 
 ### Weapons
-| カラム名            | 型      | 内容                    |
-| ------------------- | ------- | ----------------------- |
-| id                  | int     | primary key             |
-| Names               | int     | WeaponNamesのid         |
-| Types               | int     | WeaponTypesのid         |
-| SubStatusNames      | int     | SubStatusNamesのid      |
-| SubStatus           | int     | SubStatusのid           |
-| Stars               | int     | WeaponStarsのid         |
-| AscensionStages     | int     | AscensionStagesのid     |
-| Level               | int     | レベル                  |
-| RefinementNames     | int     | RefinementNamesのid     |
-| RefinementTableName | varchar | Refinementsのテーブル名 |
+| カラム名            | 型      | 内容                     |
+| ------------------- | ------- | ------------------------ |
+| id                  | int     | primary key              |
+| Names               | int     | WeaponNamesのid          |
+| Types               | int     | WeaponTypesのid          |
+| SubStatusNames      | int     | WeaponSubStatusNamesのid |
+| StatusTableName     | varchar | WeaponStatusのテーブル名 |
+| Stars               | int     | WeaponStarsのid          |
+| Ascensions          | int     | Ascensionのid            |
+| LevelTexts          | int     | WeaponLevelTextsのid     |
+| RefinementNames     | int     | RefinementNamesのid      |
+| RefinementTableName | varchar | Refinementsのテーブル名  |
 
-#### WeaponsNames
+#### WeaponNames
 | カラム名 | 型      | 内容        |
 | -------- | ------- | ----------- |
 | id       | int     | primary key |
 | Japanese | varchar | 日本語表記  |
 | English  | varchar | 英語表記    |
 
-#### WeaponsTypes
+#### WeaponTypes
 | カラム名 | 型      | 内容             |
 | -------- | ------- | ---------------- |
 | id       | int     | primary key      |
@@ -437,11 +452,19 @@
 | Japanese | varchar | 日本語表記  |
 | English  | varchar | 英語表記    |
 
-#### WeaponSubStatus
+#### WeaponLevelTexts
+| カラム名       | 型  | 内容         |
+| -------------- | --- | ------------ |
+| id             | int | primary key  |
+| Level          | int | 武器レベル   |
+| AscensionStage | int | 限界突破段階 |
+
+#### WeaponStatus(n)[^3]
 | カラム名         | 型           | 内容                   |
 | ---------------- | ------------ | ---------------------- |
 | id               | int          | primary key            |
-| BaseAttacks      | int          | BaseAttacksのid        |
+| WeaponLevelTexts | int          | WeaponLevelTextsのid   |
+| BaseAttack       | int          | 基礎攻撃力             |
 | AttackPercent    | decimal(8,3) | 攻撃力%の数値          |
 | DefensePercent   | decimal(8,3) | 防御力%の数値          |
 | HPPercent        | decimal(8,3) | HP%の数値              |
@@ -449,23 +472,7 @@
 | CritDMG          | decimal(8,3) | 会心ダメージの数値     |
 | EnergyRecharge   | decimal(8,3) | 元素チャージ効率の数値 |
 | ElementalMastery | decimal(8,3) | 元素熟知の数値         |
-| PyroDMGBonus     | decimal(8,3) | 炎元素バフの数値       |
-| HydroDMGBonus    | decimal(8,3) | 水元素バフの数値       |
-| CryoDMGBonus     | decimal(8,3) | 氷元素バフの数値       |
-| ElectroDMGBonus  | decimal(8,3) | 雷元素バフの数値       |
-| AnemoDMGBonus    | decimal(8,3) | 風元素バフの数値       |
-| GeoDMGBonus      | decimal(8,3) | 岩元素バフの数値       |
-| DendroDMGBonus   | decimal(8,3) | 草元素バフの数値       |
 | PhysicalDMGBonus | decimal(8,3) | 物理バフの数値         |
-
-#### WeaponBaseAttacks
-| カラム名 | 型  | 内容                                  |
-| -------- | --- | ------------------------------------- |
-| id       | int | primary key                           |
-| Level    | int | レベル                                |
-| Type_38  | int | Lv1時点で基礎攻撃力38の基礎攻撃力数値 |
-| :        | :   | :                                     |
-| Type_49  | int | Lv1時点で基礎攻撃力49の基礎攻撃力数値 |
 
 #### WeaponStars
 | カラム名 | 型      | 内容         |
@@ -474,14 +481,12 @@
 | Number   | int     | 数値         |
 | Text     | varchar | テキスト表記 |
 
-#### WeaponAscensionStages
-| カラム名       | 型  | 内容                |
-| -------------- | --- | ------------------- |
-| id             | int | primary key         |
-| Star_3         | int | 星3の突破ボーナス値 |
-| Star_4         | int | 星4の突破ボーナス値 |
-| Star_5         | int | 星5の突破ボーナス値 |
-| UnlockMaxLevel | int | 突破後のレベル上限  |
+#### WeaponAscensions
+| カラム名         | 型  | 内容               |
+| ---------------- | --- | ------------------ |
+| id               | int | primary key        |
+| Stage            | int | 限界突破段階       |
+| UnlockedMaxLevel | int | 突破後のレベル上限 |
 
 #### RefinementNames
 | カラム名 | 型      | 内容        |
@@ -518,8 +523,36 @@
 | Japanese | varchar | 日本語表記  |
 | English  | varchar | 英語表記    |
 
+### Artifacts
+| カラム名    | 型  | 内容        |
+| ----------- | --- | ----------- |
+| id          | int | primary key |
+| Name        | int |             |
+| Description | int |             |
+| Type        | int |             |
+| Star        | int |             |
 
+#### ArtifactSets
+| カラム名 | 型  | 内容        |
+| -------- | --- | ----------- |
+| id       | int | primary key |
+| Name     | int |             |
+| Bonus    | int |             |
+
+#### ArtifactSetBonus
+| カラム名    | 型  | 内容        |
+| ----------- | --- | ----------- |
+| id          | int | primary key |
+| Needcount   | int |             |
+| Description | int |             |
+
+#### ArtifactSetBonusStatus
+| カラム名 | 型  | 内容        |
+| -------- | --- | ----------- |
+| id       | int | primary key |
+| Name     | int |             |
 
 [^1]:n=>Charactersテーブルのid
 [^2]:n=>Weaponsテーブルのid
-[^3]:StatusNameのところは武器効果のステータス名
+[^3]:Lv.1時点での基礎攻撃力
+[^4]:AscensionStatusName=>突破ステータス名

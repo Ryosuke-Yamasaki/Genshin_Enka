@@ -54,15 +54,17 @@ async function run() {
 
 
 
-  let character = enka.getCharacterById(10000037);
+  let character = enka.getCharacterById(10000036);
   let weapon = enka.getWeaponById(15502);
+  let artifact = enka.getArtifactById(23700);
 
   //console.log(convertObjectToJson(enka.getAllCharacters().map(c => c.id)));
-  //console.log(convertObjectToJson(enka.getAllWeapons().map(c => c.id)));
+  //console.log(convertObjectToJson(enka.getAllWeapons().map(w => w.id)));
+  //console.log(convertObjectToJson(enka.getAllArtifacts().map(a => a.id)));
 
-  console.log(convertObjectToJson(character.getStats(6, 90)));
-  //console.log(convertObjectToJson(weapon.refinements.map(a => a.)))
-  //console.log(convertObjectToJson(enka.getAllCharacters().map(c => c.passiveTalents.map(p => p.description))));
+  //console.log(convertObjectToJson(character.getAscensionData(6)));
+  //console.log(convertObjectToJson(weapon.getAscensionData(6)))
+  console.log(convertObjectToJson(artifact.set.setBonus))
 
   let talent_lvl = {
     "normalAttack": target.skillLevels[0].level.value,
