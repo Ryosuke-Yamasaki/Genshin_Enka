@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-const { EnkaClient, DetailedGenshinUser, ArtifactSet, TextAssets, DynamicTextAssets, WeaponData } = require("enka-network-api");
+const { EnkaClient, DetailedGenshinUser, ArtifactSet, TextAssets, DynamicTextAssets, WeaponData, WeaponRefinements } = require("enka-network-api");
 const enka = new EnkaClient({ defaultLanguage: "jp" });
 
 router.get("/", (req, res, next) => {
@@ -55,11 +55,14 @@ async function run() {
 
 
   let character = enka.getCharacterById(10000037);
+  let weapon = enka.getWeaponById(15502);
 
   //console.log(convertObjectToJson(enka.getAllCharacters().map(c => c.id)));
+  //console.log(convertObjectToJson(enka.getAllWeapons().map(c => c.id)));
 
-  console.log(convertObjectToJson(character.normalAttack.getSkillAttributes(10).map(s => s.getNullableAttributeData())))
-
+  console.log(convertObjectToJson(character));
+  //console.log(convertObjectToJson(weapon.refinements.map(a => a.)))
+  //console.log(convertObjectToJson(enka.getAllCharacters().map(c => c.passiveTalents.map(p => p.description))));
 
   let talent_lvl = {
     "normalAttack": target.skillLevels[0].level.value,
