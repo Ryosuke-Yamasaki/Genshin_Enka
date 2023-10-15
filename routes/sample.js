@@ -60,7 +60,7 @@ async function run() {
   //console.log(convertObjectToJson(enka.getAllCharacters().map(c => c.id)));
   //console.log(convertObjectToJson(enka.getAllWeapons().map(c => c.id)));
 
-  console.log(convertObjectToJson(character));
+  console.log(convertObjectToJson(character.getStats(6, 90)));
   //console.log(convertObjectToJson(weapon.refinements.map(a => a.)))
   //console.log(convertObjectToJson(enka.getAllCharacters().map(c => c.passiveTalents.map(p => p.description))));
 

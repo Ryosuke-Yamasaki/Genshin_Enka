@@ -61,7 +61,6 @@
 | Titles                             | int | Titlesのid                             |
 | Descriptions                       | int | Descriptionsのid                       |
 | ConstellationTitles                | int | ConstellationTitlesのid                |
-| Constellations                     | int | のid                                   |
 
 #### CharacterNames
 | カラム名 | 型      | 内容        |
@@ -319,13 +318,6 @@
 | Japanese | varchar | 日本語表記  |
 | English  | varchar | 英語表記    |
 
-#### ConstellationTitles
-| カラム名 | 型      | 内容        |
-| -------- | ------- | ----------- |
-| id       | int     | primary key |
-| Japanese | varchar | 日本語表記  |
-| English  | varchar | 英語表記    |
-
 #### Titles
 | カラム名 | 型      | 内容        |
 | -------- | ------- | ----------- |
@@ -341,17 +333,64 @@
 | English  | varchar | 英語表記    |
 
 
+#### ConstellationTitles
+| カラム名 | 型      | 内容        |
+| -------- | ------- | ----------- |
+| id       | int     | primary key |
+| Japanese | varchar | 日本語表記  |
+| English  | varchar | 英語表記    |
 
 
 
 
-#### Descriptions
+
+
+#### Constellation(n)[^1]
+| カラム名    | 型  | 内容                          |
+| ----------- | --- | ----------------------------- |
+| id          | int | primary key                   |
+| Rank        | int | 凸数                          |
+| Name        | int | ConstellationNamesのid        |
+| Description | int | ConstellationDesctiptionsのid |
+
+##### ConstellationNames
+| カラム名 | 型      | 内容        |
+| -------- | ------- | ----------- |
+| id       | int     | primary key |
+| Japanese | varchar | 日本語表記  |
+| English  | varchar | 英語表記    |
+
+##### ConstellationDesctiptions
+| カラム名 | 型      | 内容        |
+| -------- | ------- | ----------- |
+| id       | int     | primary key |
+| Japanese | varchar | 日本語表記  |
+| English  | varchar | 英語表記    |
+
+#### ConstellationStatus
+| カラム名        | 型           | 内容                         |
+| --------------- | ------------ | ---------------------------- |
+| id              | int          | primary key                  |
+| ConstellationId | int          | Constellationsのid           |
+| Names           | int          | ConstellationStatusNamesのid |
+| Number          | decimal(8,3) | 数値                         |
+
+##### ConstellationStatusNames
+| カラム名 | 型      | 内容        |
+| -------- | ------- | ----------- |
+| id       | int     | primary key |
+| Japanese | varchar | 日本語表記  |
+| English  | varchar | 英語表記    |
+
+
+
+
+
+#### CharacterStatus
 | カラム名 | 型  | 内容        |
 | -------- | --- | ----------- |
 | id       | int | primary key |
-
-
-
+| level    | int | レベル      |
 
 
 
@@ -371,7 +410,6 @@
 | Types               | int     | WeaponTypesのid         |
 | SubStatusNames      | int     | SubStatusNamesのid      |
 | SubStatus           | int     | SubStatusのid           |
-| BaseAttacks         | int     | BaseAttacksのid         |
 | Stars               | int     | WeaponStarsのid         |
 | AscensionStages     | int     | AscensionStagesのid     |
 | Level               | int     | レベル                  |
@@ -452,22 +490,35 @@
 | Japanese | varchar | 日本語表記  |
 | English  | varchar | 英語表記    |
 
-#### Refinement(n)Status[^2]　[^3]
-| カラム名     | 型           | 内容                             |
-| ------------ | ------------ | -------------------------------- |
-| id           | int          | primary key                      |
-| Rank         | int          | 精錬ランク                       |
-| StatusName   | decimal(8,3) | 武器効果の各数値                 |
-| :            | :            | :                                |
-| StatusName   | decimal(8,3) | 武器効果の各数値                 |
-| Descriptions | int          | RefinementStatusDescriptionsのid |
+#### Refinement(n)[^2]
+| カラム名     | 型  | 内容                       |
+| ------------ | --- | -------------------------- |
+| Rank         | int | 精錬ランク                 |
+| Descriptions | int | RefinementDescriptionsのid |
 
-##### RefinementStatusDescriptions
+##### RefinementDescriptions
 | カラム名 | 型      | 内容        |
 | -------- | ------- | ----------- |
 | id       | int     | primary key |
 | Japanese | varchar | 日本語表記  |
 | English  | varchar | 英語表記    |
+
+#### RefinementStatus
+| カラム名     | 型           | 内容                      |
+| ------------ | ------------ | ------------------------- |
+| id           | int          | primary key               |
+| RefinementId | int          | Refinementsのid           |
+| Names        | int          | RefinementStatusNamesのid |
+| Number       | decimal(8,3) | 数値                      |
+
+##### RefinementStatusNames
+| カラム名 | 型      | 内容        |
+| -------- | ------- | ----------- |
+| id       | int     | primary key |
+| Japanese | varchar | 日本語表記  |
+| English  | varchar | 英語表記    |
+
+
 
 [^1]:n=>Charactersテーブルのid
 [^2]:n=>Weaponsテーブルのid
