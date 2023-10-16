@@ -43,75 +43,75 @@
 | 02  | SetNames |
 
 ## StatusNamesテーブルのIDについて
-| id  | 日本語                   | 英語                   |
-| --- | ------------------------ | ---------------------- |
-| 1   | 基礎HP                   | BaseHP                 |
-| 2   | 基礎攻撃力               | BaseAttack             |
-| 3   | 基礎防御力               | BaseDefense            |
-| 4   | HP実数                   | HP                     |
-| 5   | HP%                      | HPPercent              |
-| 6   | 攻撃力実数               | Attack                 |
-| 7   | 攻撃力%                  | AttackPercent          |
-| 8   | 防御力実数               | Defense                |
-| 9   | 防御力%                  | DefensePercent         |
-| 10  | 基礎スピード             | BaseSpeed              |
-| 11  | スピード%                | SpeedPercent           |
-| 12  | 会心率                   | CritRate               |
-| 13  | 会心率(通常)             | NormalAttackCritRate   |
-| 14  | 会心率(重撃)             | ChargedAttackCritRate  |
-| 15  | 会心率(落下)             | PlungingAttackCritRate |
-| 16  | 会心率(元素スキル)       | ElementalSkillCritRate |
-| 17  | 会心率(元素爆発)         | ElementalBurstCritRate |
-| 18  | 会心率(燃焼)             | BurningCritRate        |
-| 19  | 会心率(開花)             | BloomCritRate          |
-| 20  | 会心率(超開花)           | HyperBloomCritRate     |
-| 21  | 会心率(烈開花)           | BurgeonCritRate        |
-| 22  | 会心ダメージ             | CritDMG                |
-| 23  | 会心ダメージ(通常)       | NormalAttackCritDMG    |
-| 24  | 会心ダメージ(重撃)       | ChargedAttackCritDMG   |
-| 25  | 会心ダメージ(落下)       | PlungingAttackCritDMG  |
-| 26  | 会心ダメージ(元素スキル) | ElementalSkillCritDMG  |
-| 27  | 会心ダメージ(元素爆発)   | ElementalBurstCritDMG  |
-| 28  | 会心ダメージ(燃焼)       | BurningCritDMG         |
-| 29  | 会心ダメージ(開花)       | BloomCritDMG           |
-| 30  | 会心ダメージ(超開花)     | HyperBloomCritDMG      |
-| 31  | 会心ダメージ(烈開花)     | BurgeonCritDMG         |
-| 32  | 元素熟知                 | ElementalMastery       |
-| 33  | 元素チャージ効率         | EnergyRecharge         |
-| 34  | ダメージバフ             | DMGBonus               |
-| 35  | 受ける治療効果           | IncomingHealingBonus   |
-| 36  | 与える治療効果           | HealingBonus           |
-| 37  | 炎元素ダメージバフ       | PyroDMGBonus           |
-| 38  | 水元素ダメージバフ       | HydroDMGBonus          |
-| 39  | 氷元素ダメージバフ       | CryoDMGBonus           |
-| 40  | 雷元素ダメージバフ       | ElectroDMGBonus        |
-| 41  | 風元素ダメージバフ       | AnemoDMGBonus          |
-| 42  | 岩元素ダメージバフ       | GeoDMGBonus            |
-| 43  | 草元素ダメージバフ       | DendroDMGBonus         |
-| 44  | 物理ダメージバフ         | PhysicalDMGBonus       |
-| 45  | 通常攻撃バフ             | NormalAttackBonus      |
-| 46  | 重撃バフ                 | ChargedAttackBonus     |
-| 47  | 落下攻撃バフ             | PlungingAttackBonus    |
-| 48  | 元素スキルバフ           | ElementalSkillBonus    |
-| 49  | 元素爆発バフ             | ElementalBurstBonus    |
-| 50  | 炎元素耐性UP             | PyroRES                |
-| 51  | 水元素耐性UP             | HydroRES               |
-| 52  | 氷元素耐性UP             | CryoRES                |
-| 53  | 雷元素耐性UP             | ElectroRES             |
-| 54  | 風元素耐性UP             | AnemoRES               |
-| 55  | 岩元素耐性UP             | GeoRES                 |
-| 56  | 草元素耐性UP             | DendroRES              |
-| 57  | 物理耐性UP               | PhysicalRES            |
-| 58  | 炎元素耐性DOWN           | PyroRESDown            |
-| 59  | 水元素耐性DOWN           | HydroRESDown           |
-| 60  | 氷元素耐性DOWN           | CryoRESDown            |
-| 61  | 雷元素耐性DOWN           | ElectroRESDown         |
-| 62  | 風元素耐性DOWN           | AnemoRESDown           |
-| 63  | 岩元素耐性DOWN           | GeoRESDown             |
-| 64  | 草元素耐性DOWN           | DendroRESDown          |
-| 65  | 物理耐性DOWN             | PhysicalRESDown        |
-| 66  | クールタイム短縮         | CDReduction            |
-| 67  | シールド強化             | ShieldStrength         |
+| id  | 日本語                   | 英語                     |
+| --- | ------------------------ | ------------------------ |
+| 1   | 基礎HP                   | Base_HP                  |
+| 2   | 基礎攻撃力               | Base_Attack              |
+| 3   | 基礎防御力               | Base_Defense             |
+| 4   | HP実数                   | HP_Flat                  |
+| 5   | HP%                      | HP_Percent               |
+| 6   | 攻撃力実数               | Attack_Flat              |
+| 7   | 攻撃力%                  | Attack_Percent           |
+| 8   | 防御力実数               | Defense_Flat             |
+| 9   | 防御力%                  | Defense_Percent          |
+| 10  | 基礎スピード             | BaseSpeed                |
+| 11  | スピード%                | Speed_Percent            |
+| 12  | 会心率                   | Crit_Rate                |
+| 13  | 会心率(通常)             | NormalAttack_CritRate    |
+| 14  | 会心率(重撃)             | ChargedAttack_CritRate   |
+| 15  | 会心率(落下)             | PlungingAttack_CritRate  |
+| 16  | 会心率(元素スキル)       | ElementalSkill_CritRate  |
+| 17  | 会心率(元素爆発)         | ElementalBurst_CritRate  |
+| 18  | 会心率(燃焼)             | Burning_CritRate         |
+| 19  | 会心率(開花)             | Bloom_CritRate           |
+| 20  | 会心率(超開花)           | HyperBloom_CritRate      |
+| 21  | 会心率(烈開花)           | Burgeon_CritRate         |
+| 22  | 会心ダメージ             | CritDMG                  |
+| 23  | 会心ダメージ(通常)       | NormalAttack_CritDMG     |
+| 24  | 会心ダメージ(重撃)       | ChargedAttack_CritDMG    |
+| 25  | 会心ダメージ(落下)       | PlungingAttack_CritDMG   |
+| 26  | 会心ダメージ(元素スキル) | ElementalSkill_CritDMG   |
+| 27  | 会心ダメージ(元素爆発)   | ElementalBurst_CritDMG   |
+| 28  | 会心ダメージ(燃焼)       | Burning_CritDMG          |
+| 29  | 会心ダメージ(開花)       | Bloom_CritDMG            |
+| 30  | 会心ダメージ(超開花)     | HyperBloom_CritDMG       |
+| 31  | 会心ダメージ(烈開花)     | Burgeon_CritDMG          |
+| 32  | 元素熟知                 | ElementalMastery         |
+| 33  | 元素チャージ効率         | EnergyRecharge           |
+| 34  | ダメージバフ             | DMG_Bonus                |
+| 35  | 受ける治療効果           | Incoming_HealingBonus    |
+| 36  | 与える治療効果           | HealingBonus             |
+| 37  | 炎元素ダメージバフ       | Pyro_DMG_Bonus           |
+| 38  | 水元素ダメージバフ       | Hydro_DMG_Bonus          |
+| 39  | 氷元素ダメージバフ       | Cryo_DMG_Bonus           |
+| 40  | 雷元素ダメージバフ       | Electro_DMG_Bonus        |
+| 41  | 風元素ダメージバフ       | Anemo_DMG_Bonus          |
+| 42  | 岩元素ダメージバフ       | Geo_DMG_Bonus            |
+| 43  | 草元素ダメージバフ       | Dendro_DMG_Bonus         |
+| 44  | 物理ダメージバフ         | Physical_DMG_Bonus       |
+| 45  | 通常攻撃バフ             | NormalAttack_DMG_Bonus   |
+| 46  | 重撃バフ                 | ChargedAttack_DMG_Bonus  |
+| 47  | 落下攻撃バフ             | PlungingAttack_DMG_Bonus |
+| 48  | 元素スキルバフ           | ElementalSkill_DMG_Bonus |
+| 49  | 元素爆発バフ             | ElementalBurst_DMG_Bonus |
+| 50  | 炎元素耐性UP             | Pyro_RES                 |
+| 51  | 水元素耐性UP             | Hydro_RES                |
+| 52  | 氷元素耐性UP             | Cryo_RES                 |
+| 53  | 雷元素耐性UP             | Electro_RES              |
+| 54  | 風元素耐性UP             | Anemo_RES                |
+| 55  | 岩元素耐性UP             | Geo_RES                  |
+| 56  | 草元素耐性UP             | Dendro_RES               |
+| 57  | 物理耐性UP               | Physical_RES             |
+| 58  | 炎元素耐性DOWN           | Pyro_RES_Down            |
+| 59  | 水元素耐性DOWN           | Hydro_RES_Down           |
+| 60  | 氷元素耐性DOWN           | Cryo_RES_Down            |
+| 61  | 雷元素耐性DOWN           | Electro_RES_Down         |
+| 62  | 風元素耐性DOWN           | Anemo_RES_Down           |
+| 63  | 岩元素耐性DOWN           | Geo_RES_Down             |
+| 64  | 草元素耐性DOWN           | Dendro_RES_Down          |
+| 65  | 物理耐性DOWN             | Physical_RES_Down        |
+| 66  | クールタイム短縮         | CD_Reduction             |
+| 67  | シールド強化             | ShieldStrength           |
 
 ## WeaponTypesテーブルのIDについて
 | id  | 内容     |
@@ -193,9 +193,6 @@
 | Regions             | int     | Regionsのid              |
 | Locations           | int     | Locationsのid            |
 | ConstellationTitles | int     | ConstellationTitlesのid  |
-| NormalAttacks       | int     | NormalAttacksのid        |
-| ElementalSkills     | int     | ElementalSkillsのid      |
-| ElementalBursts     | int     | ElementalBurstsのid      |
 
 #### CharacterNames
 | カラム名 | 型      | 内容        |
@@ -565,19 +562,19 @@
 | AscensionStage | int | 限界突破段階 |
 
 #### WeaponStatus(n)[^3]
-| カラム名         | 型           | 内容                   |
-| ---------------- | ------------ | ---------------------- |
-| id               | int          | primary key            |
-| WeaponLevelTexts | int          | WeaponLevelTextsのid   |
-| BaseAttack       | decimal(8,3) | 基礎攻撃力             |
-| AttackPercent    | decimal(8,3) | 攻撃力%の数値          |
-| DefensePercent   | decimal(8,3) | 防御力%の数値          |
-| HPPercent        | decimal(8,3) | HP%の数値              |
-| CritRate         | decimal(8,3) | 会心率の数値           |
-| CritDMG          | decimal(8,3) | 会心ダメージの数値     |
-| ElementalMastery | decimal(8,3) | 元素熟知の数値         |
-| EnergyRecharge   | decimal(8,3) | 元素チャージ効率の数値 |
-| PhysicalDMGBonus | decimal(8,3) | 物理バフの数値         |
+| カラム名           | 型           | 内容                   |
+| ------------------ | ------------ | ---------------------- |
+| id                 | int          | primary key            |
+| WeaponLevelTexts   | int          | WeaponLevelTextsのid   |
+| Base_Attack        | decimal(8,3) | 基礎攻撃力             |
+| Attack_Percent     | decimal(8,3) | 攻撃力%の数値          |
+| Defense_Percent    | decimal(8,3) | 防御力%の数値          |
+| HP_Percent         | decimal(8,3) | HP%の数値              |
+| CritRate           | decimal(8,3) | 会心率の数値           |
+| CritDMG            | decimal(8,3) | 会心ダメージの数値     |
+| ElementalMastery   | decimal(8,3) | 元素熟知の数値         |
+| EnergyRecharge     | decimal(8,3) | 元素チャージ効率の数値 |
+| Physical_DMG_Bonus | decimal(8,3) | 物理バフの数値         |
 
 #### WeaponStars
 | カラム名 | 型      | 内容         |
@@ -699,7 +696,11 @@
 
 
 
-### 
+### Targets
+| カラム名 | 型  | 内容        |
+| -------- | --- | ----------- |
+| id       | int | primary key |
+
 
 [^1]:n=>Charactersテーブルのid
 [^2]:n=>Weaponsテーブルのid
