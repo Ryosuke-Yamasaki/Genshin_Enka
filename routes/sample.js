@@ -54,7 +54,7 @@ async function run() {
 
 
 
-  let character = enka.getCharacterById(10000059);
+  let character = enka.getCharacterById(10000073);
   let weapon = enka.getWeaponById(15502);
   let artifact = enka.getArtifactById(23700);
 
@@ -63,8 +63,8 @@ async function run() {
   //enka.getAllArtifactSets().map(c => console.log(convertObjectToJson(c.id), convertObjectToJson(c.name.get())));
 
 
-  //console.log(convertObjectToJson(character.normalAttack.getSkillAttributes(10).flatMap(s => s.getNullableAttributeData())));
-  //console.log(convertObjectToJson(weapon.getAscensionData(6)))
+  console.log(character.getAscensionData(6)._data)
+  console.log(weapon.getAscensionData(6)._data)
   //console.log(convertObjectToJson(artifact.set))
 
 
