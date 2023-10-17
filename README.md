@@ -4,7 +4,7 @@
 | テーブル名 | テーブルの内容 |
 | ---------- | -------------- |
 
-## NamesテーブルのIDについて
+## namesテーブルのIDについて
 | 0              | 0000           |
 | -------------- | -------------- |
 | 大枠の識別番号 | 各テーブルのid |
@@ -16,78 +16,78 @@
 | 2   | weapons    |
 | 3   | artifacts  |
 
-## status_namesテーブルのIDについて
-| id  | 日本語                   | 英語                     |
-| --- | ------------------------ | ------------------------ |
-| 1   | 基礎HP                   | base_hp                  |
-| 2   | 基礎攻撃力               | base_attack              |
-| 3   | 基礎防御力               | base_defense             |
-| 4   | HP実数                   | hp_flat                  |
-| 5   | HP%                      | hp_percent               |
-| 6   | 攻撃力実数               | attack_flat              |
-| 7   | 攻撃力%                  | attack_percent           |
-| 8   | 防御力実数               | defense_flat             |
-| 9   | 防御力%                  | defense_percent          |
-| 10  | 基礎スピード             | base_speed               |
-| 11  | スピード%                | speed_percent            |
-| 12  | 会心率                   | crit_rate                |
-| 13  | 会心率(通常)             | normal_attack_CritRate   |
-| 14  | 会心率(重撃)             | ChargedAttack_CritRate   |
-| 15  | 会心率(落下)             | PlungingAttack_CritRate  |
-| 16  | 会心率(元素スキル)       | ElementalSkill_CritRate  |
-| 17  | 会心率(元素爆発)         | ElementalBurst_CritRate  |
-| 18  | 会心率(燃焼)             | Burning_CritRate         |
-| 19  | 会心率(開花)             | Bloom_CritRate           |
-| 20  | 会心率(超開花)           | HyperBloom_CritRate      |
-| 21  | 会心率(烈開花)           | Burgeon_CritRate         |
-| 22  | 会心ダメージ             | CritDMG                  |
-| 23  | 会心ダメージ(通常)       | normal_attack_CritDMG    |
-| 24  | 会心ダメージ(重撃)       | ChargedAttack_CritDMG    |
-| 25  | 会心ダメージ(落下)       | PlungingAttack_CritDMG   |
-| 26  | 会心ダメージ(元素スキル) | ElementalSkill_CritDMG   |
-| 27  | 会心ダメージ(元素爆発)   | ElementalBurst_CritDMG   |
-| 28  | 会心ダメージ(燃焼)       | Burning_CritDMG          |
-| 29  | 会心ダメージ(開花)       | Bloom_CritDMG            |
-| 30  | 会心ダメージ(超開花)     | HyperBloom_CritDMG       |
-| 31  | 会心ダメージ(烈開花)     | Burgeon_CritDMG          |
-| 32  | 元素熟知                 | ElementalMastery         |
-| 33  | 元素チャージ効率         | EnergyRecharge           |
-| 34  | ダメージバフ             | DMG_Bonus                |
-| 35  | 受ける治療効果           | Incoming_HealingBonus    |
-| 36  | 与える治療効果           | HealingBonus             |
-| 37  | 炎元素ダメージバフ       | Pyro_DMG_Bonus           |
-| 38  | 水元素ダメージバフ       | Hydro_DMG_Bonus          |
-| 39  | 氷元素ダメージバフ       | Cryo_DMG_Bonus           |
-| 40  | 雷元素ダメージバフ       | Electro_DMG_Bonus        |
-| 41  | 風元素ダメージバフ       | Anemo_DMG_Bonus          |
-| 42  | 岩元素ダメージバフ       | Geo_DMG_Bonus            |
-| 43  | 草元素ダメージバフ       | Dendro_DMG_Bonus         |
-| 44  | 物理ダメージバフ         | Physical_DMG_Bonus       |
-| 45  | 通常攻撃バフ             | normal_attack_DMG_Bonus  |
-| 46  | 重撃バフ                 | ChargedAttack_DMG_Bonus  |
-| 47  | 落下攻撃バフ             | PlungingAttack_DMG_Bonus |
-| 48  | 元素スキルバフ           | ElementalSkill_DMG_Bonus |
-| 49  | 元素爆発バフ             | ElementalBurst_DMG_Bonus |
-| 50  | 炎元素耐性UP             | Pyro_RES                 |
-| 51  | 水元素耐性UP             | Hydro_RES                |
-| 52  | 氷元素耐性UP             | Cryo_RES                 |
-| 53  | 雷元素耐性UP             | Electro_RES              |
-| 54  | 風元素耐性UP             | Anemo_RES                |
-| 55  | 岩元素耐性UP             | Geo_RES                  |
-| 56  | 草元素耐性UP             | Dendro_RES               |
-| 57  | 物理耐性UP               | Physical_RES             |
-| 58  | 炎元素耐性DOWN           | Pyro_RES_Down            |
-| 59  | 水元素耐性DOWN           | Hydro_RES_Down           |
-| 60  | 氷元素耐性DOWN           | Cryo_RES_Down            |
-| 61  | 雷元素耐性DOWN           | Electro_RES_Down         |
-| 62  | 風元素耐性DOWN           | Anemo_RES_Down           |
-| 63  | 岩元素耐性DOWN           | Geo_RES_Down             |
-| 64  | 草元素耐性DOWN           | Dendro_RES_Down          |
-| 65  | 物理耐性DOWN             | Physical_RES_Down        |
-| 66  | クールタイム短縮         | CD_Reduction             |
-| 67  | シールド強化             | ShieldStrength           |
+## stat_namesテーブルのIDについて
+| id  | 日本語                   | 英語                         |
+| --- | ------------------------ | ---------------------------- |
+| 1   | 基礎HP                   | base_hp                      |
+| 2   | 基礎攻撃力               | base_attack                  |
+| 3   | 基礎防御力               | base_defense                 |
+| 4   | HP実数                   | hp_flat                      |
+| 5   | HP%                      | hp_percent                   |
+| 6   | 攻撃力実数               | attack_flat                  |
+| 7   | 攻撃力%                  | attack_percent               |
+| 8   | 防御力実数               | defense_flat                 |
+| 9   | 防御力%                  | defense_percent              |
+| 10  | 基礎スピード             | base_speed                   |
+| 11  | スピード%                | speed_percent                |
+| 12  | 会心率                   | critical_rate                |
+| 13  | 会心率(通常)             | normal_attack_critical_rate  |
+| 14  | 会心率(重撃)             | ChargedAttack_critical_rate  |
+| 15  | 会心率(落下)             | PlungingAttack_critical_rate |
+| 16  | 会心率(元素スキル)       | ElementalSkill_critical_rate |
+| 17  | 会心率(元素爆発)         | ElementalBurst_critical_rate |
+| 18  | 会心率(燃焼)             | Burning_critical_rate        |
+| 19  | 会心率(開花)             | Bloom_critical_rate          |
+| 20  | 会心率(超開花)           | HyperBloom_critical_rate     |
+| 21  | 会心率(烈開花)           | Burgeon_critical_rate        |
+| 22  | 会心ダメージ             | critical_dmg                 |
+| 23  | 会心ダメージ(通常)       | normal_attack_critical_dmg   |
+| 24  | 会心ダメージ(重撃)       | ChargedAttack_critical_dmg   |
+| 25  | 会心ダメージ(落下)       | PlungingAttack_critical_dmg  |
+| 26  | 会心ダメージ(元素スキル) | ElementalSkill_critical_dmg  |
+| 27  | 会心ダメージ(元素爆発)   | ElementalBurst_critical_dmg  |
+| 28  | 会心ダメージ(燃焼)       | Burning_critical_dmg         |
+| 29  | 会心ダメージ(開花)       | Bloom_critical_dmg           |
+| 30  | 会心ダメージ(超開花)     | HyperBloom_critical_dmg      |
+| 31  | 会心ダメージ(烈開花)     | Burgeon_critical_dmg         |
+| 32  | 元素熟知                 | elemental_mastery            |
+| 33  | 元素チャージ効率         | energy_recharge              |
+| 34  | ダメージバフ             | dmg_bonus                    |
+| 35  | 受ける治療効果           | Incoming_HealingBonus        |
+| 36  | 与える治療効果           | HealingBonus                 |
+| 37  | 炎元素ダメージバフ       | Pyro_dmg_bonus               |
+| 38  | 水元素ダメージバフ       | Hydro_dmg_bonus              |
+| 39  | 氷元素ダメージバフ       | Cryo_dmg_bonus               |
+| 40  | 雷元素ダメージバフ       | Electro_dmg_bonus            |
+| 41  | 風元素ダメージバフ       | Anemo_dmg_bonus              |
+| 42  | 岩元素ダメージバフ       | Geo_dmg_bonus                |
+| 43  | 草元素ダメージバフ       | Dendro_dmg_bonus             |
+| 44  | 物理ダメージバフ         | Physical_dmg_bonus           |
+| 45  | 通常攻撃バフ             | normal_attack_dmg_bonus      |
+| 46  | 重撃バフ                 | ChargedAttack_dmg_bonus      |
+| 47  | 落下攻撃バフ             | PlungingAttack_dmg_bonus     |
+| 48  | 元素スキルバフ           | ElementalSkill_dmg_bonus     |
+| 49  | 元素爆発バフ             | ElementalBurst_dmg_bonus     |
+| 50  | 炎元素耐性UP             | Pyro_RES                     |
+| 51  | 水元素耐性UP             | Hydro_RES                    |
+| 52  | 氷元素耐性UP             | Cryo_RES                     |
+| 53  | 雷元素耐性UP             | Electro_RES                  |
+| 54  | 風元素耐性UP             | Anemo_RES                    |
+| 55  | 岩元素耐性UP             | Geo_RES                      |
+| 56  | 草元素耐性UP             | Dendro_RES                   |
+| 57  | 物理耐性UP               | Physical_RES                 |
+| 58  | 炎元素耐性DOWN           | Pyro_RES_Down                |
+| 59  | 水元素耐性DOWN           | Hydro_RES_Down               |
+| 60  | 氷元素耐性DOWN           | Cryo_RES_Down                |
+| 61  | 雷元素耐性DOWN           | Electro_RES_Down             |
+| 62  | 風元素耐性DOWN           | Anemo_RES_Down               |
+| 63  | 岩元素耐性DOWN           | Geo_RES_Down                 |
+| 64  | 草元素耐性DOWN           | Dendro_RES_Down              |
+| 65  | 物理耐性DOWN             | Physical_RES_Down            |
+| 66  | クールタイム短縮         | CD_Reduction                 |
+| 67  | シールド強化             | ShieldStrength               |
 
-## WeaponTypesテーブルのIDについて
+## weapon_typesテーブルのIDについて
 | id  | 内容     |
 | --- | -------- |
 | 1   | 片手剣   |
@@ -96,7 +96,7 @@
 | 4   | 法器     |
 | 5   | 弓       |
 
-## ElementalTypesテーブルのIDについて
+## elemental_typesテーブルのIDについて
 | id  | 内容   |
 | --- | ------ |
 | 1   | 炎元素 |
@@ -108,7 +108,7 @@
 | 7   | 草元素 |
 | 8   | 物理   |
 
-## AttackingTypesテーブルのIDについて
+## attacking_typesテーブルのIDについて
 | id  | 内容       |
 | --- | ---------- |
 | 1   | 通常       |
@@ -117,7 +117,7 @@
 | 4   | 元素スキル |
 | 5   | 元素爆発   |
 
-## VisionsテーブルのIDについて
+## visionsテーブルのIDについて
 | id  | 内容 |
 | --- | ---- |
 | 1   | 炎   |
@@ -143,84 +143,23 @@
 | 4   | スメール     |
 | 5   | フォンテーヌ |
 
-## AscensionsテーブルのIDについて
-| 0              | 0              |
-| -------------- | -------------- |
-| 大枠の識別番号 | 各テーブルのid |
-
-### 大枠の割り振り
-| id  | 内容       |
-| --- | ---------- |
-| 1   | characters |
-| 2   | weapons    |
-
-## LevelTextsテーブルのIDについて
-| 0              | 0              |
-| -------------- | -------------- |
-| 大枠の識別番号 | 各テーブルのid |
-
-### 大枠の割り振り
-| id  | 内容       |
-| --- | ---------- |
-| 1   | characters |
-| 2   | weapons    |
+## artifact_typesテーブルのIDについて
+| id  | 内容 |
+| --- | ---- |
+| 1   | 花   |
+| 2   | 羽   |
+| 3   | 砂   |
+| 4   | 杯   |
+| 5   | 冠   |
 
 ## 各テーブルのカラム一覧
-
-### names
-| カラム名 | 型      | 内容        |
-| -------- | ------- | ----------- |
-| id       | int     | primary key |
-| japanese | varchar | 日本語表記  |
-| english  | varchar | 英語表記    |
-
-### stars
-| カラム名 | 型      | 内容         |
-| -------- | ------- | ------------ |
-| id       | int     | primary key  |
-| number   | int     | 数値         |
-| text     | varchar | テキスト表記 |
-
-### visions
-| カラム名 | 型      | 内容        |
-| -------- | ------- | ----------- |
-| id       | int     | primary key |
-| japanese | varchar | 日本語表記  |
-| english  | varchar | 英語表記    |
-
-### weapon_types
-| カラム名 | 型      | 内容        |
-| -------- | ------- | ----------- |
-| id       | int     | primary key |
-| japanese | varchar | 日本語表記  |
-| english  | varchar | 英語表記    |
-
-### genders
-| カラム名 | 型      | 内容        |
-| -------- | ------- | ----------- |
-| id       | int     | primary key |
-| japanese | varchar | 日本語表記  |
-| english  | varchar | 英語表記    |
-
-### regions
-| カラム名 | 型      | 内容        |
-| -------- | ------- | ----------- |
-| id       | int     | primary key |
-| japanese | varchar | 日本語表記  |
-| english  | varchar | 英語表記    |
-
-### locations
-| カラム名 | 型      | 内容        |
-| -------- | ------- | ----------- |
-| id       | int     | primary key |
-| japanese | varchar | 日本語表記  |
-| english  | varchar | 英語表記    |
 
 ### characters
 | カラム名            | 型      | 内容                 |
 | ------------------- | ------- | -------------------- |
 | id                  | int     | primary key          |
-| name                | varchar | キャラ名             |
+| name_japanese       | varchar | 日本語のキャラ名     |
+| name_english        | varchar | 英語のキャラ名       |
 | title               | varchar | 称号                 |
 | description         | varchar | キャラクターの説明文 |
 | star                | int     | レアリティ           |
@@ -230,7 +169,7 @@
 | region_id           | int     | 出身国               |
 | location            | varchar | 所属                 |
 | constellation_title | varchar | 星座名               |
-| status_name         | int     | 突破ステータス       |
+| stat_name_id        | int     | 突破ステータス       |
 
 #### birthdays
 | カラム名     | 型  | 内容          |
@@ -241,11 +180,11 @@
 | day          | int | 誕生日        |
 
 #### normal_attacks
-| カラム名          | 型      | 内容               |
-| ----------------- | ------- | ------------------ |
-| id                | int     | primary key        |
-| title_name        | varchar | 通常攻撃のタイトル |
-| title_description | varchar | 通常攻撃の説明文   |
+| カラム名    | 型      | 内容               |
+| ----------- | ------- | ------------------ |
+| id          | int     | primary key        |
+| name        | varchar | 通常攻撃のタイトル |
+| description | varchar | 通常攻撃の説明文   |
 
 #### normal_attack_data
 | カラム名          | 型           | 内容               |
@@ -294,12 +233,12 @@
 | level15               | varchar | Lv.15天賦倍率のテキストデータ |
 
 #### elemental_skills
-| カラム名          | 型      | 内容                 |
-| ----------------- | ------- | -------------------- |
-| id                | int     | primary key          |
-| title_name        | varchar | 元素スキルのタイトル |
-| title_description | varchar | 元素スキルの説明文   |
-| max_qty           | int     | 元素スキルの個数     |
+| カラム名    | 型      | 内容                 |
+| ----------- | ------- | -------------------- |
+| id          | int     | primary key          |
+| name        | varchar | 元素スキルのタイトル |
+| description | varchar | 元素スキルの説明文   |
+| max_qty     | int     | 元素スキルの個数     |
 
 #### elemental_skill_data
 | カラム名          | 型           | 内容               |
@@ -348,12 +287,12 @@
 | level15                 | varchar | Lv.15天賦倍率のテキストデータ |
 
 #### elemental_bursts
-| カラム名          | 型      | 内容               |
-| ----------------- | ------- | ------------------ |
-| id                | int     | primary key        |
-| title_name        | varchar | 元素爆発のタイトル |
-| title_description | varchar | 元素爆発の説明文   |
-| cost              | int     | 必要エネルギー     |
+| カラム名    | 型      | 内容               |
+| ----------- | ------- | ------------------ |
+| id          | int     | primary key        |
+| name        | varchar | 元素爆発のタイトル |
+| description | varchar | 元素爆発の説明文   |
+| cost        | int     | 必要エネルギー     |
 
 #### elemental_burst_data
 | カラム名          | 型           | 内容               |
@@ -414,24 +353,34 @@
 | ----------------- | ------------ | ------------------ |
 | id                | int          | primary key        |
 | passive_talent_id | int          | passive_talentのid |
-| status_name_id    | int          | status_nameのid    |
+| stat_name_id      | int          | stat_nameのid      |
 | number            | decimal(8,3) | 数値               |
 
-#### constellation(n)[^5]
+#### constellations
 | カラム名     | 型      | 内容          |
 | ------------ | ------- | ------------- |
 | id           | int     | primary key   |
 | character_id | int     | characterのid |
-| name         | varchar | n凸の名前     |
-| Description  | varchar | n凸の説明文   |
+| rank1        | varchar | 1凸の名前     |
+| rank2        | varchar | 2凸の名前     |
+| rank3        | varchar | 3凸の名前     |
+| rank4        | varchar | 4凸の名前     |
+| rank5        | varchar | 5凸の名前     |
 
-#### constellation_status
-| カラム名         | 型           | 内容              |
-| ---------------- | ------------ | ----------------- |
-| id               | int          | primary key       |
-| constellation_id | int          | constellationのid |
-| status_name_id   | int          | status_nameのid   |
-| number           | decimal(8,3) | 数値              |
+#### constellation_names
+| カラム名           | 型      | 内容        |
+| ------------------ | ------- | ----------- |
+| id                 | int     | primary key |
+| constellation_name | varchar | 星の名前    |
+| description        | varchar | 凸の説明文  |
+
+#### constellation_data
+| カラム名              | 型           | 内容                   |
+| --------------------- | ------------ | ---------------------- |
+| id                    | int          | primary key            |
+| constellation_name_id | int          | constellation_nameのid |
+| stat_name_id          | int          | stat_nameのid          |
+| number                | decimal(8,3) | 数値                   |
 
 #### ascend_level
 | カラム名  | 型  | 内容         |
@@ -440,7 +389,7 @@
 | level     | int | レベル       |
 | ascension | int | 限界突破段階 |
 
-#### character_status[^4]
+#### character_data[^4]
 | カラム名        | 型           | 内容             |
 | --------------- | ------------ | ---------------- |
 | id              | int          | primary key      |
@@ -461,176 +410,97 @@
 
 
 
-### Weapons
-| カラム名            | 型      | 内容                     |
-| ------------------- | ------- | ------------------------ |
-| id                  | int     | primary key              |
-| Names               | int     | WeaponNamesのid          |
-| Types               | int     | WeaponTypesのid          |
-| SubstatusNames      | int     | WeaponSubstatusNamesのid |
-| statusTableName     | varchar | Weaponstatusのテーブル名 |
-| Stars               | int     | WeaponStarsのid          |
-| Ascensions          | int     | Ascensionのid            |
-| LevelTexts          | int     | WeaponLevelTextsのid     |
-| RefinementNames     | int     | RefinementNamesのid      |
-| RefinementTableName | varchar | Refinementsのテーブル名  |
+### weapons
+| カラム名         | 型      | 内容                   |
+| ---------------- | ------- | ---------------------- |
+| id               | int     | primary key            |
+| name_japanese    | varchar | 日本語の武器名         |
+| name_english     | varchar | 英語の武器名           |
+| weapon_type_id   | int     | 武器種                 |
+| sub_stat_name_id | int     | サブステータスの名前   |
+| base_attack_type | int     | Lv.1時点での基礎攻撃力 |
+| star             | int     | レアリティ             |
+| refinement_name  | varchar | 武器効果名             |
 
-#### WeaponNames
-| カラム名 | 型      | 内容        |
-| -------- | ------- | ----------- |
-| id       | int     | primary key |
-| japanese | varchar | 日本語表記  |
-| english  | varchar | 英語表記    |
-
-#### WeaponTypes
-| カラム名 | 型      | 内容        |
-| -------- | ------- | ----------- |
-| id       | int     | primary key |
-| japanese | varchar | 日本語表記  |
-| english  | varchar | 英語表記    |
-
-#### WeaponSubstatusNames
-| カラム名 | 型      | 内容        |
-| -------- | ------- | ----------- |
-| id       | int     | primary key |
-| japanese | varchar | 日本語表記  |
-| english  | varchar | 英語表記    |
-
-#### WeaponLevelTexts
-| カラム名       | 型  | 内容         |
-| -------------- | --- | ------------ |
-| id             | int | primary key  |
-| Level          | int | 武器レベル   |
-| AscensionStage | int | 限界突破段階 |
-
-#### Weaponstatus(n)[^3]
+#### weapon_stat_data_type(n)[^3]
 | カラム名           | 型           | 内容                   |
 | ------------------ | ------------ | ---------------------- |
 | id                 | int          | primary key            |
-| WeaponLevelTexts   | int          | WeaponLevelTextsのid   |
-| Base_Attack        | decimal(8,3) | 基礎攻撃力             |
-| Attack_Percent     | decimal(8,3) | 攻撃力%の数値          |
-| Defense_Percent    | decimal(8,3) | 防御力%の数値          |
-| HP_Percent         | decimal(8,3) | HP%の数値              |
-| CritRate           | decimal(8,3) | 会心率の数値           |
-| CritDMG            | decimal(8,3) | 会心ダメージの数値     |
-| ElementalMastery   | decimal(8,3) | 元素熟知の数値         |
-| EnergyRecharge     | decimal(8,3) | 元素チャージ効率の数値 |
-| Physical_DMG_Bonus | decimal(8,3) | 物理バフの数値         |
+| ascend_level_id    | int          | ascend_levelのid       |
+| base_attack        | decimal(8,3) | 基礎攻撃力             |
+| attack_percent     | decimal(8,3) | 攻撃力%の数値          |
+| defense_percent    | decimal(8,3) | 防御力%の数値          |
+| hp_percent         | decimal(8,3) | HP%の数値              |
+| critical_rate      | decimal(8,3) | 会心率の数値           |
+| critical_dmg       | decimal(8,3) | 会心ダメージの数値     |
+| elemental_mastery  | decimal(8,3) | 元素熟知の数値         |
+| energy_recharge    | decimal(8,3) | 元素チャージ効率の数値 |
+| physical_dmg_bonus | decimal(8,3) | 物理バフの数値         |
 
-#### WeaponStars
-| カラム名 | 型      | 内容         |
-| -------- | ------- | ------------ |
-| id       | int     | primary key  |
-| Number   | int     | 数値         |
-| Text     | varchar | テキスト表記 |
+#### refinement_descriptions
+| カラム名        | 型      | 内容                        |
+| --------------- | ------- | --------------------------- |
+| id              | int     | primary key                 |
+| refinement_name | varchar | 武器効果名                  |
+| rank1           | varchar | 精錬ランク1武器効果の説明文 |
+| rank2           | varchar | 精錬ランク2武器効果の説明文 |
+| rank3           | varchar | 精錬ランク3武器効果の説明文 |
+| rank4           | varchar | 精錬ランク4武器効果の説明文 |
+| rank5           | varchar | 精錬ランク5武器効果の説明文 |
 
-#### WeaponAscensions
-| カラム名         | 型  | 内容               |
-| ---------------- | --- | ------------------ |
-| id               | int | primary key        |
-| Stage            | int | 限界突破段階       |
-| UnlockedMaxLevel | int | 突破後のレベル上限 |
-
-#### RefinementNames
-| カラム名 | 型      | 内容        |
-| -------- | ------- | ----------- |
-| id       | int     | primary key |
-| japanese | varchar | 日本語表記  |
-| english  | varchar | 英語表記    |
-
-#### Refinement(n)[^2]
-| カラム名     | 型      | 内容             |
-| ------------ | ------- | ---------------- |
-| Rank         | int     | 精錬ランク       |
-| Descriptions | varchar | 武器効果の説明文 |
-
-#### Refinementstatus
-| カラム名     | 型           | 内容                      |
-| ------------ | ------------ | ------------------------- |
-| id           | int          | primary key               |
-| RefinementId | int          | Refinementsのid           |
-| Names        | int          | RefinementstatusNamesのid |
-| Number       | decimal(8,3) | 数値                      |
-
-##### RefinementstatusNames
-| カラム名 | 型      | 内容        |
-| -------- | ------- | ----------- |
-| id       | int     | primary key |
-| japanese | varchar | 日本語表記  |
-| english  | varchar | 英語表記    |
+#### refinement_stats
+| カラム名       | 型           | 内容                       |
+| -------------- | ------------ | -------------------------- |
+| id             | int          | primary key                |
+| description_id | int          | refinement_descriptionのid |
+| stat_name_id   | int          | stat_nameのid              |
+| rank1          | decimal(8,3) | 精錬ランク1時点での数値    |
+| rank2          | decimal(8,3) | 精錬ランク2時点での数値    |
+| rank3          | decimal(8,3) | 精錬ランク3時点での数値    |
+| rank4          | decimal(8,3) | 精錬ランク4時点での数値    |
+| rank5          | decimal(8,3) | 精錬ランク5時点での数値    |
 
 
 
 
 
 
-### Artifacts
-| カラム名     | 型      | 内容              |
-| ------------ | ------- | ----------------- |
-| id           | int     | primary key       |
-| Names        | int     | ArtifactNamesのid |
-| Descriptions | varchar | 聖遺物の説明文    |
-| Types        | int     | ArtifactTypesのid |
-| Stars        | int     | ArtifactStarsのid |
 
-##### ArtifactNames
-| カラム名 | 型      | 内容        |
-| -------- | ------- | ----------- |
-| id       | int     | primary key |
-| japanese | varchar | 日本語表記  |
-| english  | varchar | 英語表記    |
+### artifact_sets
+| カラム名      | 型      | 内容             |
+| ------------- | ------- | ---------------- |
+| id            | int     | primary key      |
+| name_japanese | varchar | 日本語のセット名 |
+| name_english  | varchar | 英語のセット名   |
+| star          | int     | レアリティ       |
+| bonus2        | varchar | 2セット効果      |
+| bonus4        | varchar | 4セット効果      |
 
-##### ArtifactTypes
-| カラム名 | 型      | 内容        |
-| -------- | ------- | ----------- |
-| id       | int     | primary key |
-| japanese | varchar | 日本語表記  |
-| english  | varchar | 英語表記    |
+### artifacts
+| カラム名         | 型      | 内容              |
+| ---------------- | ------- | ----------------- |
+| id               | int     | primary key       |
+| name             | varchar | 聖遺物の名前      |
+| description      | varchar | 聖遺物の説明文    |
+| artifact_type_id | int     | artifact_typeのid |
+| artifact_set_id  | int     | artifact_setのid  |
 
-##### ArtifactStars
-| カラム名 | 型      | 内容         |
-| -------- | ------- | ------------ |
-| id       | int     | primary key  |
-| Number   | int     | 数値         |
-| Text     | varchar | テキスト表記 |
+#### artifact_set_bonuses
+| カラム名        | 型      | 内容                |
+| --------------- | ------- | ------------------- |
+| id              | int     | primary key         |
+| artifact_set_id | int     | artifact_setのid    |
+| bonus2          | varchar | 2セット効果の説明文 |
+| bonus4          | varchar | 4セット効果の説明文 |
 
-#### ArtifactSets
-| カラム名 | 型  | 内容                              |
-| -------- | --- | --------------------------------- |
-| id       | int | primary key                       |
-| Names    | int | ArtifactSetNamesのid              |
-| Bonus2   | int | 2セット効果のArtifactSetBonusのid |
-| Bonus4   | int | 4セット効果のArtifactSetBonusのid |
+#### artifact_set_bonus(n)_data[^1]
+| カラム名        | 型           | 内容             |
+| --------------- | ------------ | ---------------- |
+| id              | int          | primary key      |
+| artifact_set_id | int          | artifact_setのid |
+| stat_name_id    | int          | stat_nameのid    |
+| Numbers         | decimal(8,3) | セット効果の数値 |
 
-##### ArtifactSetNames
-| カラム名 | 型      | 内容        |
-| -------- | ------- | ----------- |
-| id       | int     | primary key |
-| japanese | varchar | 日本語表記  |
-| english  | varchar | 英語表記    |
-
-#### ArtifactSetBonus
-| カラム名     | 型      | 内容                           |
-| ------------ | ------- | ------------------------------ |
-| id           | int     | primary key                    |
-| Needcounts   | int     | セット効果発動のための必要個数 |
-| Descriptions | varchar | セット効果の説明文             |
-
-#### ArtifactSetBonusstatus
-| カラム名           | 型           | 内容                            |
-| ------------------ | ------------ | ------------------------------- |
-| id                 | int          | primary key                     |
-| ArtifactSetBonusId | int          | ArtifactSetBonusのid            |
-| Names              | int          | ArtifactSetBonusstatusNamesのid |
-| Numbers            | decimal(8,3) | セット効果の数値                |
-
-##### ArtifactSetBonusstatusNames
-| カラム名 | 型      | 内容        |
-| -------- | ------- | ----------- |
-| id       | int     | primary key |
-| japanese | varchar | 日本語表記  |
-| english  | varchar | 英語表記    |
 
 
 
@@ -646,8 +516,6 @@
 | CharacterLevels | int | Charactersのid |
 
 
-[^1]:n=>Charactersテーブルのid
-[^2]:n=>Weaponsテーブルのid
+[^1]:n=>セット効果の必要数
 [^3]:Lv.1時点での基礎攻撃力
 [^4]:character=>characterの英語名
-[^5]:n=>凸数
