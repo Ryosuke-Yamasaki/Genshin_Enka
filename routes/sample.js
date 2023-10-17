@@ -50,7 +50,7 @@ async function run() {
 
 
 
-  //console.log(convertObjectToJson(target.characterData));
+  console.log(convertObjectToJson(target));
 
 
 
@@ -63,9 +63,9 @@ async function run() {
   //enka.getAllArtifactSets().map(c => console.log(convertObjectToJson(c.id), convertObjectToJson(c.name.get())));
 
 
-  //console.log(character.getAscensionData(6)._data)
+  //console.log(character.getStats(6,90))
   //console.log(convertObjectToJson(weapon.getStats(6, 90)))
-  console.log(convertObjectToJson(artifact))
+  //console.log(convertObjectToJson(artifact))
 
 
   let talent_lvl = {

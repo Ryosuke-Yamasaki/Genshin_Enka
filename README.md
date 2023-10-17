@@ -499,7 +499,7 @@
 | id              | int          | primary key      |
 | artifact_set_id | int          | artifact_setのid |
 | stat_name_id    | int          | stat_nameのid    |
-| Numbers         | decimal(8,3) | セット効果の数値 |
+| number          | decimal(8,3) | セット効果の数値 |
 
 
 
@@ -508,13 +508,49 @@
 
 
 
-### Targets
-| カラム名        | 型  | 内容           |
-| --------------- | --- | -------------- |
-| id              | int | primary key    |
-| Characters      | int | Charactersのid |
-| CharacterLevels | int | Charactersのid |
+### targets
+| カラム名                    | 型  | 内容        |
+| --------------------------- | --- | ----------- |
+| id                          | int | primary key |
+| user_id                     | int |             |
+| character_id                | int |             |
+| character_ascend_level_id   | int |             |
+| normal_attack_level         | int |             |
+| elemental_skill_level       | int |             |
+| elemental_burst_level       | int |             |
+| constellation_rank          | int |             |
+| weapon_id                   | int |             |
+| weapon_ascend_level_id      | int |             |
+| refinement_rank             | int |             |
+| flower_artifact_manager_id  | int |             |
+| plume_artifact_manager_id   | int |             |
+| sands_artifact_manager_id   | int |             |
+| goblet_artifact_manager_id  | int |             |
+| circlet_artifact_manager_id | int |             |
 
+### artifact_managers
+| カラム名          | 型           | 内容        |
+| ----------------- | ------------ | ----------- |
+| id                | int          | primary key |
+| user_id           | int          |             |
+| artifact_id       | int          |             |
+| main_stat_id      | int          |             |
+| sub1_stat_name_id | int          |             |
+| sub2_stat_name_id | int          |             |
+| sub3_stat_name_id | int          |             |
+| sub4_stat_name_id | int          |             |
+| sub1_number       | decimal(8,3) |             |
+| sub2_number       | decimal(8,3) |             |
+| sub3_number       | decimal(8,3) |             |
+| sub4_number       | decimal(8,3) |             |
+
+### main_stats
+| カラム名     | 型           | 内容        |
+| ------------ | ------------ | ----------- |
+| id           | int          | primary key |
+| stat_name_id | int          |             |
+| star4        | decimal(8,3) |             |
+| star5        | decimal(8,3) |             |
 
 [^1]:n=>セット効果の必要数
 [^3]:Lv.1時点での基礎攻撃力
