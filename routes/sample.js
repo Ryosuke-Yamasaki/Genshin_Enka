@@ -50,7 +50,7 @@ async function run() {
 
 
 
-  console.log(convertObjectToJson(target));
+  //console.log(convertObjectToJson(target));
 
 
 
@@ -58,7 +58,7 @@ async function run() {
   let weapon = enka.getWeaponById(15502);
   let artifact = enka.getArtifactById(23700);
 
-  //enka.getAllCharacters().map(c => console.log(convertObjectToJson(c.id), convertObjectToJson(c.name.get())));
+  enka.getAllCharacters().map(c => console.log(convertObjectToJson(c.name.get()), convertObjectToJson(c.name.get("en"))));
   //enka.getAllWeapons().map(c => console.log(convertObjectToJson(c.id), convertObjectToJson(c.name.get())));
   //enka.getAllArtifactSets().map(c => console.log(convertObjectToJson(c.id), convertObjectToJson(c.name.get())));
 
@@ -142,7 +142,7 @@ async function run() {
   }
 
   function talentvaluenumber(Json, level) {
-    let skillAttributes = Json.getSkillAttributes(level).map(attribute => attribute.getAttributeData());
+    let skillAttributes = Json.getSkillAttributes(level).flatMap(attribute => attribute.getAttributeData());
     return skillAttributes;
   }
 }

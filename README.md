@@ -4,17 +4,166 @@
 | テーブル名 | テーブルの内容 |
 | ---------- | -------------- |
 
-## namesテーブルのIDについて
-| 0              | 0000           |
-| -------------- | -------------- |
-| 大枠の識別番号 | 各テーブルのid |
+## キャラクターの名前について
+| id     | jp           | en                 |
+| ------ | ------------ | ------------------ |
+| 100001 | 旅人(風)     | Traveler_anemo     |
+| 100002 | 旅人(岩)     | Traveler_geo       |
+| 100003 | ジン         | Jean               |
+| 100004 | ディルック   | Diluc              |
+| 100005 | モナ         | Mona               |
+| 100006 | 刻晴         | Keqing             |
+| 100007 | 七七         | Qiqi               |
+|        | ベネット     | Bennett            |
+|        | ガイア       | Kaeya              |
+|        | レザー       | Razor              |
+|        | ノエル       | Noelle             |
+|        | バーバラ     | Barbara            |
+|        | スクロース   | Sucrose            |
+|        | リサ         | Lisa               |
+|        | アンバー     | Amber              |
+|        | フィッシュル | Fischl             |
+|        | 行秋         | Xingqiu            |
+|        | 北斗         | Beidou             |
+|        | 重雲         | Chongyun           |
+|        | 香菱         | Xiangling          |
+|        | 凝光         | Ningguang          |
+|        | ウェンティ   | Venti              |
+|        | クレー       | Klee               |
+|        | タルタリヤ   | Tartaglia          |
+|        | ディオナ     | Diona              |
+|        | 鍾離         | Zhongli            |
+|        | 辛炎         | Xinyan             |
+|        | アルベド     | Albedo             |
+|        | 甘雨         | Ganyu              |
+|        | 魈           | Xiao               |
+|        | 胡桃         | Hu_Tao             |
+|        | ロサリア     | Rosaria            |
+|        | 煙緋         | Yanfei             |
+|        | エウルア     | Eula               |
+|        | 楓原万葉     | Kaedehara_Kazuha   |
+|        | 旅人(雷)     | Traveler_electro   |
+|        | 神里綾華     | Kamisato_Ayaka     |
+|        | 宵宮         | Yoimiya            |
+|        | 早柚         | Sayu               |
+|        | アーロイ     | Aloy               |
+|        | 雷電将軍     | Raiden_Shogun      |
+|        | 九条裟羅     | Kujou_Sara         |
+|        | 珊瑚宮心海   | Sangonomiya_Kokomi |
+|        | トーマ       | Thoma              |
+|        | 荒瀧一斗     | Arataki_Itto       |
+|        | ゴロー       | Gorou              |
+|        | 申鶴         | Shenhe             |
+|        | 雲菫         | Yun_Jin            |
+|        | 八重神子     | Yae_Miko           |
+|        | 神里綾人     | Kamisato_Ayato     |
+|        | 夜蘭         | Yelan              |
+|        | 久岐忍       | Kuki_Shinobu       |
+|        | 鹿野院平蔵   | Shikanoin_Heizou   |
+|        | 旅人(草)     | Traveler_dendro    |
+|        | ティナリ     | Tighnari           |
+|        | コレイ       | Collei             |
+|        | ドリー       | Dori               |
+|        | セノ         | Cyno               |
+|        | キャンディス | Candace            |
+|        | ニィロウ     | Nilou              |
+|        | ナヒーダ     | Nahida             |
+|        | レイラ       | Layla              |
+|        | 放浪者       | Wanderer           |
+|        | ファルザン   | Faruzan            |
+|        | アルハイゼン | Alhaitham          |
+|        | ヨォーヨ     | Yaoyao             |
+|        | ディシア     | Dehya              |
+|        | ミカ         | Mika               |
+|        | 白朮         | Baizhu             |
+|        | カーヴェ     | Kaveh              |
+|        | 綺良々       | Kirara             |
+|        | 旅人(水)     | Traveler_hydro     |
+|        | リネ         | Lyney              |
+|        | リネット     | Lynette            |
+|        | フレミネ     | Freminet           |
+|        | ヌヴィレット | Neuvillette        |
+|        | リオセスリ   | Wriothesley        |
 
-### 大枠の割り振り
-| id  | 内容       |
-| --- | ---------- |
-| 1   | characters |
-| 2   | weapons    |
-| 3   | artifacts  |
+traveler_anemo
+traveler_geo
+jean
+diluc
+mona
+keqing
+qiqi
+bennett
+kaeya
+razor
+noelle
+barbara
+sucrose
+lisa
+amber
+fischl
+xingqiu
+beidou
+chongyun
+xiangling
+ningguang
+venti
+klee
+tartaglia
+diona
+zhongli
+xinyan
+albedo
+ganyu
+xiao
+huTao
+rosaria
+yanfei
+eula
+kaedehara_kazuha
+traveler_electro
+kamisato_ayaka
+yoimiya
+sayu
+aloy
+raiden_shogun
+kujou_sara
+sangonomiya_kokomi
+thoma
+arataki_itto
+gorou
+shenhe
+yun_jin
+yae_miko
+kamisato_ayato
+yelan
+kuki_shinobu
+shikanoin_heizou
+traveler_dendro
+tighnari
+collei
+dori
+cyno
+candace
+nilou
+nahida
+layla
+wanderer
+faruzan
+alhaitham
+yaoyao
+dehya
+mika
+baizhu
+kaveh
+kirara
+traveler_hydro
+lyney
+lynette
+freminet
+neuvillette
+wriothesley
+
+___________________________
 
 ## stat_namesテーブルのIDについて
 | id  | 日本語                   | 英語                          |
@@ -155,21 +304,30 @@
 ## 各テーブルのカラム一覧
 
 ### characters
-| カラム名            | 型      | 内容                 |
-| ------------------- | ------- | -------------------- |
-| id                  | int     | primary key          |
-| name_japanese       | varchar | 日本語のキャラ名     |
-| name_english        | varchar | 英語のキャラ名       |
-| title               | varchar | 称号                 |
-| description         | varchar | キャラクターの説明文 |
-| star                | int     | レアリティ           |
-| vision_id           | int     | 元素タイプ           |
-| weapon_type_id      | int     | 武器タイプ           |
-| gender_id           | int     | 性別                 |
-| region_id           | int     | 出身国               |
-| location            | varchar | 所属                 |
-| constellation_title | varchar | 星座名               |
-| stat_name_id        | int     | 突破ステータス       |
+| カラム名                    | 型      | 内容                   |
+| --------------------------- | ------- | ---------------------- |
+| id                          | int     | primary key            |
+| name_japanese               | varchar | 日本語のキャラ名       |
+| name_english                | varchar | 英語のキャラ名         |
+| title                       | varchar | 称号                   |
+| description                 | varchar | キャラクターの説明文   |
+| star                        | int     | レアリティ             |
+| vision_id                   | int     | 元素タイプ             |
+| weapon_type_id              | int     | 武器タイプ             |
+| gender_id                   | int     | 性別                   |
+| region_id                   | int     | 出身国                 |
+| location                    | varchar | 所属                   |
+| constellation_title         | varchar | 星座名                 |
+| stat_name_id                | int     | 突破ステータス         |
+| normal_attack_id            | int     | normal_attackのid      |
+| elemental_skill_id          | int     | elemental_skillのid    |
+| elemental_burst_id          | int     | elemental_burstのid    |
+| rank1_constellation_name_id | int     | constellation_nameのid |
+| rank2_constellation_name_id | int     | constellation_nameのid |
+| rank3_constellation_name_id | int     | constellation_nameのid |
+| rank4_constellation_name_id | int     | constellation_nameのid |
+| rank5_constellation_name_id | int     | constellation_nameのid |
+| rank6_constellation_name_id | int     | constellation_nameのid |
 
 #### birthdays
 | カラム名     | 型  | 内容          |
@@ -180,18 +338,20 @@
 | day          | int | 誕生日        |
 
 #### normal_attacks
-| カラム名    | 型      | 内容               |
-| ----------- | ------- | ------------------ |
-| id          | int     | primary key        |
-| name        | varchar | 通常攻撃のタイトル |
-| description | varchar | 通常攻撃の説明文   |
+| カラム名     | 型      | 内容               |
+| ------------ | ------- | ------------------ |
+| id           | int     | primary key        |
+| character_id | int     | characterのid      |
+| name         | varchar | 通常攻撃のタイトル |
+| description  | varchar | 通常攻撃の説明文   |
 
 #### normal_attack_data
 | カラム名          | 型           | 内容               |
 | ----------------- | ------------ | ------------------ |
 | id                | int          | primary key        |
-| character_id      | int          | characterのid      |
+| normal_attack_id  | int          |                    |
 | name              | varchar      | 攻撃名             |
+| reference_stat_id | int          | 参照ステータス     |
 | elemental_type_id | int          | どの元素攻撃なのか |
 | attacking_type_id | int          | どの攻撃扱いなのか |
 | aoe               | boolean      | 範囲攻撃かどうか   |
@@ -210,6 +370,15 @@
 | level13           | decimal(8,3) | Lv.13天賦倍率      |
 | level14           | decimal(8,3) | Lv.14天賦倍率      |
 | level15           | decimal(8,3) | Lv.15天賦倍率      |
+
+#### normal_attack_static_data
+| カラム名         | 型           | 内容        |
+| ---------------- | ------------ | ----------- |
+| id               | int          | primary key |
+| normal_attack_id | int          |             |
+| name             | varchar      | 名称        |
+| value_text       | varchar      |             |
+| value_number     | decimal(8,3) |             |
 
 #### normal_attack_text_data
 | カラム名              | 型      | 内容                          |
@@ -233,37 +402,49 @@
 | level15               | varchar | Lv.15天賦倍率のテキストデータ |
 
 #### elemental_skills
-| カラム名    | 型      | 内容                 |
-| ----------- | ------- | -------------------- |
-| id          | int     | primary key          |
-| name        | varchar | 元素スキルのタイトル |
-| description | varchar | 元素スキルの説明文   |
-| max_qty     | int     | 元素スキルの個数     |
+| カラム名     | 型      | 内容                 |
+| ------------ | ------- | -------------------- |
+| id           | int     | primary key          |
+| character_id | int     | characterのid        |
+| name         | varchar | 元素スキルのタイトル |
+| description  | varchar | 元素スキルの説明文   |
+| max_qty      | int     | 元素スキルの個数     |
 
 #### elemental_skill_data
-| カラム名          | 型           | 内容               |
-| ----------------- | ------------ | ------------------ |
-| id                | int          | primary key        |
-| character_id      | int          | characterのid      |
-| name              | varchar      | 攻撃名             |
-| elemental_type_id | int          | どの元素攻撃なのか |
-| attacking_type_id | int          | どの攻撃扱いなのか |
-| aoe               | boolean      | 範囲攻撃かどうか   |
-| level1            | decimal(8,3) | Lv.1天賦倍率       |
-| level2            | decimal(8,3) | Lv.2天賦倍率       |
-| level3            | decimal(8,3) | Lv.3天賦倍率       |
-| level4            | decimal(8,3) | Lv.4天賦倍率       |
-| level5            | decimal(8,3) | Lv.5天賦倍率       |
-| level6            | decimal(8,3) | Lv.6天賦倍率       |
-| level7            | decimal(8,3) | Lv.7天賦倍率       |
-| level8            | decimal(8,3) | Lv.8天賦倍率       |
-| level9            | decimal(8,3) | Lv.9天賦倍率       |
-| level10           | decimal(8,3) | Lv.10天賦倍率      |
-| level11           | decimal(8,3) | Lv.11天賦倍率      |
-| level12           | decimal(8,3) | Lv.12天賦倍率      |
-| level13           | decimal(8,3) | Lv.13天賦倍率      |
-| level14           | decimal(8,3) | Lv.14天賦倍率      |
-| level15           | decimal(8,3) | Lv.15天賦倍率      |
+| カラム名           | 型           | 内容               |
+| ------------------ | ------------ | ------------------ |
+| id                 | int          | primary key        |
+| elemental_skill_id | int          |                    |
+| name               | varchar      | 攻撃名             |
+| reference_stat_id  | int          | 参照ステータス     |
+| elemental_type_id  | int          | どの元素攻撃なのか |
+| attacking_type_id  | int          | どの攻撃扱いなのか |
+| aoe                | boolean      | 範囲攻撃かどうか   |
+| level1             | decimal(8,3) | Lv.1天賦倍率       |
+| level2             | decimal(8,3) | Lv.2天賦倍率       |
+| level3             | decimal(8,3) | Lv.3天賦倍率       |
+| level4             | decimal(8,3) | Lv.4天賦倍率       |
+| level5             | decimal(8,3) | Lv.5天賦倍率       |
+| level6             | decimal(8,3) | Lv.6天賦倍率       |
+| level7             | decimal(8,3) | Lv.7天賦倍率       |
+| level8             | decimal(8,3) | Lv.8天賦倍率       |
+| level9             | decimal(8,3) | Lv.9天賦倍率       |
+| level10            | decimal(8,3) | Lv.10天賦倍率      |
+| level11            | decimal(8,3) | Lv.11天賦倍率      |
+| level12            | decimal(8,3) | Lv.12天賦倍率      |
+| level13            | decimal(8,3) | Lv.13天賦倍率      |
+| level14            | decimal(8,3) | Lv.14天賦倍率      |
+| level15            | decimal(8,3) | Lv.15天賦倍率      |
+
+#### elemental_skill_static_data
+| カラム名           | 型           | 内容        |
+| ------------------ | ------------ | ----------- |
+| id                 | int          | primary key |
+| elemental_skill_id | int          |             |
+| name               | varchar      | 名称        |
+| value_text         | varchar      |             |
+| value_number       | decimal(8,3) |             |
+
 
 #### elemental_skill_text_data
 | カラム名                | 型      | 内容                          |
@@ -287,37 +468,48 @@
 | level15                 | varchar | Lv.15天賦倍率のテキストデータ |
 
 #### elemental_bursts
-| カラム名    | 型      | 内容               |
-| ----------- | ------- | ------------------ |
-| id          | int     | primary key        |
-| name        | varchar | 元素爆発のタイトル |
-| description | varchar | 元素爆発の説明文   |
-| cost        | int     | 必要エネルギー     |
+| カラム名     | 型      | 内容               |
+| ------------ | ------- | ------------------ |
+| id           | int     | primary key        |
+| character_id | int     | characterのid      |
+| name         | varchar | 元素爆発のタイトル |
+| description  | varchar | 元素爆発の説明文   |
+| cost         | int     | 必要エネルギー     |
 
 #### elemental_burst_data
-| カラム名          | 型           | 内容               |
-| ----------------- | ------------ | ------------------ |
-| id                | int          | primary key        |
-| character_id      | int          | characterのid      |
-| name              | varchar      | 攻撃名             |
-| elemental_type_id | int          | どの元素攻撃なのか |
-| attacking_type_id | int          | どの攻撃扱いなのか |
-| aoe               | boolean      | 範囲攻撃かどうか   |
-| level1            | decimal(8,3) | Lv.1天賦倍率       |
-| level2            | decimal(8,3) | Lv.2天賦倍率       |
-| level3            | decimal(8,3) | Lv.3天賦倍率       |
-| level4            | decimal(8,3) | Lv.4天賦倍率       |
-| level5            | decimal(8,3) | Lv.5天賦倍率       |
-| level6            | decimal(8,3) | Lv.6天賦倍率       |
-| level7            | decimal(8,3) | Lv.7天賦倍率       |
-| level8            | decimal(8,3) | Lv.8天賦倍率       |
-| level9            | decimal(8,3) | Lv.9天賦倍率       |
-| level10           | decimal(8,3) | Lv.10天賦倍率      |
-| level11           | decimal(8,3) | Lv.11天賦倍率      |
-| level12           | decimal(8,3) | Lv.12天賦倍率      |
-| level13           | decimal(8,3) | Lv.13天賦倍率      |
-| level14           | decimal(8,3) | Lv.14天賦倍率      |
-| level15           | decimal(8,3) | Lv.15天賦倍率      |
+| カラム名           | 型           | 内容               |
+| ------------------ | ------------ | ------------------ |
+| id                 | int          | primary key        |
+| elemental_burst_id | int          |                    |
+| name               | varchar      | 攻撃名             |
+| reference_stat_id  | int          | 参照ステータス     |
+| elemental_type_id  | int          | どの元素攻撃なのか |
+| attacking_type_id  | int          | どの攻撃扱いなのか |
+| aoe                | boolean      | 範囲攻撃かどうか   |
+| level1             | decimal(8,3) | Lv.1天賦倍率       |
+| level2             | decimal(8,3) | Lv.2天賦倍率       |
+| level3             | decimal(8,3) | Lv.3天賦倍率       |
+| level4             | decimal(8,3) | Lv.4天賦倍率       |
+| level5             | decimal(8,3) | Lv.5天賦倍率       |
+| level6             | decimal(8,3) | Lv.6天賦倍率       |
+| level7             | decimal(8,3) | Lv.7天賦倍率       |
+| level8             | decimal(8,3) | Lv.8天賦倍率       |
+| level9             | decimal(8,3) | Lv.9天賦倍率       |
+| level10            | decimal(8,3) | Lv.10天賦倍率      |
+| level11            | decimal(8,3) | Lv.11天賦倍率      |
+| level12            | decimal(8,3) | Lv.12天賦倍率      |
+| level13            | decimal(8,3) | Lv.13天賦倍率      |
+| level14            | decimal(8,3) | Lv.14天賦倍率      |
+| level15            | decimal(8,3) | Lv.15天賦倍率      |
+
+#### elemental_burst_static_data
+| カラム名           | 型           | 内容        |
+| ------------------ | ------------ | ----------- |
+| id                 | int          | primary key |
+| elemental_burst_id | int          |             |
+| name               | varchar      | 名称        |
+| value_text         | varchar      |             |
+| value_number       | decimal(8,3) |             |
 
 #### elemental_burst_text_data
 | カラム名                | 型      | 内容                          |
@@ -354,25 +546,14 @@
 | id                | int          | primary key        |
 | passive_talent_id | int          | passive_talentのid |
 | stat_name_id      | int          | stat_nameのid      |
-| number            | decimal(8,3) | 数値               |
+| value_number      | decimal(8,3) | 数値               |
 
 #### constellations
-| カラム名     | 型      | 内容          |
-| ------------ | ------- | ------------- |
-| id           | int     | primary key   |
-| character_id | int     | characterのid |
-| rank1        | varchar | 1凸の名前     |
-| rank2        | varchar | 2凸の名前     |
-| rank3        | varchar | 3凸の名前     |
-| rank4        | varchar | 4凸の名前     |
-| rank5        | varchar | 5凸の名前     |
-
-#### constellation_names
-| カラム名           | 型      | 内容        |
-| ------------------ | ------- | ----------- |
-| id                 | int     | primary key |
-| constellation_name | varchar | 星の名前    |
-| description        | varchar | 凸の説明文  |
+| カラム名    | 型      | 内容        |
+| ----------- | ------- | ----------- |
+| id          | int     | primary key |
+| name        | varchar | 星の名前    |
+| description | varchar | 凸の説明文  |
 
 #### constellation_data
 | カラム名              | 型           | 内容                   |
@@ -380,9 +561,9 @@
 | id                    | int          | primary key            |
 | constellation_name_id | int          | constellation_nameのid |
 | stat_name_id          | int          | stat_nameのid          |
-| number                | decimal(8,3) | 数値                   |
+| value_number          | decimal(8,3) | 数値                   |
 
-#### ascend_level
+#### ascend_levels
 | カラム名  | 型  | 内容         |
 | --------- | --- | ------------ |
 | id        | int | primary key  |
@@ -411,16 +592,16 @@
 
 
 ### weapons
-| カラム名         | 型      | 内容                   |
-| ---------------- | ------- | ---------------------- |
-| id               | int     | primary key            |
-| name_japanese    | varchar | 日本語の武器名         |
-| name_english     | varchar | 英語の武器名           |
-| weapon_type_id   | int     | 武器種                 |
-| sub_stat_name_id | int     | サブステータスの名前   |
-| base_attack_type | int     | Lv.1時点での基礎攻撃力 |
-| star             | int     | レアリティ             |
-| refinement_name  | varchar | 武器効果名             |
+| カラム名         | 型      | 内容                    |
+| ---------------- | ------- | ----------------------- |
+| id               | int     | primary key             |
+| name_japanese    | varchar | 日本語の武器名          |
+| name_english     | varchar | 英語の武器名            |
+| weapon_type_id   | int     | 武器種                  |
+| sub_stat_name_id | int     | サブステータスの名前    |
+| base_attack_type | int     | Lv.90時点での基礎攻撃力 |
+| star             | int     | レアリティ              |
+| refinement_name  | varchar | 武器効果名              |
 
 #### weapon_stat_data_type(n)[^3]
 | カラム名           | 型           | 内容                   |
@@ -437,7 +618,7 @@
 | energy_recharge    | decimal(8,3) | 元素チャージ効率の数値 |
 | physical_dmg_bonus | decimal(8,3) | 物理バフの数値         |
 
-#### refinement_descriptions
+#### refinements
 | カラム名        | 型      | 内容                        |
 | --------------- | ------- | --------------------------- |
 | id              | int     | primary key                 |
@@ -448,7 +629,7 @@
 | rank4           | varchar | 精錬ランク4武器効果の説明文 |
 | rank5           | varchar | 精錬ランク5武器効果の説明文 |
 
-#### refinement_stats
+#### refinement_data
 | カラム名       | 型           | 内容                       |
 | -------------- | ------------ | -------------------------- |
 | id             | int          | primary key                |
@@ -485,21 +666,13 @@
 | artifact_type_id | int     | artifact_typeのid |
 | artifact_set_id  | int     | artifact_setのid  |
 
-#### artifact_set_bonuses
-| カラム名        | 型      | 内容                |
-| --------------- | ------- | ------------------- |
-| id              | int     | primary key         |
-| artifact_set_id | int     | artifact_setのid    |
-| bonus2          | varchar | 2セット効果の説明文 |
-| bonus4          | varchar | 4セット効果の説明文 |
-
 #### artifact_set_bonus(n)_data[^1]
 | カラム名        | 型           | 内容             |
 | --------------- | ------------ | ---------------- |
 | id              | int          | primary key      |
 | artifact_set_id | int          | artifact_setのid |
 | stat_name_id    | int          | stat_nameのid    |
-| number          | decimal(8,3) | セット効果の数値 |
+| value_number    | decimal(8,3) | セット効果の数値 |
 
 
 
@@ -509,30 +682,33 @@
 
 
 ### targets
-| カラム名                    | 型  | 内容        |
-| --------------------------- | --- | ----------- |
-| id                          | int | primary key |
-| user_id                     | int |             |
-| character_id                | int |             |
-| character_ascend_level_id   | int |             |
-| normal_attack_level         | int |             |
-| elemental_skill_level       | int |             |
-| elemental_burst_level       | int |             |
-| constellation_rank          | int |             |
-| weapon_id                   | int |             |
-| weapon_ascend_level_id      | int |             |
-| refinement_rank             | int |             |
-| flower_artifact_manager_id  | int |             |
-| plume_artifact_manager_id   | int |             |
-| sands_artifact_manager_id   | int |             |
-| goblet_artifact_manager_id  | int |             |
-| circlet_artifact_manager_id | int |             |
+| カラム名                    | 型       | 内容        |
+| --------------------------- | -------- | ----------- |
+| id                          | int      | primary key |
+| user_id                     | int      |             |
+| character_id                | int      |             |
+| character_ascend_level_id   | int      |             |
+| normal_attack_level         | int      |             |
+| elemental_skill_level       | int      |             |
+| elemental_burst_level       | int      |             |
+| constellation_rank          | int      |             |
+| weapon_id                   | int      |             |
+| weapon_ascend_level_id      | int      |             |
+| refinement_rank             | int      |             |
+| flower_artifact_manager_id  | int      |             |
+| plume_artifact_manager_id   | int      |             |
+| sands_artifact_manager_id   | int      |             |
+| goblet_artifact_manager_id  | int      |             |
+| circlet_artifact_manager_id | int      |             |
+| create_date                 | datetime |             |
+| update_date                 | datetime |             |
 
 ### artifact_managers
 | カラム名          | 型           | 内容        |
 | ----------------- | ------------ | ----------- |
 | id                | int          | primary key |
 | user_id           | int          |             |
+| score             | decimal(8,3) |             |
 | artifact_id       | int          |             |
 | main_stat_id      | int          |             |
 | sub1_stat_name_id | int          |             |
@@ -543,6 +719,8 @@
 | sub2_number       | decimal(8,3) |             |
 | sub3_number       | decimal(8,3) |             |
 | sub4_number       | decimal(8,3) |             |
+| create_date       | datetime     |             |
+| update_date       | datetime     |             |
 
 ### main_stats
 | カラム名     | 型           | 内容        |
@@ -552,6 +730,15 @@
 | star4        | decimal(8,3) |             |
 | star5        | decimal(8,3) |             |
 
+### users
+| カラム名    | 型       | 内容        |
+| ----------- | -------- | ----------- |
+| id          | int      | primary key |
+| name        | varchar  |             |
+| password    | varchar  |             |
+| create_date | datetime |             |
+| update_date | datetime |             |
+
 [^1]:n=>セット効果の必要数
-[^3]:Lv.1時点での基礎攻撃力
+[^3]:Lv.90時点での基礎攻撃力
 [^4]:character=>characterの英語名
