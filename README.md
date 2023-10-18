@@ -4,166 +4,7 @@
 | テーブル名 | テーブルの内容 |
 | ---------- | -------------- |
 
-## キャラクターの名前について
-| id     | jp           | en                 |
-| ------ | ------------ | ------------------ |
-| 100001 | 旅人(風)     | Traveler_anemo     |
-| 100002 | 旅人(岩)     | Traveler_geo       |
-| 100003 | ジン         | Jean               |
-| 100004 | ディルック   | Diluc              |
-| 100005 | モナ         | Mona               |
-| 100006 | 刻晴         | Keqing             |
-| 100007 | 七七         | Qiqi               |
-|        | ベネット     | Bennett            |
-|        | ガイア       | Kaeya              |
-|        | レザー       | Razor              |
-|        | ノエル       | Noelle             |
-|        | バーバラ     | Barbara            |
-|        | スクロース   | Sucrose            |
-|        | リサ         | Lisa               |
-|        | アンバー     | Amber              |
-|        | フィッシュル | Fischl             |
-|        | 行秋         | Xingqiu            |
-|        | 北斗         | Beidou             |
-|        | 重雲         | Chongyun           |
-|        | 香菱         | Xiangling          |
-|        | 凝光         | Ningguang          |
-|        | ウェンティ   | Venti              |
-|        | クレー       | Klee               |
-|        | タルタリヤ   | Tartaglia          |
-|        | ディオナ     | Diona              |
-|        | 鍾離         | Zhongli            |
-|        | 辛炎         | Xinyan             |
-|        | アルベド     | Albedo             |
-|        | 甘雨         | Ganyu              |
-|        | 魈           | Xiao               |
-|        | 胡桃         | Hu_Tao             |
-|        | ロサリア     | Rosaria            |
-|        | 煙緋         | Yanfei             |
-|        | エウルア     | Eula               |
-|        | 楓原万葉     | Kaedehara_Kazuha   |
-|        | 旅人(雷)     | Traveler_electro   |
-|        | 神里綾華     | Kamisato_Ayaka     |
-|        | 宵宮         | Yoimiya            |
-|        | 早柚         | Sayu               |
-|        | アーロイ     | Aloy               |
-|        | 雷電将軍     | Raiden_Shogun      |
-|        | 九条裟羅     | Kujou_Sara         |
-|        | 珊瑚宮心海   | Sangonomiya_Kokomi |
-|        | トーマ       | Thoma              |
-|        | 荒瀧一斗     | Arataki_Itto       |
-|        | ゴロー       | Gorou              |
-|        | 申鶴         | Shenhe             |
-|        | 雲菫         | Yun_Jin            |
-|        | 八重神子     | Yae_Miko           |
-|        | 神里綾人     | Kamisato_Ayato     |
-|        | 夜蘭         | Yelan              |
-|        | 久岐忍       | Kuki_Shinobu       |
-|        | 鹿野院平蔵   | Shikanoin_Heizou   |
-|        | 旅人(草)     | Traveler_dendro    |
-|        | ティナリ     | Tighnari           |
-|        | コレイ       | Collei             |
-|        | ドリー       | Dori               |
-|        | セノ         | Cyno               |
-|        | キャンディス | Candace            |
-|        | ニィロウ     | Nilou              |
-|        | ナヒーダ     | Nahida             |
-|        | レイラ       | Layla              |
-|        | 放浪者       | Wanderer           |
-|        | ファルザン   | Faruzan            |
-|        | アルハイゼン | Alhaitham          |
-|        | ヨォーヨ     | Yaoyao             |
-|        | ディシア     | Dehya              |
-|        | ミカ         | Mika               |
-|        | 白朮         | Baizhu             |
-|        | カーヴェ     | Kaveh              |
-|        | 綺良々       | Kirara             |
-|        | 旅人(水)     | Traveler_hydro     |
-|        | リネ         | Lyney              |
-|        | リネット     | Lynette            |
-|        | フレミネ     | Freminet           |
-|        | ヌヴィレット | Neuvillette        |
-|        | リオセスリ   | Wriothesley        |
 
-traveler_anemo
-traveler_geo
-jean
-diluc
-mona
-keqing
-qiqi
-bennett
-kaeya
-razor
-noelle
-barbara
-sucrose
-lisa
-amber
-fischl
-xingqiu
-beidou
-chongyun
-xiangling
-ningguang
-venti
-klee
-tartaglia
-diona
-zhongli
-xinyan
-albedo
-ganyu
-xiao
-huTao
-rosaria
-yanfei
-eula
-kaedehara_kazuha
-traveler_electro
-kamisato_ayaka
-yoimiya
-sayu
-aloy
-raiden_shogun
-kujou_sara
-sangonomiya_kokomi
-thoma
-arataki_itto
-gorou
-shenhe
-yun_jin
-yae_miko
-kamisato_ayato
-yelan
-kuki_shinobu
-shikanoin_heizou
-traveler_dendro
-tighnari
-collei
-dori
-cyno
-candace
-nilou
-nahida
-layla
-wanderer
-faruzan
-alhaitham
-yaoyao
-dehya
-mika
-baizhu
-kaveh
-kirara
-traveler_hydro
-lyney
-lynette
-freminet
-neuvillette
-wriothesley
-
-___________________________
 
 ## stat_namesテーブルのIDについて
 | id  | 日本語                   | 英語                          |
@@ -291,6 +132,8 @@ ___________________________
 | 3   | 稲妻         |
 | 4   | スメール     |
 | 5   | フォンテーヌ |
+| 6   | ナタ         |
+| 7   | スネージナヤ |
 
 ## artifact_typesテーブルのIDについて
 | id  | 内容 |
@@ -304,30 +147,30 @@ ___________________________
 ## 各テーブルのカラム一覧
 
 ### characters
-| カラム名                    | 型      | 内容                   |
-| --------------------------- | ------- | ---------------------- |
-| id                          | int     | primary key            |
-| name_japanese               | varchar | 日本語のキャラ名       |
-| name_english                | varchar | 英語のキャラ名         |
-| title                       | varchar | 称号                   |
-| description                 | varchar | キャラクターの説明文   |
-| star                        | int     | レアリティ             |
-| vision_id                   | int     | 元素タイプ             |
-| weapon_type_id              | int     | 武器タイプ             |
-| gender_id                   | int     | 性別                   |
-| region_id                   | int     | 出身国                 |
-| location                    | varchar | 所属                   |
-| constellation_title         | varchar | 星座名                 |
-| stat_name_id                | int     | 突破ステータス         |
-| normal_attack_id            | int     | normal_attackのid      |
-| elemental_skill_id          | int     | elemental_skillのid    |
-| elemental_burst_id          | int     | elemental_burstのid    |
-| rank1_constellation_name_id | int     | constellation_nameのid |
-| rank2_constellation_name_id | int     | constellation_nameのid |
-| rank3_constellation_name_id | int     | constellation_nameのid |
-| rank4_constellation_name_id | int     | constellation_nameのid |
-| rank5_constellation_name_id | int     | constellation_nameのid |
-| rank6_constellation_name_id | int     | constellation_nameのid |
+| カラム名               | 型      | 内容                   |
+| ---------------------- | ------- | ---------------------- |
+| id                     | int     | primary key            |
+| name_japanese          | varchar | 日本語のキャラ名       |
+| name_english           | varchar | 英語のキャラ名         |
+| title                  | varchar | 称号                   |
+| description            | varchar | キャラクターの説明文   |
+| star                   | int     | レアリティ             |
+| vision_id              | int     | 元素タイプ             |
+| weapon_type_id         | int     | 武器タイプ             |
+| gender_id              | int     | 性別                   |
+| region_id              | int     | 出身国                 |
+| location               | varchar | 所属                   |
+| constellation_title    | varchar | 星座名                 |
+| stat_name_id           | int     | 突破ステータス         |
+| normal_attack_id       | int     | normal_attackのid      |
+| elemental_skill_id     | int     | elemental_skillのid    |
+| elemental_burst_id     | int     | elemental_burstのid    |
+| rank1_constellation_id | int     | constellation_nameのid |
+| rank2_constellation_id | int     | constellation_nameのid |
+| rank3_constellation_id | int     | constellation_nameのid |
+| rank4_constellation_id | int     | constellation_nameのid |
+| rank5_constellation_id | int     | constellation_nameのid |
+| rank6_constellation_id | int     | constellation_nameのid |
 
 #### birthdays
 | カラム名     | 型  | 内容          |
@@ -556,12 +399,12 @@ ___________________________
 | description | varchar | 凸の説明文  |
 
 #### constellation_data
-| カラム名              | 型           | 内容                   |
-| --------------------- | ------------ | ---------------------- |
-| id                    | int          | primary key            |
-| constellation_name_id | int          | constellation_nameのid |
-| stat_name_id          | int          | stat_nameのid          |
-| value_number          | decimal(8,3) | 数値                   |
+| カラム名         | 型           | 内容                   |
+| ---------------- | ------------ | ---------------------- |
+| id               | int          | primary key            |
+| constellation_id | int          | constellation_nameのid |
+| stat_name_id     | int          | stat_nameのid          |
+| value_number     | decimal(8,3) | 数値                   |
 
 #### ascend_levels
 | カラム名  | 型  | 内容         |
@@ -722,7 +565,7 @@ ___________________________
 | create_date       | datetime     |             |
 | update_date       | datetime     |             |
 
-### main_stats
+### artifact_main_stats
 | カラム名     | 型           | 内容        |
 | ------------ | ------------ | ----------- |
 | id           | int          | primary key |
