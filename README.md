@@ -49,30 +49,29 @@
 | description  | varchar | 通常攻撃の説明文   |
 
 #### normal_attack_data
-| カラム名          | 型           | 内容               |
-| ----------------- | ------------ | ------------------ |
-| id                | int          | primary key        |
-| normal_attack_id  | int          |                    |
-| name              | varchar      | 攻撃名             |
-| reference_stat_id | int          | 参照ステータス     |
-| elemental_type_id | int          | どの元素攻撃なのか |
-| attacking_type_id | int          | どの攻撃扱いなのか |
-| aoe               | boolean      | 範囲攻撃かどうか   |
-| level1            | decimal(8,3) | Lv.1天賦倍率       |
-| level2            | decimal(8,3) | Lv.2天賦倍率       |
-| level3            | decimal(8,3) | Lv.3天賦倍率       |
-| level4            | decimal(8,3) | Lv.4天賦倍率       |
-| level5            | decimal(8,3) | Lv.5天賦倍率       |
-| level6            | decimal(8,3) | Lv.6天賦倍率       |
-| level7            | decimal(8,3) | Lv.7天賦倍率       |
-| level8            | decimal(8,3) | Lv.8天賦倍率       |
-| level9            | decimal(8,3) | Lv.9天賦倍率       |
-| level10           | decimal(8,3) | Lv.10天賦倍率      |
-| level11           | decimal(8,3) | Lv.11天賦倍率      |
-| level12           | decimal(8,3) | Lv.12天賦倍率      |
-| level13           | decimal(8,3) | Lv.13天賦倍率      |
-| level14           | decimal(8,3) | Lv.14天賦倍率      |
-| level15           | decimal(8,3) | Lv.15天賦倍率      |
+| カラム名               | 型           | 内容               |
+| ---------------------- | ------------ | ------------------ |
+| id                     | int          | primary key        |
+| normal_attack_id       | int          |                    |
+| name                   | varchar      | 攻撃名             |
+| reference_stat_name_id | int          | 参照ステータス     |
+| elemental_type_id      | int          | どの元素攻撃なのか |
+| attacking_type_id      | int          | どの攻撃扱いなのか |
+| level1                 | decimal(9,4) | Lv.1天賦倍率       |
+| level2                 | decimal(9,4) | Lv.2天賦倍率       |
+| level3                 | decimal(9,4) | Lv.3天賦倍率       |
+| level4                 | decimal(9,4) | Lv.4天賦倍率       |
+| level5                 | decimal(9,4) | Lv.5天賦倍率       |
+| level6                 | decimal(9,4) | Lv.6天賦倍率       |
+| level7                 | decimal(9,4) | Lv.7天賦倍率       |
+| level8                 | decimal(9,4) | Lv.8天賦倍率       |
+| level9                 | decimal(9,4) | Lv.9天賦倍率       |
+| level10                | decimal(9,4) | Lv.10天賦倍率      |
+| level11                | decimal(9,4) | Lv.11天賦倍率      |
+| level12                | decimal(9,4) | Lv.12天賦倍率      |
+| level13                | decimal(9,4) | Lv.13天賦倍率      |
+| level14                | decimal(9,4) | Lv.14天賦倍率      |
+| level15                | decimal(9,4) | Lv.15天賦倍率      |
 
 #### normal_attack_static_data
 | カラム名         | 型           | 内容        |
@@ -81,7 +80,7 @@
 | normal_attack_id | int          |             |
 | name             | varchar      | 名称        |
 | value_text       | varchar      |             |
-| value_number     | decimal(8,3) |             |
+| value_number     | decimal(9,4) |             |
 
 #### normal_attack_text_data
 | カラム名              | 型      | 内容                          |
@@ -114,30 +113,29 @@
 | max_qty      | int     | 元素スキルの個数     |
 
 #### elemental_skill_data
-| カラム名           | 型           | 内容               |
-| ------------------ | ------------ | ------------------ |
-| id                 | int          | primary key        |
-| elemental_skill_id | int          |                    |
-| name               | varchar      | 攻撃名             |
-| reference_stat_id  | int          | 参照ステータス     |
-| elemental_type_id  | int          | どの元素攻撃なのか |
-| attacking_type_id  | int          | どの攻撃扱いなのか |
-| aoe                | boolean      | 範囲攻撃かどうか   |
-| level1             | decimal(8,3) | Lv.1天賦倍率       |
-| level2             | decimal(8,3) | Lv.2天賦倍率       |
-| level3             | decimal(8,3) | Lv.3天賦倍率       |
-| level4             | decimal(8,3) | Lv.4天賦倍率       |
-| level5             | decimal(8,3) | Lv.5天賦倍率       |
-| level6             | decimal(8,3) | Lv.6天賦倍率       |
-| level7             | decimal(8,3) | Lv.7天賦倍率       |
-| level8             | decimal(8,3) | Lv.8天賦倍率       |
-| level9             | decimal(8,3) | Lv.9天賦倍率       |
-| level10            | decimal(8,3) | Lv.10天賦倍率      |
-| level11            | decimal(8,3) | Lv.11天賦倍率      |
-| level12            | decimal(8,3) | Lv.12天賦倍率      |
-| level13            | decimal(8,3) | Lv.13天賦倍率      |
-| level14            | decimal(8,3) | Lv.14天賦倍率      |
-| level15            | decimal(8,3) | Lv.15天賦倍率      |
+| カラム名               | 型           | 内容               |
+| ---------------------- | ------------ | ------------------ |
+| id                     | int          | primary key        |
+| elemental_skill_id     | int          |                    |
+| name                   | varchar      | 攻撃名             |
+| reference_stat_name_id | int          | 参照ステータス     |
+| elemental_type_id      | int          | どの元素攻撃なのか |
+| attacking_type_id      | int          | どの攻撃扱いなのか |
+| level1                 | decimal(9,4) | Lv.1天賦倍率       |
+| level2                 | decimal(9,4) | Lv.2天賦倍率       |
+| level3                 | decimal(9,4) | Lv.3天賦倍率       |
+| level4                 | decimal(9,4) | Lv.4天賦倍率       |
+| level5                 | decimal(9,4) | Lv.5天賦倍率       |
+| level6                 | decimal(9,4) | Lv.6天賦倍率       |
+| level7                 | decimal(9,4) | Lv.7天賦倍率       |
+| level8                 | decimal(9,4) | Lv.8天賦倍率       |
+| level9                 | decimal(9,4) | Lv.9天賦倍率       |
+| level10                | decimal(9,4) | Lv.10天賦倍率      |
+| level11                | decimal(9,4) | Lv.11天賦倍率      |
+| level12                | decimal(9,4) | Lv.12天賦倍率      |
+| level13                | decimal(9,4) | Lv.13天賦倍率      |
+| level14                | decimal(9,4) | Lv.14天賦倍率      |
+| level15                | decimal(9,4) | Lv.15天賦倍率      |
 
 #### elemental_skill_static_data
 | カラム名           | 型           | 内容        |
@@ -146,7 +144,7 @@
 | elemental_skill_id | int          |             |
 | name               | varchar      | 名称        |
 | value_text         | varchar      |             |
-| value_number       | decimal(8,3) |             |
+| value_number       | decimal(9,4) |             |
 
 
 #### elemental_skill_text_data
@@ -180,30 +178,29 @@
 | cost         | int     | 必要エネルギー     |
 
 #### elemental_burst_data
-| カラム名           | 型           | 内容               |
-| ------------------ | ------------ | ------------------ |
-| id                 | int          | primary key        |
-| elemental_burst_id | int          |                    |
-| name               | varchar      | 攻撃名             |
-| reference_stat_id  | int          | 参照ステータス     |
-| elemental_type_id  | int          | どの元素攻撃なのか |
-| attacking_type_id  | int          | どの攻撃扱いなのか |
-| aoe                | boolean      | 範囲攻撃かどうか   |
-| level1             | decimal(8,3) | Lv.1天賦倍率       |
-| level2             | decimal(8,3) | Lv.2天賦倍率       |
-| level3             | decimal(8,3) | Lv.3天賦倍率       |
-| level4             | decimal(8,3) | Lv.4天賦倍率       |
-| level5             | decimal(8,3) | Lv.5天賦倍率       |
-| level6             | decimal(8,3) | Lv.6天賦倍率       |
-| level7             | decimal(8,3) | Lv.7天賦倍率       |
-| level8             | decimal(8,3) | Lv.8天賦倍率       |
-| level9             | decimal(8,3) | Lv.9天賦倍率       |
-| level10            | decimal(8,3) | Lv.10天賦倍率      |
-| level11            | decimal(8,3) | Lv.11天賦倍率      |
-| level12            | decimal(8,3) | Lv.12天賦倍率      |
-| level13            | decimal(8,3) | Lv.13天賦倍率      |
-| level14            | decimal(8,3) | Lv.14天賦倍率      |
-| level15            | decimal(8,3) | Lv.15天賦倍率      |
+| カラム名               | 型           | 内容               |
+| ---------------------- | ------------ | ------------------ |
+| id                     | int          | primary key        |
+| elemental_burst_id     | int          |                    |
+| name                   | varchar      | 攻撃名             |
+| reference_stat_name_id | int          | 参照ステータス     |
+| elemental_type_id      | int          | どの元素攻撃なのか |
+| attacking_type_id      | int          | どの攻撃扱いなのか |
+| level1                 | decimal(9,4) | Lv.1天賦倍率       |
+| level2                 | decimal(9,4) | Lv.2天賦倍率       |
+| level3                 | decimal(9,4) | Lv.3天賦倍率       |
+| level4                 | decimal(9,4) | Lv.4天賦倍率       |
+| level5                 | decimal(9,4) | Lv.5天賦倍率       |
+| level6                 | decimal(9,4) | Lv.6天賦倍率       |
+| level7                 | decimal(9,4) | Lv.7天賦倍率       |
+| level8                 | decimal(9,4) | Lv.8天賦倍率       |
+| level9                 | decimal(9,4) | Lv.9天賦倍率       |
+| level10                | decimal(9,4) | Lv.10天賦倍率      |
+| level11                | decimal(9,4) | Lv.11天賦倍率      |
+| level12                | decimal(9,4) | Lv.12天賦倍率      |
+| level13                | decimal(9,4) | Lv.13天賦倍率      |
+| level14                | decimal(9,4) | Lv.14天賦倍率      |
+| level15                | decimal(9,4) | Lv.15天賦倍率      |
 
 #### elemental_burst_static_data
 | カラム名           | 型           | 内容        |
@@ -212,7 +209,7 @@
 | elemental_burst_id | int          |             |
 | name               | varchar      | 名称        |
 | value_text         | varchar      |             |
-| value_number       | decimal(8,3) |             |
+| value_number       | decimal(9,4) |             |
 
 #### elemental_burst_text_data
 | カラム名                | 型      | 内容                          |
@@ -249,7 +246,7 @@
 | id                | int          | primary key        |
 | passive_talent_id | int          | passive_talentのid |
 | stat_name_id      | int          | stat_nameのid      |
-| value_number      | decimal(8,3) | 数値               |
+| value_number      | decimal(9,4) | 数値               |
 
 #### constellations
 | カラム名    | 型      | 内容        |
@@ -264,7 +261,7 @@
 | id               | int          | primary key            |
 | constellation_id | int          | constellation_nameのid |
 | stat_name_id     | int          | stat_nameのid          |
-| value_number     | decimal(8,3) | 数値                   |
+| value_number     | decimal(9,4) | 数値                   |
 
 #### ascend_levels
 | カラム名  | 型  | 内容         |
@@ -278,12 +275,10 @@
 | --------------- | ------------ | ---------------- |
 | id              | int          | primary key      |
 | ascend_level_id | int          | ascend_levelのid |
-| base_hp         | decimal(8,3) | 基礎HP           |
-| base_attack     | decimal(8,3) | 基礎攻撃力       |
-| base_defense    | decimal(8,3) | 基礎防御力       |
-| ascension_data  | decimal(8,3) | 突破ステータス   |
-
-
+| base_hp         | decimal(9,4) | 基礎HP           |
+| base_attack     | decimal(9,4) | 基礎攻撃力       |
+| base_defense    | decimal(9,4) | 基礎防御力       |
+| ascension_data  | decimal(9,4) | 突破ステータス   |
 
 
 
@@ -311,15 +306,15 @@
 | ------------------ | ------------ | ---------------------- |
 | id                 | int          | primary key            |
 | ascend_level_id    | int          | ascend_levelのid       |
-| base_attack        | decimal(8,3) | 基礎攻撃力             |
-| attack_percent     | decimal(8,3) | 攻撃力%の数値          |
-| defense_percent    | decimal(8,3) | 防御力%の数値          |
-| hp_percent         | decimal(8,3) | HP%の数値              |
-| critical_rate      | decimal(8,3) | 会心率の数値           |
-| critical_dmg       | decimal(8,3) | 会心ダメージの数値     |
-| elemental_mastery  | decimal(8,3) | 元素熟知の数値         |
-| energy_recharge    | decimal(8,3) | 元素チャージ効率の数値 |
-| physical_dmg_bonus | decimal(8,3) | 物理バフの数値         |
+| base_attack        | decimal(9,4) | 基礎攻撃力             |
+| attack_percent     | decimal(9,4) | 攻撃力%の数値          |
+| defense_percent    | decimal(9,4) | 防御力%の数値          |
+| hp_percent         | decimal(9,4) | HP%の数値              |
+| critical_rate      | decimal(9,4) | 会心率の数値           |
+| critical_dmg       | decimal(9,4) | 会心ダメージの数値     |
+| elemental_mastery  | decimal(9,4) | 元素熟知の数値         |
+| energy_recharge    | decimal(9,4) | 元素チャージ効率の数値 |
+| physical_dmg_bonus | decimal(9,4) | 物理バフの数値         |
 
 #### refinements
 | カラム名        | 型      | 内容                        |
@@ -333,16 +328,16 @@
 | rank5           | varchar | 精錬ランク5武器効果の説明文 |
 
 #### refinement_data
-| カラム名       | 型           | 内容                       |
-| -------------- | ------------ | -------------------------- |
-| id             | int          | primary key                |
-| description_id | int          | refinement_descriptionのid |
-| stat_name_id   | int          | stat_nameのid              |
-| rank1          | decimal(8,3) | 精錬ランク1時点での数値    |
-| rank2          | decimal(8,3) | 精錬ランク2時点での数値    |
-| rank3          | decimal(8,3) | 精錬ランク3時点での数値    |
-| rank4          | decimal(8,3) | 精錬ランク4時点での数値    |
-| rank5          | decimal(8,3) | 精錬ランク5時点での数値    |
+| カラム名      | 型           | 内容                       |
+| ------------- | ------------ | -------------------------- |
+| id            | int          | primary key                |
+| refinement_id | int          | refinement_descriptionのid |
+| stat_name_id  | int          | stat_nameのid              |
+| rank1         | decimal(9,4) | 精錬ランク1時点での数値    |
+| rank2         | decimal(9,4) | 精錬ランク2時点での数値    |
+| rank3         | decimal(9,4) | 精錬ランク3時点での数値    |
+| rank4         | decimal(9,4) | 精錬ランク4時点での数値    |
+| rank5         | decimal(9,4) | 精錬ランク5時点での数値    |
 
 
 
@@ -375,7 +370,7 @@
 | id              | int          | primary key      |
 | artifact_set_id | int          | artifact_setのid |
 | stat_name_id    | int          | stat_nameのid    |
-| value_number    | decimal(8,3) | セット効果の数値 |
+| value_number    | decimal(9,4) | セット効果の数値 |
 
 
 
@@ -411,17 +406,17 @@
 | ----------------- | ------------ | ----------- |
 | id                | int          | primary key |
 | user_id           | int          |             |
-| score             | decimal(8,3) |             |
+| score             | decimal(9,4) |             |
 | artifact_id       | int          |             |
 | main_stat_id      | int          |             |
 | sub1_stat_name_id | int          |             |
 | sub2_stat_name_id | int          |             |
 | sub3_stat_name_id | int          |             |
 | sub4_stat_name_id | int          |             |
-| sub1_number       | decimal(8,3) |             |
-| sub2_number       | decimal(8,3) |             |
-| sub3_number       | decimal(8,3) |             |
-| sub4_number       | decimal(8,3) |             |
+| sub1_number       | decimal(9,4) |             |
+| sub2_number       | decimal(9,4) |             |
+| sub3_number       | decimal(9,4) |             |
+| sub4_number       | decimal(9,4) |             |
 | create_date       | datetime     |             |
 | update_date       | datetime     |             |
 
@@ -430,8 +425,8 @@
 | ------------ | ------------ | ----------- |
 | id           | int          | primary key |
 | stat_name_id | int          |             |
-| star4        | decimal(8,3) |             |
-| star5        | decimal(8,3) |             |
+| star4        | decimal(9,4) |             |
+| star5        | decimal(9,4) |             |
 
 ### users
 | カラム名    | 型       | 内容        |
