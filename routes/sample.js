@@ -46,11 +46,16 @@ weapons[11] = enka.getWeaponById(13507)
 for (const weapon of weapons) {
   let stat = ["FIGHT_PROP_ATTACK_PERCENT", "FIGHT_PROP_HP_PERCENT"]
   let row = ""
-  for (let i = 1; i < 21; i++) {
+  for (let i = 1; i < 91; i++) {
     let data = weapon.getStats(0, i)
       .filter(d => stat.includes(d.fightProp))
       .map(d => {
-        row += `${d.value.toFixed(3)},`
+        if (i == 1) {
+          row += `${d.value.toFixed(3)},`
+        } else if (i % 5 == 0) {
+          row += `${d.value.toFixed(3)},`
+        }
+
       })
   }
   console.log(row);
