@@ -30,21 +30,17 @@ function convertObjectToJson(obj) {
 
 let weapons = []
 
-weapons[0] = enka.getWeaponById(13303)
-weapons[1] = enka.getWeaponById(11301)
-weapons[2] = enka.getWeaponById(11412)
-weapons[3] = enka.getWeaponById(13302)
-weapons[4] = enka.getWeaponById(11414)
-weapons[5] = enka.getWeaponById(15425)
-weapons[6] = enka.getWeaponById(11511)
-weapons[7] = enka.getWeaponById(11425)
-weapons[8] = enka.getWeaponById(11504)
-weapons[9] = enka.getWeaponById(13416)
-weapons[10] = enka.getWeaponById(14501)
-weapons[11] = enka.getWeaponById(13507)
+weapons[0] = enka.getWeaponById(12303)
+weapons[1] = enka.getWeaponById(11303)
+weapons[2] = enka.getWeaponById(11415)
+weapons[3] = enka.getWeaponById(12407)
+weapons[4] = enka.getWeaponById(11406)
+weapons[5] = enka.getWeaponById(11501)
+weapons[6] = enka.getWeaponById(12503)
+
 
 for (const weapon of weapons) {
-  let stat = ["FIGHT_PROP_ATTACK_PERCENT", "FIGHT_PROP_HP_PERCENT"]
+  let stat = ["FIGHT_PROP_DEFENSE_PERCENT", "FIGHT_PROP_PHYSICAL_ADD_HURT"]
   let row = ""
   for (let i = 1; i < 91; i++) {
     let data = weapon.getStats(0, i)
@@ -55,11 +51,20 @@ for (const weapon of weapons) {
         } else if (i % 5 == 0) {
           row += `${d.value.toFixed(3)},`
         }
-
       })
   }
   console.log(row);
 }
+
+
+/*
+enka.getAllWeapons().map(w => {
+  if (w.stars > 2) {
+    let stat = ["FIGHT_PROP_DEFENSE_PERCENT", "FIGHT_PROP_PHYSICAL_ADD_HURT"]
+    w.getStats(6, 90).filter(s => stat.includes(s.fightProp))
+      .map(s => console.log(`${w.id},${w.getStats(6, 90).filter(d => d.fightProp == 'FIGHT_PROP_BASE_ATTACK').map(d => d.valueText)},${s.value.toFixed(3)}`))
+  }
+})*/
 
 
 
